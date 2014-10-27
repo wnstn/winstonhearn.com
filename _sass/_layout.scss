@@ -213,6 +213,20 @@ header {
     }
   }
 
+  ul,
+  ol {
+    li {
+      @include clearfix;
+      margin-bottom: 1.5rem;
+    }
+
+    li p + p{
+      @include span-columns(17 of 18);
+      @include shift(1);
+      margin-top: 0;
+    }
+  }
+
   blockquote {
     @include fill-parent;
     @include shift(0);

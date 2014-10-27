@@ -10,7 +10,7 @@ edited: 1
 
 This post is meant to complement the talk I'm giving at [CoderFaire](http://tennessee.coderfaire.com/) on September 20, 2014. Hopefully you got to see it in person, but if not, I will maybe write out the full talk sometime soon. In the meantime, here are some links that I found helpful while researching the talk.
 
-{<1>}![http://bukk.it/swagga.gif](http://bukk.it/swagga.gif)
+![http://bukk.it/swagga.gif](http://bukk.it/swagga.gif)
 
 - [The Promises/A+ Spec](http://promisesaplus.com/)
 
