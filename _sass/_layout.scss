@@ -17,7 +17,8 @@ header {
     }
 
     @include break(1024px) {
-      width: 65%;
+      max-width: 53%;
+      display: inline-block;
     }
   }
 
@@ -25,13 +26,11 @@ header {
     display: none;
 
     @include break($on-palm) {
-      display: block;
-      float: left;
-      width: 75%;
-    }
-
-    @include break(1050px) {
-      width: 65%;
+      display: inline-block;
+      position: absolute;
+      margin-bottom: 0;
+      left: 3rem;
+      bottom: 0;
     }
   }
 

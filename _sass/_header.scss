@@ -26,22 +26,28 @@ header {
 
   .site-title {
     font-family: $big-font;
+    text-align: left;
 
     @include break($on-palm) {
-      font-size: 2.3rem;
+      font-size: 6rem;
       line-height: .6em;
       margin-bottom: 0;
       padding: 0;
-      text-align: right;
       text-transform: uppercase;
     }
 
-    @include break(1050px) {
-      font-size: 3rem;
+    @include break(1024px) {
+      font-size: 7.5rem;
+      text-align: left;
+      line-height: .65em;
     }
 
     a {
-      color: rgba($text-color, .7);
+      color: rgba($text-color, .2);
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -49,8 +55,8 @@ header {
     font-style: italic;
 
     @include break($on-palm) {
-      color: rgba($text-color, .5);
-      font-size: 1.5rem;
+      color: rgba($text-color, .7);
+      font-size: 2rem;
       line-height: 2rem;
       padding: 0;
       text-align: right;
