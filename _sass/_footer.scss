@@ -1,0 +1,19 @@
+footer {
+  background-color: $header-orange;
+  text-align: center;
+
+  ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  li {
+    @include break($on-palm) {
+      float: left;
+      margin-right: 2em;
+      @include clearfix;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.post-header {
+  margin-top: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  .post-title {
+    background-color: rgba($header-blue, .6);
+    line-height: 3.2rem;
+    font-size: 2rem;
+
+    @include break($on-laptop) {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+  }
+
+  .post-meta {
+    background-color: rgba($header-orange, .2);
+    color: $grey-color;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  .publish-date strong {
+    display: none;
+  }
+
+  .post-references ul{
+    list-style: none;
+    margin-left: 8px;
+    padding-top: 5px;
+  }
+}
+
+.post-content {
+  font-family: $serif-font;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $sans-serif-font;
+  }
+
+  @include break($on-palm) {
+    font-size: 1.1rem;
+  }
+
+  @include break($on-laptop) {
+    font-size: 1.3rem;
+
+    img {
+      margin-left: -10%;
+      max-width: 120%;
+    }
+  }
+
+  p + p {
+    margin-top: 1rem;
+  }
+
+  blockquote {
+    background-color: $header-orange-faint;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    padding: 1em 1.3em;
+
+    @include break($on-laptop) {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      border-left: none;
+      padding: 1em 20%;
+    }
+  }
+}

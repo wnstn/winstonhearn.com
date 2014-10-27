@@ -1,0 +1,36 @@
+$serif-font: "fanwood",serif; // weights: 400 & italic, 700
+$sans-serif-font: "brandon-grotesque", sans-serif; // weights: 400 & italic, 700 & italic
+$big-font: "expressway", sans-serif;
+$monospace-font: "inconsolata", sans-serif;
+
+// Our variables
+$base-font-family: $sans-serif-font;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+$header-shade:     #6DB1D9;
+$header-text:      #EFD2C6;
+$header-orange:    #F8A580;
+$header-blue:      #80A2BE;
+$header-orange-faint: #FBEAE2;
+$header-blue-faint: #DAEAF4;
+
+$white:            #ffffff;
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$dark:          #515E29; // dark green
+$accent:        #B1C968; // bright green (fave)
+$highlight:     #7F943A; // green
+$attention:     #6399A3; // sea blue
+$bright:        #CE4837; // reddish orange

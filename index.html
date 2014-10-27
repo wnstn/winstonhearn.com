@@ -1,0 +1,51 @@
+---
+layout: default
+wrapper: index
+---
+
+{% for post in site.posts %}
+  <article>
+    <div class="post-image-container">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        {% if post.img %}
+          <img src="{{post.img}}" class="post-image" alt="{{ post.title }}"/>
+        {% else %}
+          <span class="post-image-alt"></span>
+        {% endif %}
+      </a>
+    </div>
+
+    <aside class="post-details">
+      <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+
+      <div class="post-excerpt">
+        <p>{{ post.my-excerpt }}</p>
+      </div>
+
+      <ul class="post-meta">
+        <li class="publish-date"><strong>Published</strong> {{ post.date | date: "%b %-d, %Y" }}</li>
+        {% if post.edited > 1 %}
+          <li class="publish-edited">Edited {{ post.edited }} times</li>
+        {% endif %}
+        <li class="post-category"><em>This is a</em> <strong>{{ post.category }}</strong> <em>post</em></li>
+
+        {% if post.references %}
+          <li class="post-references">Inspiration from
+            <ul> {% for reference in post.references %}
+
+              <li class="post-reference">
+                <a href="{{ reference.url }}" target="_blank">
+                  <svg class="icon"><use xlink:href="#brain"></use></svg>
+                  {{ reference.title }}
+                </a>
+              </li>
+
+            {% endfor%}</ul>
+          </li>
+        {% endif %}
+      </ul>
+
+    </aside>
+  </article>
+{% endfor %}
+

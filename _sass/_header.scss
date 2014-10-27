@@ -1,0 +1,77 @@
+.pattern-bg {
+  background-image: url(/img/header.svg);
+  background-position: cover;
+  background-size: 100%;
+  background-position: 60% 10%;
+  @include clearfix;
+
+  @include break($on-palm) {
+    height: 15rem;
+  }
+}
+
+header {
+    font-size: .7rem;
+    height: 100%;
+    padding: 1em 0;
+
+    @include break($on-palm) {
+      padding: 0;
+    }
+
+    @include break($on-laptop) {
+      margin-top: 0em;
+      border-radius: 0px 20px 0px 20px;
+    }
+
+  .site-title {
+    font-family: $big-font;
+
+    @include break($on-palm) {
+      font-size: 2.3rem;
+      line-height: .6em;
+      margin-bottom: 0;
+      padding: 0;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    @include break(1050px) {
+      font-size: 3rem;
+    }
+
+    a {
+      color: rgba($text-color, .7);
+    }
+  }
+
+  .site-subtitle {
+    font-style: italic;
+
+    @include break($on-palm) {
+      color: rgba($text-color, .5);
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 0;
+      text-align: right;
+    }
+  }
+
+  .author h2 {
+    font-size: 1.2rem;
+    font-family: $big-font;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+
+    @include break($on-palm) {
+      opacity: .8;
+      text-align: right;
+    }
+
+    a {
+      color: $grey-color-dark;
+    }
+  }
+}
