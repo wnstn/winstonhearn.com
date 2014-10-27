@@ -8,7 +8,7 @@ my-excerpt: Playground is a little Sinatra app I use when I want to trying thing
 edited: 1
 ---
 
-[![playground on github](/img/introducing-playground/playground_repo.jpg)](https://github.com/wnstn/playground)
+[![playground screenshot from github](/img/introducing-playground/playground_repo.jpg)](https://github.com/wnstn/playground)
 
 ### A safe place for Front End Devs to try new things
 
