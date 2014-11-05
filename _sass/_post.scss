@@ -15,7 +15,8 @@
   }
 
   .post-meta {
-    background-color: rgba($header-orange, .2);
+    background-color: rgba($header-blue, .2);
+    border-radius: 0 0 3px 3px;
     color: $grey-color;
 
     li {
