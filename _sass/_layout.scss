@@ -174,8 +174,8 @@ header {
       }
 
       .post-meta {
-        @include span-columns(4 of 12);
-        @include shift(3);
+        @include span-columns(5 of 12);
+        @include shift(2);
       }
     }
   }
@@ -229,6 +229,30 @@ header {
   blockquote {
     @include fill-parent;
     @include shift(0);
+  }
+}
+
+.link-list .post-content {
+
+  @include break($on-palm) {
+    > blockquote {
+      @include span-columns(7 of 16);
+      @include shift(1);
+      @include clearfix;
+    }
+
+    > p {
+      @include span-columns(7 of 16);
+      @include shift(0);
+      @include omega;
+      @include clearfix;
+    }
+
+    hr {
+      width: 100%;
+      margin: 2em 0;
+      @include clearfix;
+    }
   }
 }
 
