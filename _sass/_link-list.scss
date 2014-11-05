@@ -1,0 +1,37 @@
+.link-list {
+
+  @include break($on-palm) {
+    blockquote {
+      background-color: lighten($accent, 30%);
+      border-left: none;
+      font-size: .9rem;
+      letter-spacing: .02rem;
+      line-height: 1.3rem;
+      padding: 1.5em;
+    }
+  }
+
+  @include break($on-laptop) {
+    blockquote {
+      font-size: 1.1rem;
+      padding: 1.5em;
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid rgba($attention, .3);
+    color: transparent;
+  }
+
+  p > a {
+    border-bottom: 2px solid $highlight;
+    color: darken($accent, 10%);
+    font-weight: bold;
+
+    &:hover {
+      border-bottom: 0;
+      text-decoration: none;
+    }
+  }
+}
