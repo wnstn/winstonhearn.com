@@ -16,7 +16,7 @@ wrapper: index
     </div>
 
     <aside class="post-details">
-      <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a></h2>
 
       <div class="post-excerpt">
         <p>{{ post.my-excerpt }}</p>
@@ -29,7 +29,7 @@ wrapper: index
         {% endif %}
         <li class="post-category"><em>This is a</em> <strong>{{ post.category }}</strong> <em>post</em></li>
 
-        {% if post.references %}
+        {% if post.references and post.show-references != false %}
           <li class="post-references">Inspiration from
             <ul> {% for reference in post.references %}
 

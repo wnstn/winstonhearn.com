@@ -30,7 +30,6 @@
 
   .post-link {
     color: $bright;
-    text-decoration: underline;
   }
 
   .post-title {
@@ -38,7 +37,6 @@
     padding-top: 1rem;
 
     @include break($on-laptop) {
-      text-transform: uppercase;
       text-decoration: none;
     }
   }
