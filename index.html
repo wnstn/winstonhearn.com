@@ -29,7 +29,7 @@ wrapper: index
         {% endif %}
         <li class="post-category"><em>This is a</em> <strong>{{ post.category }}</strong> <em>post</em></li>
 
-        {% if post.references %}
+        {% if post.references and post.show-references != false %}
           <li class="post-references">Inspiration from
             <ul> {% for reference in post.references %}
 
