@@ -5,13 +5,8 @@ wrapper: index
 
 {% for post in site.posts %}
   <article>
-    <div class="post-image-container">
+    <div class="post-image-container {{ post.category }}">
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-        {% if post.img %}
-          <img src="{{post.img}}" class="post-image" alt="{{ post.title }}"/>
-        {% else %}
-          <span class="post-image-alt"></span>
-        {% endif %}
       </a>
     </div>
 

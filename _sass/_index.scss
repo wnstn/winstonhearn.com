@@ -7,29 +7,11 @@
     @include break($on-laptop) {
       height: 14em;
     }
-
-    &:nth-child(odd) .post-image-container {
-      background-color: $header-orange-faint;
-    }
-
-    &:nth-child(even) .post-image-container {
-      background-color: $header-blue-faint;
-    }
   }
 
   .post-image-container {
     border: 1rem solid white;
     height: 100%;
-  }
-
-  .post-image-alt {
-    display: inline-block;
-    width: 100%;
-    height: 80%;
-  }
-
-  .post-link {
-    color: $bright;
   }
 
   .post-title {

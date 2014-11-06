@@ -1,0 +1,28 @@
+.post-image-container {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.post-image-container .post-link {
+  border: 3px solid transparent;
+  display: block;
+  margin-left: 25%;
+  margin-top: 25%;
+  position: relative;
+  height: 7em;
+  width: 7em;
+  @include transform(rotate(-7deg));
+  @include transition(background-size .1s ease-in);
+
+  &:hover {
+    background-size: 55% 55%;
+    @include transform(rotate(-3deg));
+    @include transition(all .1s ease-out);
+  }
+}
+
+@include category(links, lighten($dark, 30%), 'newspaper.svg');
+@include category(personal, lighten($accent, 20%), 'pencil.svg');
+@include category(code, lighten($highlight, 20%), 'tools.svg');
+@include category(ux, lighten($attention, 20%), 'heart.svg');
+@include category(quote, lighten($bright, 20%), 'quote.svg');
