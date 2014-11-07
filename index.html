@@ -18,10 +18,17 @@ wrapper: index
       </div>
 
       <ul class="post-meta">
+
         <li class="publish-date"><strong>Published</strong> {{ post.date | date: "%b %-d, %Y" }}</li>
+
         {% if post.edited > 1 %}
           <li class="publish-edited">Edited {{ post.edited }} times</li>
         {% endif %}
+
+        {% if post.copyeditor %}
+          <li class="publish-copyeditor">Copyedited by <br/><a href="{{ post.copyeditor.url }}" target="_blank">{{ post.copyeditor.name }}</a></li>
+        {% endif %}
+
         <li class="post-category"><em>This is a</em> <strong>{{ post.category }}</strong> <em>post</em></li>
 
         {% if post.references and post.show-references != false %}

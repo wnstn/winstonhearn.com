@@ -101,7 +101,8 @@ header {
 
   .post-category,
   .publish-date,
-  .publish-edited {
+  .publish-edited,
+  .publish-copyeditor {
     @include span-columns(6 of 12);
     @include omega(2n);
 

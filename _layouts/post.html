@@ -8,9 +8,15 @@ layout: default
     <ul class="post-meta">
       <li class="publish-date"><strong>Published</strong> {{ page.date | date: "%b %-d, %Y" }}</li>
       <li class="post-category"><em>This is a</em> <strong>{{ page.category }}</strong> <em>post</em></li>
+
       {% if page.edited > 1 %}
         <li class="publish-edited">Edited {{ page.edited }} times</li>
       {% endif %}
+
+      {% if page.copyeditor %}
+        <li class="publish-copyeditor">Copyedited by <br/><a href="{{ page.copyeditor.url }}" target="_blank">{{ page.copyeditor.name }}</a></li>
+      {% endif %}
+
       {% if page.references %}
         <li class="post-references">Inspiration from
           <ul> {% for reference in page.references %}
@@ -25,6 +31,7 @@ layout: default
           {% endfor%}</ul>
         </li>
       {% endif %}
+
     </ul>
     <div class="post-icon {{ page.category }}">
       <span class="post-link"></span>

@@ -11,6 +11,9 @@ layout: default
       {% if page.edited > 1 %}
         <li class="publish-edited">Edited {{ page.edited }} times</li>
       {% endif %}
+      {% if page.copyeditor %}
+        <li class="publish-copyeditor">Copyedited by <br/> <a href="{{ page.copyeditor.url }}" target="_blank">{{ page.copyeditor.name }}</a></li>
+      {% endif %}
       {% if page.references and page.show-references != false %}
         <li class="post-references">Inspiration from
           <ul> {% for reference in page.references %}

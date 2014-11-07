@@ -46,6 +46,10 @@
     margin-left: 0;
     color: lighten($grey-color, 10%);
 
+    > li {
+      border-bottom: 1px $grey-color-light dashed;
+    }
+
     @include break($on-laptop) {
       color: $text-color;
 
