@@ -43,6 +43,8 @@ Can an abortion doctor be a Christian? Can a Christian have mercy on women seeki
 
 [Letting Go](http://www.newyorker.com/magazine/2010/08/02/letting-go-2)
 
+Your death is coming. This is the subtext of so many essays that are intended to inspire, and it's the elephant in the corner never addressed when we talk about growing old or retiring or our golden years. But still, death is coming.
+
 <hr/>
 
 > Sing an elegy for the washed away! For the cycles of life, for the saltwater marshes, the houses, the humans—whole islands of humans. Going, going, gone! But not quite yet. 
