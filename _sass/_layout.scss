@@ -246,6 +246,12 @@ header {
 
 .link-list .post-content {
 
+  hr {
+    width: 100%;
+    margin: 2em 0 3em;
+    @include clearfix;
+  }
+
   @include break($on-palm) {
     > blockquote {
       @include span-columns(6 of 16);
@@ -257,12 +263,6 @@ header {
       @include span-columns(7 of 16);
       @include shift(1);
       @include omega;
-      @include clearfix;
-    }
-
-    hr {
-      width: 100%;
-      margin: 2em 0;
       @include clearfix;
     }
   }
