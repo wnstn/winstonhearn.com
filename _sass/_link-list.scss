@@ -24,6 +24,10 @@
     color: transparent;
   }
 
+  p + p {
+    text-indent: 1em;
+  }
+
   p > a {
     border-bottom: 2px solid $purple;
     color: darken($purple, 10%);
