@@ -43,7 +43,7 @@ Can an abortion doctor be a Christian? Can a Christian have mercy on women seeki
 
 [Letting Go](http://www.newyorker.com/magazine/2010/08/02/letting-go-2)
 
-Your death is coming. This is the subtext of so many essays that are intended to inspire, and it's the elephant in the corner never addressed when we talk about growing old or retiring or our golden years. But still, death is coming.
+Your death is coming. This is the subtext of so many essays that are intended to inspire, and it's the elephant in the corner never addressed when we talk about growing old or retiring or our golden years. But still, death is coming. Only, the modern world allows us to procrastinate facing this far longer than ever before. Yet, still it comes. My grandmother died earlier this year, and she had the privilege to do so in her home under hospice care. She intentionally chose not to seek out hospital care for her ailments, instead recognizing that it was her time and making the choice to be comfortable rather than accepting interventions that would extend her nearly nine decades of life by a few more days. This choice - to extend the quantity of days by relatively minor amounts at the sacrifice of dignity and quality of life is one multitudes of people must face each day now. Is our medical system able to help with this? Atul Gawande explored this question a few years ago in The New Yorker. 
 
 <hr/>
 
@@ -51,14 +51,20 @@ Your death is coming. This is the subtext of so many essays that are intended to
 
 [Elegy for a Country's Seasons](http://www.nybooks.com/articles/archives/2014/apr/03/elegy-countrys-seasons/)
 
+Zadie Smith eloquently mourns the death we are actively sowing upon the entirety of our globe. The consequences of our choices are vast and incomprehensible and yet they are also subtle, slow, and invisible if we do not compare each day to the days that came before it. Smith is paying attention, and sees what we have sown.
+
 <hr/>
 
 >  The death penalty needs to be abolished. Life without parole is still a death sentence. The only difference is time. To say you need to kill a person in a shorter amount of time is just seeking revenge on that person.
 
 [A Letter from Ray Jasper, Who is About to Be Executed](http://gawker.com/a-letter-from-ray-jasper-who-is-about-to-be-executed-1536073598)
 
+We have hidden millions (literally) of people from sight, locking them into prison for years as a consequence of infractions that, were their skin color lighter, they might never have been found worthy of investigating. The state of Texas executed Ray Jasper, a man convicted of participating in a robber/murder. Just before he was killed, he wrote a letter.
+
 <hr/>
 
 >  The world takes from us relentlessly. It takes our friends and first loves. It takes our parents. It takes our faith. It takes our dignity. It takes our passion. It takes our health. It takes our honesty, and it takes our credulity. To lose so much and still hold onto yourself is perhaps the most complicated task human beings are asked to perform, which is why seeing it done with aplomb is as thrilling as looking at dinosaur bones or seeing a herd of elephants. It’s an honor to exist on Earth with these things.
 
 [On Kindness](https://medium.com/matter/on-kindness-819ce388f976)
+
+Death is coming. What can we do? Cord Jefferson explores our options as he wrestles with his mother's cancer. I cried freely while reading his words and I feel no shame, only gratitude that he was willing to be so honest with us, an undeserving audience. 
