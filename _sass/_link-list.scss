@@ -2,7 +2,7 @@
 
   @include break($on-palm) {
     blockquote {
-      background-color: lighten($accent, 30%);
+      background-color: lighten($muted-purple, 30%);
       border-left: none;
       font-size: .9rem;
       letter-spacing: .02rem;
@@ -20,13 +20,13 @@
 
   hr {
     border: none;
-    border-top: 1px solid rgba($attention, .3);
+    border-top: 1px solid rgba($green, .3);
     color: transparent;
   }
 
   p > a {
-    border-bottom: 2px solid $highlight;
-    color: darken($accent, 10%);
+    border-bottom: 2px solid $purple;
+    color: darken($purple, 10%);
     font-weight: bold;
 
     &:hover {

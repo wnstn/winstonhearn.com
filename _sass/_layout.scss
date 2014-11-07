@@ -150,13 +150,18 @@ header {
       @include omega;
     }
   }
+
+  .post-icon {
+    @include span-columns(6 of 12);
+    @include shift(3);
+  }
 }
 
 @include direction-context (right-to-left) {
   @include break($on-palm) {
     .post-header {
       .post-title {
-        @include span-columns(5 of 12);
+        @include span-columns(4 of 12);
       }
 
       .post-meta {
@@ -164,19 +169,26 @@ header {
         @include shift(2);
         margin-top: -1em;
       }
+
+      .post-icon {
+        @include span-columns(2 of 12);
+      }
     }
   }
 
   @include break($on-laptop) {
     .post-header {
+
       .post-title {
-        @include span-columns(4 of 12);
+        @include span-columns(5 of 12);
       }
 
       .post-meta {
-        @include span-columns(5 of 12);
-        @include shift(2);
+        @include span-columns(4 of 12);
+        @include shift(1);
       }
+
+
     }
   }
 }
@@ -236,14 +248,14 @@ header {
 
   @include break($on-palm) {
     > blockquote {
-      @include span-columns(7 of 16);
+      @include span-columns(6 of 16);
       @include shift(1);
       @include clearfix;
     }
 
     > p {
       @include span-columns(7 of 16);
-      @include shift(0);
+      @include shift(1);
       @include omega;
       @include clearfix;
     }

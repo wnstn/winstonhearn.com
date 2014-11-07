@@ -2,10 +2,22 @@
 
   article {
     border-bottom: 1px $grey-color-light dotted;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
     @include clearfix;
 
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
     @include break($on-laptop) {
-      height: 14em;
+      height: 12em;
+
+      &:last-child {
+        height: 10em;
+      }
     }
   }
 

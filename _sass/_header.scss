@@ -3,6 +3,7 @@
   background-position: cover;
   background-size: 100%;
   background-position: 60% 10%;
+  margin-bottom: 3rem;
   @include clearfix;
 
   @include break($on-palm) {
@@ -24,45 +25,6 @@ header {
       border-radius: 0px 20px 0px 20px;
     }
 
-  .site-title {
-    font-family: $big-font;
-    text-align: left;
-
-    @include break($on-palm) {
-      font-size: 6rem;
-      line-height: .6em;
-      margin-bottom: 0;
-      padding: 0;
-      text-transform: uppercase;
-    }
-
-    @include break(1024px) {
-      font-size: 7.5rem;
-      text-align: left;
-      line-height: .65em;
-    }
-
-    a {
-      color: rgba($text-color, .2);
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-
-  .site-subtitle {
-    font-style: italic;
-
-    @include break($on-palm) {
-      color: rgba($text-color, .7);
-      font-size: 2rem;
-      line-height: 2rem;
-      padding: 0;
-      text-align: right;
-    }
-  }
-
   .author h2 {
     font-size: 1.2rem;
     font-family: $big-font;
@@ -72,12 +34,12 @@ header {
     text-align: center;
 
     @include break($on-palm) {
-      opacity: .8;
+      opacity: .6;
       text-align: right;
     }
 
     a {
-      color: $bright;
+      color: white;
     }
   }
 }

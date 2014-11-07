@@ -13,21 +13,9 @@
     }
 }
 
-@mixin category($category, $color, $icon) {
+@mixin category($category, $icon) {
   .#{$category} .post-link {
-    background: $color url(/img/icons/#{$icon}) center no-repeat;
-    background-size: 50% 50%;
-    color: rgba($color, .5);
-
-    &:before {
-    content: " ";
-    position: absolute;
-    z-index: -1;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border: 1px solid $color;
-  }
+    background: url(/img/icons/#{$icon}) center no-repeat;
+    background-size: 60% 60%;
   }
 }
