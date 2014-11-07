@@ -13,7 +13,7 @@
   .post-title {
     background-color: $purple;
     color: $grey-color-light;
-    line-height: 3.2rem;
+    line-height: 2.8rem;
     font-size: 2rem;
 
     @include break($on-laptop) {
@@ -24,7 +24,6 @@
 
   .post-meta {
     font-size: .9rem;
-    margin-left: 0;
     color: lighten($grey-color, 10%);
 
     @include break($on-laptop) {

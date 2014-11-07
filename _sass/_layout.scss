@@ -127,17 +127,16 @@ header {
   @include clearfix;
 
   .post-title{
-    display: inline;
+    display: inline-block;
+    padding-left: 8.5298%;
     @include clearfix;
   }
 
   .post-meta {
-    display: block;
-    width: 100%;
-    margin: 0;
+    @include span-columns(11 of 12);
+    @include shift(1);
     margin-top: 5px;
     margin-bottom: 1rem;
-    padding: 5px;
     @include clearfix;
 
     > li {
@@ -153,7 +152,7 @@ header {
 
   .post-icon {
     @include span-columns(6 of 12);
-    @include shift(3);
+    @include shift(4);
   }
 }
 
@@ -162,6 +161,7 @@ header {
     .post-header {
       .post-title {
         @include span-columns(4 of 12);
+        padding-left: .5em;
       }
 
       .post-meta {
