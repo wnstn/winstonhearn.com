@@ -1,18 +1,27 @@
-.post-image-container {
+.post-image-background {
   background-image: url(/img/icons/icon-bg.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50% 65%;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  height: 4em;
+  width: 4em;
+
+
+  @include break($on-laptop) {
+    height: 6em;
+    width: 6em;
+  }
 }
 
 .post-image-container .post-link {
   display: block;
-  margin-left: 20%;
   margin-top: 5%;
-  opacity: .6;
+  opacity: .7;
   position: relative;
-  height: 7em;
-  width: 7em;
+  height: 100%;
+  width: 100%;
+  @include transform(rotate(-10deg));
 }
 
 @include category(links, 'newspaper.svg');

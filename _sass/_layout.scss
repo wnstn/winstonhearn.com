@@ -53,15 +53,6 @@ header {
     @include outer-container();
   }
 
-  .post-image-container {
-    display: none;
-
-    @include break($on-laptop) {
-      display: block;
-      @include span-columns(3 of 12);
-    }
-  }
-
   .post-details {
     @include span-columns(16 of 18);
     @include shift(1);
@@ -123,6 +114,18 @@ header {
   }
 }
 
+.post-image-container {
+  @include span-columns(12);
+
+  @include break($on-palm) {
+    @include span-columns(2);
+  }
+
+  // @include break($on-laptop) {
+  //   @include span-columns(3);
+  // }
+}
+
 .post-header {
   position: relative;
   @include clearfix;
@@ -150,11 +153,6 @@ header {
       @include omega;
     }
   }
-
-  .post-icon {
-    @include span-columns(6 of 12);
-    @include shift(4);
-  }
 }
 
 @include direction-context (right-to-left) {
@@ -168,7 +166,6 @@ header {
       .post-meta {
         @include span-columns(4 of 12);
         @include shift(2);
-        margin-top: -1em;
       }
 
       .post-icon {
@@ -188,8 +185,6 @@ header {
         @include span-columns(4 of 12);
         @include shift(1);
       }
-
-
     }
   }
 }

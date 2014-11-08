@@ -5,9 +5,11 @@ wrapper: index
 
 {% for post in site.posts %}
   <article>
-    <div class="post-image-container {{ post.category }}">
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-      </a>
+    <div class="post-image-container">
+      <div class="post-image-background {{ post.category }}">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        </a>
+      </div>
     </div>
 
     <aside class="post-details">

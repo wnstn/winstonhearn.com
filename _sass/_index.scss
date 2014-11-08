@@ -21,10 +21,6 @@
     }
   }
 
-  .post-image-container {
-    height: 100%;
-  }
-
   .post-title {
     line-height: 1.5rem;
     padding-top: 1rem;
@@ -38,6 +34,7 @@
     color: $grey-color-dark;
     font-family: $serif-font;
     font-size: 1.05rem;
+    margin-bottom: 1em;
     text-indent: 1rem;
   }
 
@@ -46,16 +43,13 @@
     margin-left: 0;
     color: lighten($grey-color, 10%);
 
-    > li {
-      border-bottom: 1px $grey-color-light dashed;
-    }
-
     @include break($on-laptop) {
       color: $text-color;
 
       > li {
         padding-left: 8px;
         border-bottom: 1px $grey-color-light dashed;
+        border-top: none;
         @include clearfix;
       }
     }
