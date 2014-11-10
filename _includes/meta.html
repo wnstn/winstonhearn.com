@@ -1,0 +1,14 @@
+{% comment %}Facebook tags{% endcomment %}
+
+{% if page.title %}
+  <meta property="og:title" content="{{ page.title | strip_html }}" />
+{% else %}
+  <meta property="og:title" content="{{ site.title }}" />
+<meta property="og:site_name" content="WinstonHearn.com" />
+<meta property="og:url" content="{{ page.url }}" />
+{% if page.my-excerpt %}
+  <meta property="og:description" content="{{ page.my-excerpt }}" />
+{% else %}
+  <meta property="og:description" content="{{ site.description }}" />
+{% endif %}
+<meta property="og:image" content="/img/fb-image.jpg" />

@@ -11,10 +11,12 @@
   }
 
   .post-title {
-    background-color: $purple;
-    color: $grey-color-light;
-    line-height: 2.8rem;
+    border-bottom: 2px solid $purple;
+    color: $purple;
     font-size: 2rem;
+    line-height: 2.8rem;
+    padding-bottom: 3px;
+    padding-left: 0;
 
     @include break($on-laptop) {
       font-size: 2.5rem;
