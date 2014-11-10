@@ -3,11 +3,13 @@
   background-position: cover;
   background-size: 100%;
   background-position: 60% 10%;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5em;
+
   @include clearfix;
 
   @include break($on-palm) {
     height: 15rem;
+    margin-bottom: 3rem;
   }
 }
 
