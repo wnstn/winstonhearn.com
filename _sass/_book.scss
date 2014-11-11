@@ -39,12 +39,19 @@
 
 .book-title {
   margin-top: 1em;
+  margin-bottom: .7rem;
 
   @include media($on-laptop) {
     margin-top: 0;
   }
 }
 
+.book-author {
+  margin-bottom: .4rem;
+  padding-left: .5rem;
+}
+
 .book-published {
   margin-bottom: 2rem;
+  padding-left: .5rem;
 }
