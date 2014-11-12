@@ -14,18 +14,24 @@
 }
 
 header {
+    @include span-columns(12);
     font-size: .7rem;
     height: 100%;
     padding: 1em 0;
+    position: relative;
 
     @include break($on-palm) {
+      @include span-columns(12);
       padding: 0;
+      overflow: hidden;
     }
 
     @include break($on-laptop) {
       margin-top: 0em;
       border-radius: 0px 20px 0px 20px;
     }
+
+
 
   .author h2 {
     font-size: 1.2rem;
@@ -34,14 +40,19 @@ header {
     font-weight: 400;
     margin-bottom: 0;
     text-align: center;
+    width: 100%;
+    @include clearfix;
 
     @include break($on-palm) {
       opacity: .6;
       text-align: right;
+      position: absolute;
+      right: 2em;
+      bottom: 0;
     }
+  }
 
-    a {
-      color: white;
-    }
+  .author a {
+    color: white;
   }
 }

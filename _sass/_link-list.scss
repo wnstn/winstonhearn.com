@@ -2,12 +2,22 @@
 
   @include break($on-palm) {
     blockquote {
+      @include span-columns(6 of 16);
+      @include shift(1);
+      @include clearfix;
       background-color: lighten($muted-purple, 30%);
       border-left: none;
       font-size: .9rem;
       letter-spacing: .02rem;
       line-height: 1.3rem;
       padding: 1.5em;
+    }
+
+    .post-content > p {
+      @include span-columns(7 of 16);
+      @include shift(1);
+      @include omega;
+      @include clearfix;
     }
   }
 
@@ -19,9 +29,12 @@
   }
 
   hr {
+    @include clearfix;
+    color: transparent;
     border: none;
     border-top: 1px solid rgba($green, .3);
-    color: transparent;
+    margin: 2em 0 3em;
+    width: 100%;
   }
 
   p + p {

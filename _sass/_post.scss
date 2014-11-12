@@ -1,8 +1,10 @@
 .post-header {
-  margin-top: 0;
-  padding-top: 1em;
+  @include clearfix;
   margin-bottom: 1em;
+  margin-top: 0;
   padding-bottom: 1em;
+  padding-top: 1em;
+  position: relative;
 
   @include break($on-palm) {
     border-bottom: 1px solid rgba($purple, .3);
@@ -17,6 +19,8 @@
     line-height: 2.8rem;
     padding-bottom: 3px;
     padding-left: 0;
+    display: inline-block;
+    @include clearfix;
 
     @include break($on-laptop) {
       font-size: 2.5rem;
@@ -25,16 +29,26 @@
   }
 
   .post-meta {
+    @include span-columns(11 of 12);
+    @include shift(1);
+    @include clearfix;
     font-size: .9rem;
     color: lighten($grey-color, 10%);
+    margin-top: 5px;
+    margin-bottom: 1rem;
+
+    > li {
+      @include span-columns(6 of 12);
+      @include omega(2n);
+    }
+
+    > .post-references {
+      @include span-columns(12);
+      @include omega;
+    }
 
     @include break($on-laptop) {
-      color: $text-color;
 
-      > li {
-        border-bottom: 1px $grey-color-light dashed;
-        @include clearfix;
-      }
     }
   }
 
@@ -49,9 +63,86 @@
   }
 }
 
+@include direction-context (right-to-left) {
+  @include break($on-palm) {
+    .post-header {
+      .post-title {
+        @include span-columns(4 of 12);
+        padding-left: .5em;
+      }
+
+      .post-meta {
+        @include span-columns(4 of 12);
+        @include shift(2);
+      }
+
+      .post-icon {
+        @include span-columns(2 of 12);
+      }
+    }
+  }
+
+  @include break($on-laptop) {
+    .post-header {
+
+      .post-title {
+        @include span-columns(5 of 12);
+      }
+
+      .post-meta {
+        @include span-columns(4 of 12);
+        @include shift(1);
+        color: $text-color;
+
+        > li {
+          border-bottom: 1px $grey-color-light dashed;
+          @include clearfix;
+        }
+      }
+    }
+  }
+}
+
+@include break($on-palm) {
+  .post-header .post-meta > li {
+    @include span-columns(5 of 12);
+    @include shift(1);
+    @include omega(2n);
+  }
+
+  .post-header .post-meta .post-references {
+    @include span-columns(11 of 12);
+    @include shift(1);
+  }
+}
+
+.post-image-container {
+  @include span-columns(12);
+
+  @include break($on-palm) {
+    @include span-columns(2);
+  }
+}
+
 .post-content {
+  @include outer-container;
   font-family: $serif-font;
   font-size: 1.1rem;
+
+  > * {
+    @include span-columns(16 of 18);
+    @include shift(1);
+
+    @include break($on-palm) {
+      @include span-columns(8 of 12);
+      @include shift(2 of 12);
+    }
+
+    @include break($on-laptop) {
+      @include span-columns(6 of 12);
+      @include shift(3 of 12);
+    }
+  }
 
   h1,
   h2,
@@ -76,6 +167,8 @@
   }
 
   blockquote {
+    @include fill-parent;
+    @include shift(0);
     background-color: $header-orange-faint;
     font-size: 1.3rem;
     line-height: 1.7rem;
@@ -91,5 +184,19 @@
 
   ul {
     list-style: circle;
+  }
+
+  ul,
+  ol, {
+    li {
+      @include clearfix;
+      margin-bottom: 1.5rem;
+    }
+
+    li p + p{
+      @include span-columns(17 of 18);
+      @include shift(1);
+      margin-top: 0;
+    }
   }
 }

@@ -4,6 +4,7 @@
     border-bottom: 1px $grey-color-light dotted;
     padding-bottom: 2em;
     margin-bottom: 2em;
+    @include outer-container();
     @include clearfix;
 
     &:last-child {
@@ -21,29 +22,59 @@
     }
   }
 
+  .post-details {
+    @include span-columns(16 of 18);
+    @include shift(1);
+
+    @include break($on-laptop) {
+      @include span-columns(9);
+      @include shift(0);
+      @include clearfix;
+    }
+  }
+
+  .post-image-container {
+    @include span-columns(12);
+
+    @include break($on-palm) {
+      @include span-columns(2);
+    }
+  }
+
   .post-title {
+    @include span-columns(11 of 11);
     line-height: 1.5rem;
     padding-top: 1rem;
 
     @include break($on-laptop) {
+      @include span-columns(9 of 9);
+      @include clearfix;
       text-decoration: none;
     }
   }
 
   .post-excerpt {
+    @include span-columns(11 of 11);
     color: $grey-color-dark;
     font-family: $serif-font;
     font-size: 1.05rem;
     margin-bottom: 1em;
     text-indent: 1rem;
+
+    @include break($on-laptop) {
+      @include span-columns(6 of 9);
+    }
   }
 
   .post-meta {
+    @include span-columns(11 of 11);
     font-size: .9rem;
     margin-left: 0;
     color: lighten($grey-color, 10%);
 
     @include break($on-laptop) {
+      @include span-columns(3 of 9);
+      @include omega;
       color: $text-color;
 
       > li {
@@ -52,6 +83,19 @@
         border-top: none;
         @include clearfix;
       }
+    }
+  }
+
+  .post-category,
+  .publish-date,
+  .publish-edited,
+  .publish-copyeditor {
+    @include span-columns(6 of 12);
+    @include omega(2n);
+
+    @include break($on-laptop) {
+      @include span-columns(3 of 4);
+      @include shift(1 of 4);
     }
   }
 
@@ -64,6 +108,14 @@
   }
 
   .post-references {
+    @include span-columns(12 of 12);
+    @include omega;
+
+    @include break($on-laptop) {
+      @include span-columns(3 of 4);
+      @include shift(1 of 4);
+    }
+
     ul {
       list-style: none;
       margin-left: 5px;
