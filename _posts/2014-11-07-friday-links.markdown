@@ -2,7 +2,7 @@
 layout: link-list
 title:  "Friday Links: <br/> Death in America"
 permalink: /friday-links-nov-7-2014/
-date:   2014-11-14 00:30:00
+date:   2014-11-07 00:30:00
 category: links
 my-excerpt: Six pieces that examine death in American culture - the ways we fear it, embrace it, and our ongoing struggles with its inevitability.
 edited: 4

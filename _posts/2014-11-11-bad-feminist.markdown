@@ -2,7 +2,7 @@
 layout: book
 title:  "Bad Feminist"
 permalink: /book-review-bad-feminist/
-date:   2014-11-14 12:30:00
+date:   2014-11-11 12:30:00
 category: book
 my-excerpt: Roxane Gay's book of essays challenged me, inspired me, taught me, and humbled me. What a beautiful collection of writing.
 edited: 1
