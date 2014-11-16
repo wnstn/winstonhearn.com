@@ -1,0 +1,12 @@
+.video-wrapper {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  text-align: center;
+  @include span-columns(12);
+
+  @include break($on-palm) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
+}
