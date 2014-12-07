@@ -1,6 +1,10 @@
 .video-wrapper {
+  height: 0;
   margin: 0 auto;
   margin-bottom: 2em;
+  overflow: hidden;
+  padding-bottom: 47.25%;
+  position: relative;
   text-align: center;
   @include span-columns(12);
 
@@ -9,4 +13,15 @@
     @include shift(1);
   }
 
+  iframe,
+  object,
+  embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+
 }
+

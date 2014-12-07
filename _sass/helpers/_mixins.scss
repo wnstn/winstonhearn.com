@@ -15,7 +15,7 @@
 
 @mixin category($category, $icon) {
   .#{$category} .post-link {
-    background: url(/img/icons/#{$icon}) center left no-repeat;
-    background-size: 75% 75%;
+    background: url(/img/icons/#{$icon}) center no-repeat;
+    background-size: 70% 70%;
   }
 }

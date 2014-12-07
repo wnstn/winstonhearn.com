@@ -14,8 +14,7 @@
     }
 
     @include break($on-laptop) {
-      height: 12em;
-
+      min-height: 12em;
       &:last-child {
         height: 10em;
       }
@@ -26,29 +25,46 @@
     @include span-columns(16 of 18);
     @include shift(1);
 
-    @include break($on-laptop) {
-      @include span-columns(9);
+    @include break($on-palm) {
+      @include span-columns(8 of 11);
       @include shift(0);
+    }
+
+    @include break($on-laptop) {
+      @include span-columns(9 of 12);
       @include clearfix;
     }
   }
 
   .post-image-container {
     @include span-columns(12);
+    text-align: center;
 
     @include break($on-palm) {
-      @include span-columns(2);
+      @include span-columns(2 of 11);
+    }
+
+    @include break($on-laptop) {
+      @include span-columns(1 of 12);
+      @include shift(1);
     }
   }
 
   .post-title {
     @include span-columns(11 of 11);
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     padding-top: 1rem;
 
+    @include break($on-palm) {
+      font-size: 1.7em;
+      line-height: 1.8rem;
+    }
+
     @include break($on-laptop) {
-      @include span-columns(9 of 9);
+      @include span-columns(6 of 8);
       @include clearfix;
+      font-size: 2rem;
+      line-height: 2.3rem;
       text-decoration: none;
     }
   }
@@ -61,8 +77,14 @@
     margin-bottom: 1em;
     text-indent: 1rem;
 
+    @include break($on-palm) {
+      font-size: 1.1rem;
+    }
+
     @include break($on-laptop) {
-      @include span-columns(6 of 9);
+      @include span-columns(6 of 8);
+      @include clearfix;
+      font-size: 1.2rem;
     }
   }
 
@@ -73,7 +95,7 @@
     color: lighten($grey-color, 10%);
 
     @include break($on-laptop) {
-      @include span-columns(3 of 9);
+      @include span-columns(2 of 8);
       @include omega;
       color: $text-color;
 

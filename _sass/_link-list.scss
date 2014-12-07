@@ -1,5 +1,10 @@
 .link-list {
 
+  .post-image-background {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   @include break($on-palm) {
     blockquote {
       @include span-columns(6 of 16);

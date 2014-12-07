@@ -1,5 +1,5 @@
 .post-image-background {
-  background-image: url(/img/icons/icon-bg.svg);
+  background-image: url(/img/icons/circle.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -7,17 +7,37 @@
   height: 4em;
   width: 4em;
 
+  @include break($on-palm) {
+    height: 3em;
+    width: 3em;
+  }
 
   @include break($on-laptop) {
-    height: 6em;
-    width: 6em;
+    height: 3em;
+    width: 3em;
+  }
+}
+
+.title-icon {
+  background-image: url(/img/icons/circle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 33px;
+  margin: 1em auto 0;
+  @include transform( rotate(70deg) );
+  width: 33px;
+
+  @include break($on-palm) {
+    @include transform( rotate(10deg) );
   }
 }
 
 .post-image-container .post-link {
   display: block;
   margin-top: 5%;
-  opacity: .7;
+  opacity: .9;
   position: relative;
   height: 100%;
   width: 100%;

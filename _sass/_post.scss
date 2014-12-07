@@ -29,7 +29,7 @@
   }
 
   .post-meta {
-    @include span-columns(11 of 12);
+    @include span-columns(16 of 18);
     @include shift(1);
     @include clearfix;
     font-size: .9rem;
@@ -52,6 +52,14 @@
     }
   }
 
+  .post-image-container {
+    @include span-columns(12);
+
+    @include break($on-palm) {
+      @include span-columns(12);
+    }
+  }
+
   .publish-date strong {
     display: none;
   }
@@ -67,17 +75,18 @@
   @include break($on-palm) {
     .post-header {
       .post-title {
-        @include span-columns(4 of 12);
+        @include span-columns(5 of 12);
         padding-left: .5em;
       }
 
       .post-meta {
-        @include span-columns(4 of 12);
-        @include shift(2);
+        @include span-columns(6 of 12);
+        @include omega;
+        @include shift(1);
       }
 
       .post-icon {
-        @include span-columns(2 of 12);
+        @include span-columns(12 of 12);
       }
     }
   }
@@ -86,11 +95,11 @@
     .post-header {
 
       .post-title {
-        @include span-columns(5 of 12);
+        @include span-columns(6 of 16);
       }
 
       .post-meta {
-        @include span-columns(4 of 12);
+        @include span-columns(6 of 16);
         @include shift(1);
         color: $text-color;
 
@@ -98,6 +107,11 @@
           border-bottom: 1px $grey-color-light dashed;
           @include clearfix;
         }
+      }
+
+      .post-image-container {
+        @include span-columns(2 of 16);
+        @include omega;
       }
     }
   }
@@ -113,14 +127,6 @@
   .post-header .post-meta .post-references {
     @include span-columns(11 of 12);
     @include shift(1);
-  }
-}
-
-.post-image-container {
-  @include span-columns(12);
-
-  @include break($on-palm) {
-    @include span-columns(2);
   }
 }
 

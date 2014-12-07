@@ -3,6 +3,7 @@
   background-position: cover;
   background-size: 100%;
   background-position: 60% 10%;
+  height: 4rem;
   margin-bottom: 1.5em;
 
   @include clearfix;
@@ -31,9 +32,14 @@ header {
       border-radius: 0px 20px 0px 20px;
     }
 
-
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 
   .author h2 {
+    color: white;
     font-size: 1.2rem;
     font-family: $big-font;
     font-style: normal;
@@ -50,9 +56,5 @@ header {
       right: 2em;
       bottom: 0;
     }
-  }
-
-  .author a {
-    color: white;
   }
 }
