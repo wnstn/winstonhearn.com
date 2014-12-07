@@ -16,9 +16,9 @@
     border-bottom: 2px solid $purple;
     color: $purple;
     font-size: 2rem;
-    line-height: 2.8rem;
+    line-height: 2rem;
     padding-bottom: 3px;
-    padding-left: 0;
+    padding-left: 5.6422%;
     display: inline-block;
     @include clearfix;
 
@@ -46,10 +46,6 @@
       @include span-columns(12);
       @include omega;
     }
-
-    @include break($on-laptop) {
-
-    }
   }
 
   .post-image-container {
@@ -75,12 +71,12 @@
   @include break($on-palm) {
     .post-header {
       .post-title {
-        @include span-columns(5 of 12);
-        padding-left: .5em;
+        @include span-columns(6 of 12);
+        padding-left: 0;
       }
 
       .post-meta {
-        @include span-columns(6 of 12);
+        @include span-columns(5 of 12);
         @include omega;
         @include shift(1);
       }
