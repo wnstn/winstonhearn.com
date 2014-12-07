@@ -1,0 +1,16 @@
+.video-index {
+
+  .video {
+    border-bottom: 1px solid rgba($purple, .3);
+    margin-bottom: 3em;
+    padding-bottom: 3em;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .post-header {
+    border-bottom: none;
+  }
+}

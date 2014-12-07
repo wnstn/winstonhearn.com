@@ -1,0 +1,54 @@
+---
+layout: default
+wrapper: video-index
+---
+
+{% for post in site.categories.video %}
+  <section class="video">
+    <div class="post-header">
+      <h1 class="post-title">{{ post.title }}</h1>
+      <ul class="post-meta">
+        <li class="publish-date"><strong>Published</strong> {{ post.date | date: "%b %-d, %Y" }}</li>
+
+        {% if post.edited > 1 %}
+          <li class="publish-edited">Edited {{ post.edited }} times</li>
+        {% endif %}
+
+        {% if post.copyeditor %}
+          <li class="publish-copyeditor">Copyedited by <br/><a href="{{ post.copyeditor.url }}" target="_blank">{{ post.copyeditor.name }}</a></li>
+        {% endif %}
+
+        {% if post.references %}
+          <li class="post-references">Video linked:
+            <ul> {% for reference in post.references %}
+
+              <li class="post-reference">
+                <a href="{{ reference.url }}" target="_blank">
+                  <svg class="icon"><use xlink:href="#brain"></use></svg>
+                  {{ reference.title }}
+                </a>
+              </li>
+
+            {% endfor%}</ul>
+          </li>
+        {% endif %}
+
+      </ul>
+      <div class="post-icon">
+        <div class="post-title-image"></div>
+      </div>
+    </div>
+
+    <div class="video-wrapper">
+      {% if post.video_source == 'youtube' %}
+        <iframe width="853" height="480" src="//www.youtube-nocookie.com/embed/{{ post.video }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      {% elsif post.video_source == 'vimeo' %}
+        <iframe src="//player.vimeo.com/video/{{ post.video }}?portrait=0&amp;color=ff9933" width="853" height="479" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      {% endif %}
+
+    </div>
+    <article class="post-content">
+      {{ post.content }}
+    </article>
+  </section>
+{% endfor %}
