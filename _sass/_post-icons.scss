@@ -32,6 +32,11 @@
   @include break($on-palm) {
     @include transform( rotate(10deg) );
   }
+
+  @include break($on-laptop) {
+    margin-top: 1.7em;
+    @include transform(rotate(0deg));
+  }
 }
 
 .post-image-container .post-link {

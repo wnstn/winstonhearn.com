@@ -47,6 +47,18 @@
     @include break($on-laptop) {
       @include span-columns(1 of 12);
       @include shift(1);
+      position: relative;
+
+      &:before {
+        background-color: rgba($header-blue, .2);
+        content: "";
+        height: 2.5em;
+        left: -5.5em;
+        position: absolute;
+        top: 1.4em;
+        @include transform(skew(-20deg));
+        width: 9.5em;
+      }
     }
   }
 
