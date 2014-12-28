@@ -34,10 +34,6 @@
     }
   }
 
-  .post-header .post-title {
-    padding-left: .6em;
-  }
-
   @include direction-context (right-to-left) {
 
     @include break($on-laptop) {
