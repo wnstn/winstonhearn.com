@@ -73,7 +73,7 @@
     }
 
     @include break($on-laptop) {
-      @include span-columns(6 of 8);
+      @include span-columns(8 of 8);
       @include clearfix;
       font-size: 2rem;
       line-height: 2.3rem;
@@ -94,7 +94,7 @@
     }
 
     @include break($on-laptop) {
-      @include span-columns(6 of 8);
+      @include span-columns(5 of 8);
       @include clearfix;
       font-size: 1.2rem;
     }
@@ -107,7 +107,7 @@
     color: lighten($grey-color, 10%);
 
     @include break($on-laptop) {
-      @include span-columns(2 of 8);
+      @include span-columns(3 of 8);
       @include omega;
       color: $text-color;
 

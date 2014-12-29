@@ -1,21 +1,115 @@
 footer {
   @include span-columns(12);
   margin-top: 3em;
-  background-color: $orange;
-  text-align: center;
+  background-color: $grey-color-dark;
+  padding-bottom: 3em;
+  padding-top: 2em;
+
+  .bio-photo {
+    display: none;
+    @include break($on-palm) {
+      background: rgba($header-shade, .3);
+      margin-top: 12px;
+      padding: .5em;
+      position: relative;
+      @include span-columns(3);
+      @include shift(2);
+
+      &:before {
+        border-left: 1px solid $header-shade;
+        border-top: 1px solid $header-shade;
+        content: "";
+        height: 50px;
+        left: -12px;
+        position: absolute;
+        top: -12px;
+        width: 50px;
+      }
+
+      &:after {
+        border-bottom: 1px solid $header-shade;
+        border-right: 1px solid $header-shade;
+        bottom: -12px;
+        content: "";
+        height: 50px;
+        position: absolute;
+        right: -12px;
+        width: 50px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .bio {
+    @include span-columns(10);
+    @include shift(1);
+
+    @include break($on-palm) {
+      @include span-columns(5);
+    }
+
+    h2 {
+      color: $header-shade;
+      font-family: $big-font;
+      letter-spacing: .05em;
+      margin-bottom: 0;
+    }
+  }
+
+  .subtitle {
+    color: $grey-color;
+    font-family: $sans-serif-font;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+  }
+
+  .bio-copy {
+    color: $grey-color-light;
+    font-size: 1.1em;
+    line-height: 1.3rem;
+    text-indent: .5em;
+  }
 
   ul {
-    display: inline-block;
     list-style: none;
-    margin: 0 auto;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 1em;
+    text-align: center;
+
+    @include span-columns(5);
+    @include shift(3.5);
+    @include clearfix;
   }
+
   li {
+    margin-bottom: 1em;
+
     @include break($on-palm) {
-      float: left;
-      margin-right: 2em;
-      @include clearfix;
+      font-size: .85rem;
+      margin-bottom: 0;
+      text-align: center;
+      @include span-columns (3 of 9);
+      @include omega(3n);
+    }
+  }
+
+  a {
+    border-bottom: 2px solid $green;
+    color: $green;
+
+    &:active,
+    &:visited {
+      color: $muted-purple;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $muted-purple;
+      color: $muted-purple;
+      text-decoration: none;
     }
   }
 }
