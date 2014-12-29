@@ -4,6 +4,8 @@ wrapper: index
 ---
 
 {% for post in site.posts %}
+{% unless post.subcategory == "single-link" %}
+
   <article>
     <div class="post-image-container">
       <div class="title-icon"></div>
@@ -47,5 +49,7 @@ wrapper: index
 
     </aside>
   </article>
+
+  {% endunless %}
 {% endfor %}
 

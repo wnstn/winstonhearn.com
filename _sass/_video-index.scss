@@ -22,10 +22,6 @@
     }
   }
 
-  .post-header {
-    border-bottom: none;
-  }
-
   .video-wrapper {
     @include break($on-laptop) {
       @include span-columns(8);

@@ -180,3 +180,14 @@ pre {
         fill: $grey-color-dark;
     }
 }
+
+
+// Sitewide
+
+.category-index .post-header {
+    border-bottom: none;
+
+    .post-title {
+        padding-left: .6em;
+    }
+}
