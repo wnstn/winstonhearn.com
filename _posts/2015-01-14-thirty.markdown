@@ -4,7 +4,7 @@ title:  "Thirty"
 permalink: /thirty/
 date:   2015-01-14 12:30:00
 category: personal
-my-excerpt: Today is my birthday. My 30th birthday. It's not really that big of a deal, but I wrote some thoughts about the past decade. Also, I have a request: would you  share something great with me?
+my-excerpt: "Today is my birthday. My 30th birthday. It's not really that big of a deal, but I wrote some thoughts about the past decade. Also, I have a request: would you  share something great with me?"
 edited: 3
 ---
 
