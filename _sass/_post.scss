@@ -1,3 +1,9 @@
+
+// for wufoo for some reason
+script {
+  display: none !important;
+}
+
 .post-header {
   @include clearfix;
   margin-bottom: 1em;
@@ -200,5 +206,16 @@
       @include shift(1);
       margin-top: 0;
     }
+  }
+
+  hr {
+    border: none;
+    border-bottom:1px solid $muted-purple;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  iframe {
+    margin-top: 2em;
   }
 }
