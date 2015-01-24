@@ -135,15 +135,15 @@ script {
 .post-content {
   @include outer-container;
   font-family: $serif-font;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 
   > * {
     @include span-columns(16 of 18);
     @include shift(1);
 
     @include break($on-palm) {
-      @include span-columns(8 of 12);
-      @include shift(2 of 12);
+      @include span-columns(10 of 14);
+      @include shift(2 of 14);
     }
 
     @include break($on-laptop) {
@@ -177,21 +177,21 @@ script {
   blockquote {
     @include fill-parent;
     @include shift(0);
-    font-size: 1.2rem;
-    line-height: 1.7rem;
+    font-size: 1.2em;
+    line-height: 1.7em;
     padding: 1em 1.3em;
     text-align: center;
 
 
     @include break($on-palm) {
-      font-size: 1.3rem;
-      line-height: 1.8rem;
+      font-size: 1.3em;
+      line-height: 1.8em;
       padding: 1em 12%;
     }
 
     @include break($on-laptop) {
-      font-size: 1.4rem;
-      line-height: 2.2rem;
+      font-size: 1.4em;
+      line-height: 2.2em;
     }
   }
 
