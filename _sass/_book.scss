@@ -11,6 +11,7 @@
   @include media($on-laptop) {
     @include span-columns(3 of 12);
     @include shift(2);
+    margin-bottom: 10em;
   }
 
   img {
@@ -54,4 +55,12 @@
 .book-published {
   margin-bottom: 2rem;
   padding-left: .5rem;
+}
+
+
+.book-content blockquote {
+  padding: 1em;
+  margin-left: -1em;
+  margin-right: -1em;
+  width: calc(100% + 2em);
 }

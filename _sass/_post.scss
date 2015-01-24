@@ -177,16 +177,21 @@ script {
   blockquote {
     @include fill-parent;
     @include shift(0);
-    background-color: $header-orange-faint;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.7rem;
     padding: 1em 1.3em;
+    text-align: center;
+
+
+    @include break($on-palm) {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      padding: 1em 12%;
+    }
 
     @include break($on-laptop) {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 2.2rem;
-      border-left: none;
-      padding: 1em 20%;
     }
   }
 
