@@ -18,9 +18,9 @@
           kitId: 'est3hcj',
           scriptTimeout: 3000,
           visorShowing: true,
-          loading: function() {
+          backup: function(){
             var t = this;
-            setTimeout(function(){
+            return t.timer = setTimeout(function(){
               t.transitionVisor();
             }, 750);
           },
@@ -32,6 +32,7 @@
           },
           transitionVisor: function() {
             var visor, test, t=this;
+            clearTimeout(t.timer);
             if ( !t.visorShowing )
               return false;
 
