@@ -143,38 +143,6 @@ pre {
 }
 
 
-.fonts-loading {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    pre,
-    p,
-    a,
-    blockquote {
-        opacity: 0;
-    }
-}
-
-.fonts-loaded {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    pre,
-    p,
-    a,
-    blockquote {
-        opacity: 1.0;
-        @include transition(opacity .15s linear);
-    }
-}
-
-
 /**
  * Clearfix
  */
