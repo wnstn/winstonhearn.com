@@ -151,7 +151,7 @@ pre {
     bottom: 0;
     content: "";
     left: 0;
-    opacity: .8;
+    opacity: .6;
     position: absolute;
     right: 0;
     top: 0;
@@ -160,7 +160,7 @@ pre {
 
 .text-ready:before {
     opacity: 0;
-    @include transition(opacity .175s linear);
+    @include transition(opacity .15s linear);
 }
 
 /**
