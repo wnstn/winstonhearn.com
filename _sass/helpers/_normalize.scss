@@ -439,7 +439,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: $monospace-font;
   @if support-legacy-browser(ie, "6") {
     _font-family: 'courier new', monospace;
   }
