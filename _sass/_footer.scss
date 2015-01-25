@@ -88,7 +88,7 @@ footer {
     text-transform: uppercase;
 
     @include break($on-palm) {
-      @include span-columns(8 of 12);
+      @include span-columns(11 of 14);
       @include shift(2);
     }
   }
@@ -106,7 +106,7 @@ footer {
     @include clearfix;
 
     @include break($on-palm) {
-      @include span-columns(8 of 12);
+      @include span-columns(10 of 14);
       @include shift(2);
     }
   }
