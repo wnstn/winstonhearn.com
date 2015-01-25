@@ -1,11 +1,11 @@
 # Site settings
 title: Winston Hearn opines here
-subtitle: sometimes they listen
+subtitle: "While I'm alive, I'll make tiny changes to earth."
 author: Winston Hearn
 email: hello@wnstn.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Worldwide homepage and base of operations for Winston Hearn,
-  a person who uses the internet and has opinions.
+  a person who uses the internet and is learning about things.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://winstonhearn.com" # the base hostname & protocol for your site
 twitter_username: suchwinston

@@ -142,6 +142,26 @@ pre {
     }
 }
 
+.fonts-loading {
+    position: relative;
+}
+
+.fonts-loading:before {
+    background-color: $white;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: .8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.text-ready:before {
+    opacity: 0;
+    @include transition(opacity .175s linear);
+}
 
 /**
  * Clearfix
