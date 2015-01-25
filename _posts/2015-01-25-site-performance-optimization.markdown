@@ -142,9 +142,9 @@ I have a default favicon that I use on my personal sites, but I never added it t
 
 This was such a minor change that it's almost negligible, but the fun of performance optimization is trying to pay attention to every single detail. I'm not using a CDN (yet) for my content so all assets on my site load off of winstonhearn.com, except for Typekit assets. The path for loading external assets in a browser is Lookup DNS > Request Asset > Wait for Server > Download. If the DNS has been resolved for a domain, that step is removed. What I noticed in examining the load timings for all the assets on this site was that the last request made was Typekit, and it had to go through the full process on every page load. So to help speed this up, I added dns prefetching:
 
-```html
+{% highlight html %}
 <link rel="dns-prefetch" href="http://use.typekit.net">
-```
+{% endhighlight %}
 
 This is just hinting for the browser to say "I plan on using this domain" so the browser can prefetch the DNS. It shaves a few ms at best off the process, but I'll take it.
 
