@@ -19,7 +19,7 @@ book:
     
 ---
 
-_How Buildings Learn_ is a thoroughly documented book about all the things we may not think about as architecture, but he clearly reveals are. Brand is concerned not so much with theories of architecture or the fancy buildings that fill glossy architecture magazines, rather he seeks to understand how people inhabit buildings. In his framing, people are the teachers of buildings and their modifications to a building after it is built are lessons being taught to the building. 
+_How Buildings Learn_ is a book about all the things we may not commonly think of as architecture.  With his thorough research and documentation, Brand works hard to help us all expand our definition. He is concerned not so much with theories of architecture or the fancy buildings that fill glossy architecture magazines, rather he seeks to understand how people inhabit buildings. In his framing, people are the teachers of buildings and their modifications to a building after it is built are lessons being taught to the building. 
 
 > All buildings are predictions. All predictions are wrong.
 
