@@ -5,10 +5,10 @@ permalink: /january-perfomance-optimization/
 date:   2015-01-25 12:30:00
 category: code
 my-excerpt: I've been fighting a head cold or something this weekend and because of that I've been extremely bored. So I decided to see how much I could improve this website's loading performance. In a few hours of hacking I got it from a Speed Index of 2000+ to consistently between 600 and 800. Pretty good! Here's notes on everything I did.
-edited: 1
+edited: 2
 ---
 
-I've been fighting a head cold or something this weekend and because of that I've been extremely bored. There are only so many trivial things I can do (play Kingdom Rush, check social media, watch stupid tv shows) before I'm itching to just do anything that feels productive. So I decided to see how fast I could make this website load. This post is not at all comprehensive, but it's a log of things I've done that made an improvement. The end results were pretty good, average Speed Index on [webpagetest](http://www.webpagetest.org) was 2000+ before these optimizations, now it's hovering between 600 and 800 on average.
+I've been fighting a head cold or something this weekend and because of that I've been extremely bored. There are only so many trivial things I can do (play Kingdom Rush, check social media, watch stupid tv shows) before I'm itching to just do anything that feels productive. So I decided to see how fast I could make this website load. This post is not at all comprehensive, but it's a log of things I've done that made an improvement. The end results were pretty good, average Speed Index on [webpagetest](http://www.webpagetest.org) was 2000+ before these optimizations, now it's hovering between 600 and 800 on average. The [repo for this site](https://github.com/wnstn/winstonhearn.com) is public, so feel free to check out more of the code there!
 
 ### Compressing my footer image
 
