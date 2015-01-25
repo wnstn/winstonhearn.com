@@ -10,6 +10,7 @@ footer {
     @include break($on-palm) {
       background: rgba($header-shade, .3);
       margin-top: 12px;
+      margin-bottom: 1em;
       padding: .5em;
       position: relative;
       @include span-columns(3);
@@ -70,46 +71,69 @@ footer {
 
   .bio-copy {
     color: $grey-color-light;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.3rem;
     text-indent: .5em;
   }
 
-  ul {
-    list-style: none;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    text-align: center;
+  .snarky-title {
+    @include span-columns(10);
+    @include shift(1);
+    color: $header-shade;
+    font-family: $sans-serif-font;
+    letter-spacing: .1em;
+    margin-bottom: 0;
+    margin-top: 1em;
+    text-transform: uppercase;
 
-    @include span-columns(5);
-    @include shift(3.5);
+    @include break($on-palm) {
+      @include span-columns(8 of 12);
+      @include shift(2);
+    }
+  }
+
+  .colophon {
+    @include span-columns(8 of 12);
+    @include shift(2);
+  }
+
+  ul {
+    font-family: $monospace-font;
+    list-style: none;
+    @include span-columns(10);
+    @include shift(1);
     @include clearfix;
+
+    @include break($on-palm) {
+      @include span-columns(8 of 12);
+      @include shift(2);
+    }
   }
 
   li {
+    color: $green;
+    float: left;
+    font-size: .9em;
     margin-bottom: 1em;
+    padding-right: 1.75em;
 
     @include break($on-palm) {
-      font-size: .85rem;
       margin-bottom: 0;
-      text-align: center;
-      @include span-columns (3 of 9);
-      @include omega(3n);
     }
   }
 
   a {
-    border-bottom: 2px solid $green;
     color: $green;
+    font-size: 1em;
 
     &:active,
     &:visited {
-      color: $muted-purple;
+      color: lighten($green, 10%);
     }
 
     &:hover {
-      border-bottom: 2px solid $muted-purple;
-      color: $muted-purple;
+      border-bottom: 2px solid $green;
+      color: lighten($green, 10%);
       text-decoration: none;
     }
   }
