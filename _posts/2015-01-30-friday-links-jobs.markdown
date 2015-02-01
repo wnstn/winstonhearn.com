@@ -4,7 +4,7 @@ title:  "Friday Links: <br /> Jobs"
 permalink: /friday-links-jan-30-2015/
 date:   2015-01-30 00:30:00
 category: links
-my-excerpt: I got a new job! Starting Feb 9 I'll be working at Vox Media as a front-end engineer. Since I'm thinking about employment and jobs today, so here are some essays that have shaped my thinking on the topic in the past few years.
+my-excerpt: I got a new job! Starting Feb 9 I'll be working at Vox Media as a front-end engineer. Since I'm thinking about employment and jobs today here are some essays that have shaped my thinking on the topic in the past few years.
 edited: 1
 show-references: false
 references:
