@@ -1,26 +1,40 @@
 <footer>
 
-  <ul class="social-media-list">
-    {% if site.github_username %}
-    <li>
-      <a href="https://github.com/{{ site.github_username }}">
-        <svg class="icon-mid"><use xlink:href="#github"></use></svg>
-        <span class="username">{{ site.github_username }}</span>
-      </a>
-    </li>
-    {% endif %}
+  <div class="bio-photo">
+    <img src="/img/bio-photo.jpg"/>
+  </div>
 
-    {% if site.twitter_username %}
-    <li>
-      <a href="https://twitter.com/{{ site.twitter_username }}">
-        <svg class="icon-mid"><use xlink:href="#twitter"></use></svg>
-        <span class="username">{{ site.twitter_username }}</span>
-      </a>
-    </li>
-    {% endif %}
-    <li>
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-    </li>
-  </ul>
+  <div class="bio">
+    <h2>winston hearn dot com</h2>
+    <p class="subtitle">I'm just a guy who does things that involve code and stuff.</p>
+    <p class="bio-copy">Hello and thanks for following a link to my site and then deciding to read to the footer! I'm Winston. To make a living and pay the bills, I work on the front-end of websites. I work to make them performant and accessible, while trying to understand how to build things in user-friendly and developer-friendly forms. There is so much to learn!</p>
+    <p class="bio-copy">Once the living has been made, I love reading good literature, riding my bike, and exploring the world with my family. We spent April 2013 - September 2014 road-tripping around the country, exploring cities and national parks, and we're itching to travel again.</p>
+  </div>
+
+  <div class="footer-nav">
+    <h4 class="snarky-title">Other sites in the Winston Hearn family of brands</h4>
+    <ul>
+      <li>
+        <a href="https://github.com/{{ site.github_username }}">Winston on Github</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}">Winston on Twitter</a>
+      </li>
+      <li>
+        <a href="http://winston.cc">Winston.cc</a>
+      </li>
+      <li>
+        <a href="http://ouradventure.in">Our Adventure</a>
+      </li>
+    </ul>
+    <h4 class="snarky-title">Other Applicable Information</h4>
+    <ul>
+      <li>&copy;2014-2015 Winston Hearn</li>
+      <li><a href="mailto:hello@wnstn.com">hello@wnstn.com</a></li>
+      <li>
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+      </li>
+    </ul>
+  </div>
 
 </footer>

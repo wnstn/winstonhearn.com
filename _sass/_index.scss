@@ -47,6 +47,17 @@
     @include break($on-laptop) {
       @include span-columns(1 of 12);
       @include shift(1);
+      position: relative;
+
+      &:before {
+        content: "";
+        height: 2.5em;
+        left: -5.5em;
+        position: absolute;
+        top: 1.4em;
+        @include transform(skew(-20deg));
+        width: 9.5em;
+      }
     }
   }
 
@@ -61,7 +72,7 @@
     }
 
     @include break($on-laptop) {
-      @include span-columns(6 of 8);
+      @include span-columns(8 of 8);
       @include clearfix;
       font-size: 2rem;
       line-height: 2.3rem;
@@ -82,7 +93,7 @@
     }
 
     @include break($on-laptop) {
-      @include span-columns(6 of 8);
+      @include span-columns(5 of 8);
       @include clearfix;
       font-size: 1.2rem;
     }
@@ -95,7 +106,7 @@
     color: lighten($grey-color, 10%);
 
     @include break($on-laptop) {
-      @include span-columns(2 of 8);
+      @include span-columns(3 of 8);
       @include omega;
       color: $text-color;
 

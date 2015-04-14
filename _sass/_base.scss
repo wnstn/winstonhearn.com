@@ -102,8 +102,8 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $header-orange;
+    color: $grey-color-dark;
+    background: $grey-color-light;
     padding-left: $spacing-unit / 2;
     padding-right: 10px;
     letter-spacing: -1px;
@@ -142,9 +142,26 @@ pre {
     }
 }
 
+.fonts-loading {
+    position: relative;
+}
 
+.fonts-loading:before {
+    background-color: $white;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: .6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
 
-
+.text-ready:before {
+    opacity: 0;
+    @include transition(opacity .15s linear);
+}
 
 /**
  * Clearfix

@@ -1,3 +1,9 @@
+
+// for wufoo for some reason
+script {
+  display: none !important;
+}
+
 .post-header {
   @include clearfix;
   margin-bottom: 1em;
@@ -16,9 +22,9 @@
     border-bottom: 2px solid $purple;
     color: $purple;
     font-size: 2rem;
-    line-height: 2.8rem;
+    line-height: 2rem;
     padding-bottom: 3px;
-    padding-left: 0;
+    padding-left: 5.6422%;
     display: inline-block;
     @include clearfix;
 
@@ -46,10 +52,6 @@
       @include span-columns(12);
       @include omega;
     }
-
-    @include break($on-laptop) {
-
-    }
   }
 
   .post-image-container {
@@ -75,12 +77,12 @@
   @include break($on-palm) {
     .post-header {
       .post-title {
-        @include span-columns(5 of 12);
-        padding-left: .5em;
+        @include span-columns(6 of 12);
+        padding-left: 0;
       }
 
       .post-meta {
-        @include span-columns(6 of 12);
+        @include span-columns(5 of 12);
         @include omega;
         @include shift(1);
       }
@@ -133,15 +135,15 @@
 .post-content {
   @include outer-container;
   font-family: $serif-font;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 
   > * {
     @include span-columns(16 of 18);
     @include shift(1);
 
     @include break($on-palm) {
-      @include span-columns(8 of 12);
-      @include shift(2 of 12);
+      @include span-columns(10 of 14);
+      @include shift(2 of 14);
     }
 
     @include break($on-laptop) {
@@ -175,16 +177,21 @@
   blockquote {
     @include fill-parent;
     @include shift(0);
-    background-color: $header-orange-faint;
-    font-size: 1.3rem;
-    line-height: 1.7rem;
+    font-size: 1.2em;
+    line-height: 1.7em;
     padding: 1em 1.3em;
+    text-align: center;
+
+
+    @include break($on-palm) {
+      font-size: 1.3em;
+      line-height: 1.8em;
+      padding: 1em 12%;
+    }
 
     @include break($on-laptop) {
-      font-size: 1.6rem;
-      line-height: 2.2rem;
-      border-left: none;
-      padding: 1em 20%;
+      font-size: 1.4em;
+      line-height: 2.2em;
     }
   }
 
@@ -204,5 +211,16 @@
       @include shift(1);
       margin-top: 0;
     }
+  }
+
+  hr {
+    border: none;
+    border-bottom:1px solid $muted-purple;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  iframe {
+    margin-top: 2em;
   }
 }

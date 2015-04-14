@@ -11,8 +11,11 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+$on-palm:          600px;
+$on-laptop:        800px;
+
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: rgba(#80A2BE, .1);
 $brand-color:      #2a7ae2;
 $header-shade:     #6DB1D9;
 $header-text:      #EFD2C6;
@@ -26,10 +29,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
 $red:           #DF4642;
+$dark-orange:   #EA815D;
 $orange:        #F2A568;
 $green:         #C9DBBF;
 $muted-purple:  #B79393;
