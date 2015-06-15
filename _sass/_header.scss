@@ -50,11 +50,12 @@ header {
     @include clearfix;
 
     @include break($on-palm) {
-      opacity: .6;
+      opacity: .8;
       text-align: right;
       position: absolute;
       right: 2em;
       bottom: 0;
+      letter-spacing: 1px;
     }
   }
 }

@@ -124,7 +124,7 @@ code {
     font-family: $monospace-font;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: $header-orange-faint;
+    background-color: rgba($header-orange-faint, .3);
 }
 
 code {
