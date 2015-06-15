@@ -21,17 +21,17 @@
           backup: function(){
             var t = this;
             return t.timer = setTimeout(function(){
-              t.transitionVisor();
+              config.transitionVisor();
             }, 750);
           },
           loading: function() {
-            this.backup();
+            config.backup();
           },
           active: function() {
-            this.transitionVisor();
+            config.transitionVisor();
           },
           inactive: function() {
-            this.transitionVisor();
+            config.transitionVisor();
           },
           transitionVisor: function() {
             var visor, test, t=this;
