@@ -182,7 +182,6 @@ script {
     padding: 1em 1.3em;
     text-align: center;
 
-
     @include break($on-palm) {
       font-size: 1.3em;
       line-height: 1.8em;
@@ -191,7 +190,8 @@ script {
 
     @include break($on-laptop) {
       font-size: 1.4em;
-      line-height: 2.2em;
+      line-height: 1.8em;
+      text-align: left;
     }
   }
 
