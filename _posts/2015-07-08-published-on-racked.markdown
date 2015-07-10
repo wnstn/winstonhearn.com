@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Holy Shit Someone Published Me
+title:  I Wrote a Thing
 permalink: /omg-racked-published-me/
 date:   2015-08-08 00:30:00
 category: quote
