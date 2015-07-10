@@ -14,6 +14,6 @@ show-references: false
 
 [A Memo Regarding New Strategies for Dealing With Olds](http://www.racked.com/2015/7/8/8911809/teen-fleek-bae-please-stop-olds-please)
 
-I channeled all of my love for The New Yorker's _Shouts and Murmurs_ and also probably [Mallory Ortbert](http://the-toast.net/author/mallory-ortberg/) into a silly little piece that Racked published. We'll see how long it takes me to write again!
+I channeled all of my love for _The New Yorker's_ &ldquo;Shouts and Murmurs&rdquo; and also probably [Mallory Ortberg](http://the-toast.net/author/mallory-ortberg/) into a silly little piece that Racked published. We'll see how long it takes me to write again!
 
 
