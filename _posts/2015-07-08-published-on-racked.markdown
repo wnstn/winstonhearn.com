@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  I Did a Thing Worth Recording
+title:  OMG Racked Published Me
 permalink: /omg-racked-published-me/
 date:   2015-08-08 00:30:00
 category: quote
