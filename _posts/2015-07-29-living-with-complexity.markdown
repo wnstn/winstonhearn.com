@@ -2,7 +2,7 @@
 layout: book
 title:  "Living With Complexity"
 permalink: /book-review-living-with-complexity/
-date:   2015-08-29 12:30:00
+date:   2015-07-29 12:30:00
 category: book
 my-excerpt: "Norman seeks to help readers understand the ways people handle complexity in their lives, then derive a set of tools that designers can apply when working with complex problems."
 edited: 1
