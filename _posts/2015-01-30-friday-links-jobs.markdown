@@ -18,14 +18,14 @@ references:
       url: http://6thfloor.blogs.nytimes.com/2013/07/31/george-saunderss-advice-to-graduates/?_r=0
     - title: The Atlantic
       url: http://www.theatlantic.com/magazine/archive/2012/12/the-bookstore-strikes-back/309164/1/
-    
+
 ---
 
-> And therein lies the rub. We know that there are fewer and fewer good jobs, but we are unsure of what will replace them. In The Second Machine Age, Andrew McAfee and Eric Brynjolfsson take a stab at predicting how technology will change the way we work (and, consequently, live). Even if the promised wonderful jobs of the future do emerge, McAfee and Brynjolfsson predict that “in the short term income gaps will widen.” It seems a safe prediction to make considering current economic trends: the fastest-growing segments of the labor market offer more bad jobs, and for less pay. 
+> And therein lies the rub. We know that there are fewer and fewer good jobs, but we are unsure of what will replace them. In The Second Machine Age, Andrew McAfee and Eric Brynjolfsson take a stab at predicting how technology will change the way we work (and, consequently, live). Even if the promised wonderful jobs of the future do emerge, McAfee and Brynjolfsson predict that “in the short term income gaps will widen.” It seems a safe prediction to make considering current economic trends: the fastest-growing segments of the labor market offer more bad jobs, and for less pay.
 
 [The University and the Company Men](http://www.dissentmagazine.org/article/the-university-and-the-company-man)
 
-Tressie McMillan Cottom is a sociologist who writes with incredible wisdom on topics of higher education and poverty. Here, in Dissent Magazine she asks _What happens to college when we work not just differently but for less? _ and seeks to outline exactly what the crisis in Higher Education is. Worth reading, as is everything else I've ever read of hers.
+Tressie McMillan Cottom is a sociologist who writes with incredible wisdom on topics of higher education and poverty. Here, in Dissent Magazine she asks _What happens to college when we work not just differently but for less?_ and seeks to outline exactly what the crisis in Higher Education is. Worth reading, as is everything else I've ever read of hers.
 
 <hr/>
 
@@ -53,7 +53,7 @@ I don't really run in _Business_ circles so I've no idea if this idea is still t
 
 [George Saunder's Advice to Graduates](http://6thfloor.blogs.nytimes.com/2013/07/31/george-saunderss-advice-to-graduates/?_r=0)
 
-George Saunders writes incredible short fiction, but a lot of times when I think of him I am reflecting on this convocation speech he delivered to Syracuse University in 2013. His speech captures the difficulty of seeing other people's humanity, of responding to their humanity in a selfless manner. This is difficult always, but moreso in settings like work and family and other communities of extended connection with people. 
+George Saunders writes incredible short fiction, but a lot of times when I think of him I am reflecting on this convocation speech he delivered to Syracuse University in 2013. His speech captures the difficulty of seeing other people's humanity, of responding to their humanity in a selfless manner. This is difficult always, but moreso in settings like work and family and other communities of extended connection with people.
 
 <hr />
 
