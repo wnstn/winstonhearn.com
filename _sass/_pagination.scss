@@ -1,0 +1,54 @@
+.pagination {
+  background-color: $header-orange;
+  margin-top: 3em;
+  @include clearfix;
+
+  p {
+    color: $grey-color-dark;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+    margin-top: .8em;
+  }
+
+  .paginate-current {
+    display: none;
+
+    @include break($on-palm) {
+      text-align: center;
+      text-transform: uppercase;
+      @include span-columns(4 of 12);
+    }
+
+    @include break($on-laptop) {
+
+      @include span-columns(2 of 12);
+    }
+  }
+
+  .paginate,
+  .pagination-placeholder {
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    @include span-columns(6 of 12);
+
+    @include break($on-palm) {
+      @include span-columns(4 of 12);
+    }
+
+    @include break($on-laptop) {
+      @include span-columns(5 of 12);
+    }
+  }
+
+  .paginate {
+    display: block;
+
+    &:active,
+    &:hover {
+      color: $grey-color-dark;
+      text-decoration: underline;
+    }
+  }
+}

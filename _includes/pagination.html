@@ -1,0 +1,23 @@
+<nav class="pagination">
+  {% if paginator.total_pages > 1 %}
+      {% if paginator.previous_page_path %}
+        <a class="paginate prev" href="{{ paginator.previous_page_path }}">
+          <!-- <span class="paginate-prev-arrow"></span> -->
+          <p>Newer Posts</p>
+        </a>
+      {% else %}
+      <div class="pagination-placeholder"></div>
+      {% endif %}
+
+      <p class="paginate-current">Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
+
+      {% if paginator.next_page_path %}
+        <a class="paginate next" href="{{ paginator.next_page_path }}">
+          <p>Older Posts</p>
+          <!-- <span class="paginate-next-arrow"></span> -->
+        </a>
+      {% else %}
+        <div class="pagination-placeholder"></div>
+      {% endif %}
+  {% endif %}
+</nav>

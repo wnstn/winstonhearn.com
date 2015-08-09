@@ -1,6 +1,5 @@
 footer {
   @include span-columns(12);
-  margin-top: 3em;
   background-color: $grey-color-dark;
   padding-bottom: 3em;
   padding-top: 2em;
@@ -54,7 +53,7 @@ footer {
     }
 
     h2 {
-      color: $muted-purple;
+      color: $header-orange;
       font-family: $big-font;
       letter-spacing: .05em;
       margin-bottom: 0;
