@@ -5,7 +5,13 @@ permalink: /agency-on-social-media/
 date:   2015-09-03 12:30:00
 category: personal
 my-excerpt: A quick scroll through Twitter wrecked me for an evening. Unfortunately, this is not uncommon nor exactly accidental from the perspective of product-designers. Let's talk about that.
-edited: 1
+edited: 2
+show-references: true
+references:
+    - title: Wired
+      url:  http://www.wired.com/2014/10/content-moderation/
+    - title: The Atlantic
+      url: http://www.theatlantic.com/technology/archive/2015/08/snuff-film-unavoidable-twitter-facebook-autoplay-roanoke/402430/
 ---
 
 
