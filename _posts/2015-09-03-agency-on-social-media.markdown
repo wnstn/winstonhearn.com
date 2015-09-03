@@ -9,7 +9,7 @@ edited: 1
 ---
 
 
-Last night, while my son was brushing his teeth and watching the sand timer we use to make sure he brushes them long enough, I was skimming Twitter. I do this more often than I should, I know. Every time my brain sense a down moment it seems I have pulled the device from my pocket, typed in the passcode, and opened the Twitter app before I really thought about what I am doing. I guess this is a problem in and of itself.
+Last night, while my son was brushing his teeth and watching the sand timer we use to make sure he brushes them long enough, I was skimming Twitter. I do this more often than I should, I know. Every time my brain senses a down moment it seems I have pulled the device from my pocket, typed in the passcode, and opened the Twitter app before I really thought about what I am doing. I guess this is a problem in and of itself.
 
 This moment was different from other times. As my son alternated between chewing on this Lightning McQueen toothbrush and actually brushing with it, I scrolled my timeline to see a photo of a dead child laying on a beach. I just about threw my phone in my rush to turn it off upon realizing what I was looking at. I am sure that the image related to the immigration crisis facing Europe as people flee war and poverty and hell. I am heartbroken for the child, for the family, for the countries destroying their own futures.
 
