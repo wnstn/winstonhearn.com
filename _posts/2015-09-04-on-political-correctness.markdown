@@ -15,4 +15,4 @@ references:
 
 [PC Comedy and Paul Revere](https://medium.com/matter/pc-comedy-and-paul-revere-dc2541356851)
 
-This entire piece is excellent but this paragraph captured something I have been trying to formulate in my head for months now.
+This entire piece is excellent but this paragraph captured something I have been trying to formulate in my head for months now. A word of caution - the essay handles it well but there are descriptions of sexual assault and animal cruelty involved.
