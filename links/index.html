@@ -1,7 +1,8 @@
 ---
 layout: default
 wrapper: links-index
-title: Links Worth Reading
+title: Links
+paginate: true
 ---
 
 <div class="post-image-container">
@@ -10,7 +11,7 @@ title: Links Worth Reading
   </div>
 </div>
 
-{% for post in site.categories.links %}
+{% for post in paginator.posts %}
 
   {% if post.subcategory == "single-link" %}
 

@@ -13,4 +13,4 @@ github_username:  wnstn
 
 # Build settings
 markdown: kramdown
-paginate: 16
+paginate: 3
