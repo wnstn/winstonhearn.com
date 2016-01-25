@@ -2,7 +2,7 @@
 layout: book
 title:  "Wild Ones"
 permalink: /book-review-wild-ones/
-date:   2016-01-24 16:30:00
+date:   2016-01-24 22:45:00
 category: book
 my-excerpt: An enjoyably written book covering the depressing and yet somehow simultaneously inspiring ways that humans have worked to preserve endangered species. A meditation on the the vast ways we impact the earth and how hard it is to change course once the scope of our impact becomes obvious.
 edited: 1
