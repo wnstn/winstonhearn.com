@@ -18,11 +18,11 @@ book:
 
 ---
 
-In the first chapter of *A Web for Everyone*, the authors quote Ron Mace an architect who formulated the idea of Universal Design:
+In the first chapter of *A Web for Everyone*, the authors quote Ron Mace, the architect who formulated the concept of Universal Design:
 
 > Universal design is the design of products and environments to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design.
 
-The rest of the book is a well-layed and out wonderfully thought through attempt to help those of us building sites on the web apply this principle to our craft. The book is both philosophical in nature as the authors explain their reasoning and also practical in the advice and suggestions given. The authors introduce personas – fictional but realistic characters – that give empathetic grounding to the topics explored.
+The rest of the book is a well-layed out and wonderfully thought-through attempt to help those of us building sites on the web apply this principle to our craft. The book is both philosophical in nature as the authors explain their reasoning and also practical in the advice and suggestions given. The authors introduce personas – fictional but realistic characters – that give empathetic grounding to the topics explored.
 
 This book is comprehensive and easy to read, with numerous detours and sidebars that provide deeper examinations of the topics. I enjoyed reading through the book but it will probably take continued reference to fully soak in all the information contained within. Because of that, it has earned a place on my desk where I hope to remember to check it regularly as I build out new things for the web.
 
