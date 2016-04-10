@@ -1,0 +1,26 @@
+{
+  "name": "winstonhearn",
+  "version": "1.0.0",
+  "description": "Personal website available at winstonhearn.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wnstn/winstonhearn.com.git"
+  },
+  "author": "winston hearn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wnstn/winstonhearn.com/issues"
+  },
+  "homepage": "https://github.com/wnstn/winstonhearn.com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "fs": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "yargs": "^4.4.0"
+  }
+}
