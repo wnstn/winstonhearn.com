@@ -14,3 +14,7 @@ github_username:  wnstn
 # Build settings
 markdown: kramdown
 paginate: 16
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js
