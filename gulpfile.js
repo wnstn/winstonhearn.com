@@ -14,7 +14,7 @@ function createFile(type) {
   }
 
   var d = new Date();
-  var date = [d.getFullYear(), d.getMonth(), d.getDate()].join("-");
+  var date = [d.getFullYear(), d.getMonth() + 1, d.getDate()].join("-");
   var time = [d.getHours(), d.getMinutes(), d.getSeconds()].join(":");
 
   var locations = [
