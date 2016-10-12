@@ -18,3 +18,4 @@ exclude:
   - package.json
   - node_modules
   - gulpfile.js
+  - procfile

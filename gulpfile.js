@@ -71,8 +71,8 @@ gulp.task('sass', function(){
     cascade: false
   };
 
-  return gulp.src('./css/gulp-manifest.scss')
-    .pipe(rename('./css/main.scss'))
+  return gulp.src('./_sass/gulp-manifest.scss')
+    .pipe(rename('main.scss'))
     .pipe(cssGlobbing(cgConfig))
     .pipe(plumber(plumbConfig))
     .pipe(sass())
