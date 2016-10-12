@@ -14,7 +14,7 @@ wrapper: index
       <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a></h2>
 
       <div class="post-excerpt">
-        <p>{{ post.my-excerpt }}</p>
+        <p>{{ post.my-excerpt | markdownify }}</p>
       </div>
 
       <ul class="post-meta">
