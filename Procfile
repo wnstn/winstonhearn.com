@@ -1,2 +1,2 @@
-application: bundle exec jekyll serve --watch --drafts --port=3999
+application: bundle exec jekyll serve --drafts --port=3999
 gulp: gulp

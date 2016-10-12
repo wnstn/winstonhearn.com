@@ -29,7 +29,10 @@ wrapper: index
           <li class="publish-copyeditor">Copyedited by <br/><a href="{{ post.copyeditor.url }}" target="_blank">{{ post.copyeditor.name }}</a></li>
         {% endif %}
 
-        <li class="post-category"><em>This is a</em> <strong>{{ post.category }}</strong> <em>post</em></li>
+        <li class="post-category">
+          This is a <a href="/{{post.category}}">{{ post.category }}</a></strong>
+          post
+        </li>
 
         {% if post.references and post.show-references != false %}
           <li class="post-references">Inspiration from

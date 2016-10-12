@@ -1,10 +1,18 @@
 'use strict';
 
 var gulp = require('gulp');
+var exec = require('child_process').exec;
 var gutil = require("gulp-util");
 var browserSync = require('browser-sync').create();
 var fs = require('fs');
 var argv = require('yargs').argv;
+
+var autoprefixer = require('gulp-autoprefixer');
+var cssGlobbing = require('gulp-css-globbing');
+var notify = require("gulp-notify");
+var plumber = require('gulp-plumber');
+var sass = require('gulp-sass');
+var rename = require('gulp-rename');
 
 function createFile(type) {
   if (!argv.name) {
@@ -47,6 +55,31 @@ function createFile(type) {
   });
 }
 
+gulp.task('sass', function(){
+  var cgConfig = {
+    extensions: ['.css', '.scss'],
+    ignoreFolders: ['lib', 'vendor']
+  };
+  var plumbConfig = {
+    errorHandler: notify.onError(function(error) {
+      console.log(error.messageFormatted);
+      return error.message;
+    })
+  };
+  var apConfig = {
+    browsers: ['last 2 versions'],
+    cascade: false
+  };
+
+  return gulp.src('./css/gulp-manifest.scss')
+    .pipe(rename('./css/main.scss'))
+    .pipe(cssGlobbing(cgConfig))
+    .pipe(plumber(plumbConfig))
+    .pipe(sass())
+    .pipe(autoprefixer(apConfig))
+    .pipe(gulp.dest('./_site/css'));
+});
+
 gulp.task('createDraft', function() {
   createFile('_drafts');
 });
@@ -55,22 +88,38 @@ gulp.task('createPost', function() {
   createFile('_posts');
 });
 
-gulp.task('reload', function(){
-  return setTimeout(browserSync.reload, 9000);
+gulp.task('reload', ['jekyll-build'], function(){
+  gutil.log('Reloading browser');
+  return browserSync.reload();
 });
 
-gulp.task('stream', function() {
-  return setTimeout(browserSync.reload, 9000, '*.css');
+gulp.task('stream', ['sass'], function() {
+  return browserSync.reload('*.css');
+});
+
+gulp.task('jekyll-build', function() {
+  var cmd = 'jekyll build --config _config.yml';
+  var p = new Promise(function(resolve, reject) {
+    exec(cmd, function(error, stdout, stderror) {
+      gutil.log(stdout);
+      gutil.log(error !== null ? 'ERROR: Jekyll process exited with code: '+error.code : "Build success");
+      resolve();
+    });
+  });
+
+  return p;
 });
 
 var setupWatchers = function() {
-  gulp.watch('./_css/*.css', ['stream']);
+  gulp.watch(['./_sass/**/*.scss',
+              './css/main.scss'], ['stream']);
   gulp.watch(['./_posts/*.markdown',
               './_drafts/*.markdown',
               './_layouts/*.html',
-              './_includes/*html',
+              './_includes/*.html',
               './links/index.html',
-              './video/index.html'], ['reload']);
+              './video/index.html',
+              './index.html'], ['reload']);
 }
 
 gulp.task('init', function() {
@@ -86,4 +135,4 @@ gulp.task('init', function() {
   setupWatchers();
 });
 
-gulp.task('default', ['init']);
+gulp.task('default', ['jekyll-build','init']);
