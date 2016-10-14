@@ -3,7 +3,7 @@ layout: post
 title:  "Thoughts on a Spring Day"
 permalink: /thoughts-on-a-spring-day/
 date:   2015-04-09 23:30:00
-category: personal
+category: essay
 my-excerpt: Everything is coming alive and breaking out of hibernation and I want to write. I have nothing to say. I want this site to be filled with thoughts, references, ideas. Instead it sits. I guess this is ok.
 edited: 1
 ---

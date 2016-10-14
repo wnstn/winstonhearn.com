@@ -6,24 +6,11 @@
 
   .link-blog {
     margin-bottom: 2em;
-    @include clearfix;
   }
 
   .post-header  {
     margin-bottom: 0;
     padding-bottom: 0;
-    @include span-columns(16 of 18);
-    @include shift(1);
-
-    @include break($on-palm) {
-      @include span-columns(10 of 12);
-      @include shift(1);
-    }
-
-    @include break($on-laptop) {
-      @include span-columns(8 of 16);
-      @include shift(3.5);
-    }
 
     .post-meta {
       float: left;
@@ -36,7 +23,6 @@
       margin-bottom: 0;
       padding-left: 0;
       padding-top: .5em;
-      @include fill-parent;
     }
 
     // @include break($on-laptop) {
@@ -56,38 +42,12 @@
       }
     // }
 
-    .publish-date {
-      @include fill-parent;
-    }
   }
 
   .post-content {
     border-left: 1px solid rgba($header-shade, .3);
     margin-left: 1em;
     padding-left: 3.1799%;
-    @include span-columns(16 of 18);
-    @include shift(1);
-
-    @include break($on-palm) {
-      @include span-columns(10 of 12);
-      @include shift(1);
-    }
-
-    @include break($on-laptop) {
-      position: relative;
-      @include span-columns(8 of 16);
-      @include shift(3.5);
-
-      &:after {
-        border-bottom: 1px solid rgba($header-shade, .3);
-        bottom: 0;
-        content: "";
-        height: 1px;
-        left: 0;
-        position: absolute;
-        width: 75px;
-      }
-    }
 
     &.single-link {
       border-left: none;
@@ -101,25 +61,11 @@
       }
     }
 
-    > * {
-      font-size: .9em;
-      // @include break($on-laptop) {
-        @include fill-parent;
-        @include shift(0);
-      // }
-    }
-
-    > p a {
-      font-size: 1.1em;
-      // font-family: $sans-serif-font;
-    }
-
     > blockquote {
       display: none;
     }
 
     hr {
-      @include clearfix;
       color: transparent;
       border: none;
       margin: 2em 0 0;

@@ -9,25 +9,6 @@ dl, dd, ol, ul, figure {
 }
 
 
-
-/**
- * Basic styling
- */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-}
-
-
-footer {
-    font-family: $serif-font;
-}
-
-
 /**
  * Set `margin-bottom` to maintain vertycal rhythm
  */
@@ -78,43 +59,6 @@ li {
 }
 
 
-
-/**
- * Links
- */
-a {
-    color: $header-blue;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($header-blue, 15%);
-    }
-
-    &:hover {
-        color: $header-blue;
-        text-decoration: underline;
-    }
-}
-
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color-dark;
-    background: $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    padding-right: 10px;
-    letter-spacing: -1px;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-
-
 /**
  * Code formatting
  */
@@ -142,38 +86,6 @@ pre {
     }
 }
 
-.fonts-loading {
-    position: relative;
-}
-
-.fonts-loading:before {
-    background-color: $white;
-    bottom: 0;
-    content: "";
-    left: 0;
-    opacity: .6;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-}
-
-.text-ready:before {
-    opacity: 0;
-    @include transition(opacity .15s linear);
-}
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
 
 
 
@@ -195,16 +107,5 @@ pre {
 
     path {
         fill: $grey-color-dark;
-    }
-}
-
-
-// Sitewide
-
-.category-index .post-header {
-    border-bottom: none;
-
-    .post-title {
-        padding-left: .6em;
     }
 }

@@ -1,18 +1,5 @@
 
 .book-image {
-  @include span-columns(6 of 12);
-  @include shift(3);
-
-  @include media($on-palm) {
-    @include span-columns(4 of 12);
-    @include shift(4);
-  }
-
-  @include media($on-laptop) {
-    @include span-columns(3 of 12);
-    @include shift(2);
-    margin-bottom: 10em;
-  }
 
   img {
     border: 10px solid rgba($muted-purple, .2);
@@ -25,26 +12,13 @@
 .book-author,
 .book-content,
 .book-published {
-  @include span-columns(10 of 12);
-  @include shift(1);
   line-height: 1.3em;
   margin-bottom: .3em;
-
-  @include media($on-laptop) {
-    @include span-columns(5 of 12);
-    @include shift(0);
-    line-height: 1.3em;
-    margin-bottom: 0;
-  }
 }
 
 .book-title {
   margin-top: 1em;
   margin-bottom: .7rem;
-
-  @include media($on-laptop) {
-    margin-top: 0;
-  }
 }
 
 .book-author {

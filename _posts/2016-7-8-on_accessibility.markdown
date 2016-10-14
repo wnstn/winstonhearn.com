@@ -3,7 +3,7 @@
    title:  "Some Thoughts on Accessibility"
    permalink: /thoughts-on-accessibility/
    date: 2016-7-8 21:46:20
-   category: personal
+   category: essay
    my-excerpt: Recently I worked with some coworkers to write documentation on building accessibile web content (which we have since [open-sourced as the Accessibility Guidelines](http://accessibility.voxmedia.com)) and then, building on that work, I gave a talk about accessibility as a practice rather than task or checklist. This post is a written version of that talk.
    edited: 2
    references:

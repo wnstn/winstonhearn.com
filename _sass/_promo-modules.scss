@@ -1,0 +1,93 @@
+.promo-module {
+  box-sizing: border-box;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  margin-bottom: .5em;
+  border-bottom: 1px solid $brand-color;
+  // border-bottom-style: solid;
+  // border-bottom-color: rgba($brand-color, .1);
+
+  @include breakpoint(1000) {
+    max-width: 850px;
+    margin-bottom: 3em;
+    padding: 1em 25px 3em;
+  }
+
+  .promo__meta {
+    width: 100%;
+    @include clearfix;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 1.5em;
+
+    li {
+      float: right;
+      padding-left: 1em;
+      padding-right: 1em;
+      font-size: .8em;
+      text-transform: uppercase;
+    }
+  }
+
+  .promo__category {
+
+  }
+
+  .promo__publish-date {
+    border-left: 1px solid $grey-color-dark;
+  }
+
+  .promo__copy {
+    font-size: $base-font-size * .9;
+
+    @include breakpoint(1000) {
+      font-size: $base-font-size;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  .promo__title {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: .5em;
+    padding-right: 100px;
+    border-bottom: 2px solid $text-color;
+
+    a {
+      color: $text-color;
+      border-bottom-color:$text-color;
+      background: none;
+      border: none;
+    }
+  }
+}
+
+// .video-module {
+//   border-bottom-width: .6em;
+// }
+
+// .essay-module {
+//   border-bottom-width: .7em;
+// }
+
+// .book-module {
+//   border-bottom-width: .8em;
+// }
+
+// .quote-module {
+//   border-bottom-width: .9em;
+// }
+
+// .code-module {
+//   border-bottom-width: 1em;
+// }
+
+// .link-module {
+//   border-bottom-width: 1.1em;
+// }

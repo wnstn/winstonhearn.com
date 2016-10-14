@@ -1,66 +1,19 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="dns-prefetch" href="http://use.typekit.net">
-    <link rel="dns-prefetch" href="http://p.typekit.net">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="dns-prefetch" href="http://use.typekit.net">
+  <link rel="dns-prefetch" href="http://p.typekit.net">
 
-    <title>{% if page.title %}Winston Hearn | {{ page.title | strip_html }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
+  <title>{% if page.title %}Winston Hearn | {{ page.title | strip_html }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
 
-    {% include meta.html %}
+  {% include meta.html %}
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
-    <script>
-      (function(d) {
-        var config = {
-          kitId: 'est3hcj',
-          scriptTimeout: 3000,
-          visorShowing: true,
-          backup: function(){
-            var t = this;
-            return t.timer = setTimeout(function(){
-              config.transitionVisor();
-            }, 750);
-          },
-          loading: function() {
-            config.backup();
-          },
-          active: function() {
-            config.transitionVisor();
-          },
-          inactive: function() {
-            config.transitionVisor();
-          },
-          transitionVisor: function() {
-            var visor, test, t=this;
-            clearTimeout(t.timer);
-            if ( !t.visorShowing )
-              return false;
+  <script src="https://use.typekit.net/zma1vip.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-            t.visorShowing = false;
-            test = document.createElement('div');
-            visor = document.querySelector('.fonts-loading');
-
-            if ( test.style['transition'] !== undefined ) {
-              visor.addEventListener('transitionend', function(){
-                t.showText(visor);
-              });
-              visor.classList.add('text-ready');
-            } else {
-              t.showText(visor);
-            }
-
-          },
-          showText: function(el) {
-            el.classList.add('fonts-loaded');
-            el.classList.remove('fonts-loading', 'text-ready');
-          }
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

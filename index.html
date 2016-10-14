@@ -3,56 +3,43 @@ layout: default
 wrapper: index
 ---
 
+{% include bio.html %}
+
 {% for post in paginator.posts %}
-{% unless post.subcategory == "single-link" %}
+  {% unless post.subcategory == "single-link" %}
+  <article class="promo-module {{ post.category }}-module">
+    <ul class="promo__meta">
+      <li class="promo__publish-date">{{ post.date | date: "%b %-d, %Y" }}</li>
+      <li class="promo__category">
+        <a href="/{{post.category}}">{{ post.category }} post</a></strong>
+      </li>
+    </ul>
 
-  <article>
-    <div class="post-image-container">
-      <div class="title-icon"></div>
+    <h2 class="promo__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a></h2>
+
+    <div class="promo__copy">
+      <p>{{ post.my-excerpt | markdownify }}</p>
     </div>
-    <aside class="post-details">
-      <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a></h2>
 
-      <div class="post-excerpt">
-        <p>{{ post.my-excerpt | markdownify }}</p>
-      </div>
 
-      <ul class="post-meta">
+  <!--
+      {% if post.references and post.show-references != false %}
+        <li class="post-references">Inspiration from
+          <ul> {% for reference in post.references %}
 
-        <li class="publish-date"><strong>Published</strong> {{ post.date | date: "%b %-d, %Y" }}</li>
+            <li class="post-reference">
+              <a href="{{ reference.url }}" target="_blank">
+                <svg class="icon"><use xlink:href="#brain"></use></svg>
+                {{ reference.title }}
+              </a>
+            </li>
 
-        {% if post.edited > 1 %}
-          <li class="publish-edited">Edited {{ post.edited }} times</li>
-        {% endif %}
-
-        {% if post.copyeditor %}
-          <li class="publish-copyeditor">Copyedited by <br/><a href="{{ post.copyeditor.url }}" target="_blank">{{ post.copyeditor.name }}</a></li>
-        {% endif %}
-
-        <li class="post-category">
-          This is a <a href="/{{post.category}}">{{ post.category }}</a></strong>
-          post
+          {% endfor%}</ul>
         </li>
+      {% endif %}
+       -->
 
-        {% if post.references and post.show-references != false %}
-          <li class="post-references">Inspiration from
-            <ul> {% for reference in post.references %}
-
-              <li class="post-reference">
-                <a href="{{ reference.url }}" target="_blank">
-                  <svg class="icon"><use xlink:href="#brain"></use></svg>
-                  {{ reference.title }}
-                </a>
-              </li>
-
-            {% endfor%}</ul>
-          </li>
-        {% endif %}
-      </ul>
-
-    </aside>
   </article>
-
   {% endunless %}
 {% endfor %}
 

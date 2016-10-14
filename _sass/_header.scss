@@ -1,61 +1,46 @@
 .pattern-bg {
   background-image: url(/img/header.svg);
-  background-position: cover;
-  background-size: 100%;
-  background-position: 60% 10%;
+  background-position: 0 70%;
+  background-size: 100% auto;
   height: 4rem;
   margin-bottom: 1.5em;
 
-  @include clearfix;
+  @include breakpoint(600) {
+    // background-position: 0 60%;
+    height: 12rem;
+  }
 
-  @include break($on-palm) {
-    height: 15rem;
-    margin-bottom: 3rem;
+  @include breakpoint(1000) {
+    // background-position: 0 70%;
   }
 }
 
 header {
-    @include span-columns(12);
     font-size: .7rem;
     height: 100%;
-    padding: 1em 0;
     position: relative;
-
-    @include break($on-palm) {
-      @include span-columns(12);
-      padding: 0;
-      overflow: hidden;
-    }
-
-    @include break($on-laptop) {
-      margin-top: 0em;
-      border-radius: 0px 20px 0px 20px;
-    }
 
   a {
     display: block;
-    height: 100%;
-    width: 100%;
+    padding-top: 1em;
+    border-bottom: none;
+    text-align: center;
+
+    @include breakpoint(600) {
+      text-align: left;
+      margin-left: 5%;
+      padding-top: 9.5rem;
+    }
   }
 
   .author h1 {
     color: white;
-    font-size: 1.2rem;
-    font-family: $big-font;
     font-style: normal;
     font-weight: 400;
     margin-bottom: 0;
-    text-align: center;
     width: 100%;
-    @include clearfix;
-
-    @include break($on-palm) {
-      opacity: .8;
-      text-align: right;
-      position: absolute;
-      right: 2em;
-      bottom: 0;
-      letter-spacing: 1px;
+    @include breakpoint(600) {
+      font-size: 2em;
     }
   }
 }

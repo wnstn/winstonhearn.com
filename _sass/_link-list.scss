@@ -4,52 +4,10 @@
     margin-left: 0;
     margin-right: 0;
 
-    @include break($on-palm) {
-      margin: 0 auto;
-    }
   }
 
-  @include break($on-palm) {
-    blockquote {
-      @include span-columns(12 of 16);
-      @include shift(2);
-      @include clearfix;
-      background: $grey-color-light;
-      border-top: 2px lighten($muted-purple, 20%) solid;
-      border-left: none;
-      font-size: 1.05rem;
-      letter-spacing: .02rem;
-      line-height: 1.3rem;
-      text-align: left;
-      padding: 1.5em;
-    }
-
-    .post-content > p {
-      @include span-columns(14 of 16);
-      @include shift(1);
-      @include clearfix;
-    }
-  }
-
-  @include break($on-laptop) {
-    blockquote {
-      @include span-columns(6 of 16);
-      @include shift(1);
-      font-size: 1.1rem;
-      line-height: 1.4rem;
-      padding: 1.5em;
-    }
-
-    .post-content > p {
-      @include span-columns(7 of 16);
-      @include shift(1);
-      @include omega;
-      @include clearfix;
-    }
-  }
 
   hr {
-    @include clearfix;
     color: transparent;
     border: none;
     border-top: 1px solid rgba($green, .3);
@@ -63,7 +21,6 @@
 
   p > a {
     border-bottom: 2px solid darken($header-blue, 15%);
-    // color: darken($purple, 10%);
     color: darken($header-blue, 15%);
     font-family: $sans-serif-font;
     font-size: 1.3rem;

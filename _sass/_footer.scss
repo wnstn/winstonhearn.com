@@ -1,63 +1,13 @@
 footer {
-  @include span-columns(12);
   background-color: $grey-color-dark;
   padding-bottom: 3em;
   padding-top: 2em;
 
   .bio-photo {
     display: none;
-    @include break($on-palm) {
-      background: rgba($header-shade, .3);
-      margin-top: 12px;
-      margin-bottom: 1em;
-      padding: .5em;
-      position: relative;
-      @include span-columns(3);
-      @include shift(2);
-
-      &:before {
-        border-left: 1px solid $header-shade;
-        border-top: 1px solid $header-shade;
-        content: "";
-        height: 50px;
-        left: -12px;
-        position: absolute;
-        top: -12px;
-        width: 50px;
-      }
-
-      &:after {
-        border-bottom: 1px solid $header-shade;
-        border-right: 1px solid $header-shade;
-        bottom: -12px;
-        content: "";
-        height: 50px;
-        position: absolute;
-        right: -12px;
-        width: 50px;
-      }
-
-      img {
-        max-width: 100%;
-      }
-    }
   }
 
   .bio {
-    @include span-columns(10);
-    @include shift(1);
-
-    @include break($on-palm) {
-      @include span-columns(5);
-      @include shift(0);
-    }
-
-    h2 {
-      color: $header-orange;
-      font-family: $big-font;
-      letter-spacing: .05em;
-      margin-bottom: 0;
-    }
   }
 
   .subtitle {
@@ -76,50 +26,16 @@ footer {
   }
 
   .snarky-title {
-    @include span-columns(10);
-    @include shift(1);
-    color: $header-shade;
-    font-family: $sans-serif-font;
-    font-size: .9em;
-    letter-spacing: .1em;
-    margin-bottom: 0;
-    margin-top: 1em;
-    text-transform: uppercase;
-
-    @include break($on-palm) {
-      @include span-columns(11 of 14);
-      @include shift(2);
-    }
   }
 
   .colophon {
-    @include span-columns(8 of 12);
-    @include shift(2);
   }
 
   ul {
-    font-family: $monospace-font;
-    list-style: none;
-    @include span-columns(10);
-    @include shift(1);
-    @include clearfix;
-
-    @include break($on-palm) {
-      @include span-columns(10 of 14);
-      @include shift(2);
-    }
   }
 
   li {
-    color: $green;
-    float: left;
-    font-size: .9em;
-    margin-bottom: 1em;
-    padding-right: 1.75em;
 
-    @include break($on-palm) {
-      margin-bottom: 0;
-    }
   }
 
   a {
