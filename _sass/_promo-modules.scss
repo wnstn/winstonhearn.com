@@ -10,8 +10,7 @@
 
   @include breakpoint(750) {
     border-bottom: none;
-    margin-top: 1em;
-    margin-bottom: 4em;
+    margin-top: 4em;
     width: 90%;
 
     &:after {
@@ -38,11 +37,12 @@
 
 .promo__meta {
   width: 100%;
-  @include clearfix;
+  display: inline-block;
   list-style: none;
   margin: 0;
   margin-bottom: 1.5em;
   position: relative;
+  @include clearfix;
 
   li {
     float: right;

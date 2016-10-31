@@ -6,7 +6,24 @@ wrapper: index
 {% include bio.html %}
 
 {% for post in paginator.posts %}
-  {% unless post.subcategory == "single-link" %}
+  {% if post.subcategory == "single-link" %}
+
+  <article class="promo-module {{post.category}}-module promo__single-link">
+    <ul class="promo__meta">
+      <li class="promo__publish-date">{{ post.date | date: "%b %-d, %Y" }}</li>
+      <li class="promo__category">
+        <a href="/{{post.category}}">{{ post.category }} post</a></strong>
+      </li>
+    </ul>
+    {% for reference in post.references %}
+    <h2 class="promo__title"><a href="{{ reference.url }}">{{ reference.title }}</a></h2>
+    <div class="promo__copy">
+      {{post.content}}
+    </div>
+    {% endfor %}
+  </article>
+
+  {% else %}
   <article class="promo-module {{ post.category }}-module">
     <ul class="promo__meta">
       <li class="promo__publish-date">{{ post.date | date: "%b %-d, %Y" }}</li>
@@ -47,6 +64,6 @@ wrapper: index
        -->
 
   </article>
-  {% endunless %}
+  {% endif %}
 {% endfor %}
 
