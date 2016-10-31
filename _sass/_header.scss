@@ -3,15 +3,9 @@
   background-position: 0 70%;
   background-size: 100% auto;
   height: 4rem;
-  margin-bottom: 1.5em;
 
   @include breakpoint(600) {
-    // background-position: 0 60%;
     height: 12rem;
-  }
-
-  @include breakpoint(1000) {
-    // background-position: 0 70%;
   }
 }
 
@@ -25,6 +19,7 @@ header {
     padding-top: 1em;
     border-bottom: none;
     text-align: center;
+    background-color: transparent;
 
     @include breakpoint(600) {
       text-align: left;

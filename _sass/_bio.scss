@@ -1,0 +1,18 @@
+.bio {
+  width: 100%;
+  // background-color: #a58192;
+  background-color: lighten($header-blue, 5%);
+
+  p {
+    margin: 0 5%;
+    padding: 1em 0 1em .5em;
+    font-size: 12px;
+    color: #fff;
+
+    @include breakpoint(800) {
+      font-size: 14px;
+      max-width: 60%;
+      padding: 1.5em 0 1.5em 1em;
+    }
+  }
+}

@@ -1,93 +1,167 @@
 .promo-module {
   box-sizing: border-box;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
   margin-bottom: .5em;
-  border-bottom: 1px solid $brand-color;
-  // border-bottom-style: solid;
-  // border-bottom-color: rgba($brand-color, .1);
+  position: relative;
+  border-bottom: 1px solid rgba($brand-color, .2);
+
+  @include breakpoint(750) {
+    border-bottom: none;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    width: 90%;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 60px;
+      transform: rotate(-15deg);
+      border-top: 1px solid $text-color;
+      background-color: transparent;
+      border-bottom: 1px solid $link-color;
+      position: absolute;
+      bottom: 0;
+      right: 0px;
+      height: 3px;
+    }
+  }
 
   @include breakpoint(1000) {
     max-width: 850px;
-    margin-bottom: 3em;
-    padding: 1em 25px 3em;
+    padding: 1em 25px;
+    margin-left: 10%;
   }
+}
 
-  .promo__meta {
-    width: 100%;
-    @include clearfix;
-    list-style: none;
-    margin: 0;
-    margin-bottom: 1.5em;
+.promo__meta {
+  width: 100%;
+  @include clearfix;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 1.5em;
+  position: relative;
 
-    li {
-      float: right;
-      padding-left: 1em;
-      padding-right: 1em;
-      font-size: .8em;
-      text-transform: uppercase;
-    }
-  }
-
-  .promo__category {
-
-  }
-
-  .promo__publish-date {
-    border-left: 1px solid $grey-color-dark;
-  }
-
-  .promo__copy {
-    font-size: $base-font-size * .9;
-
-    @include breakpoint(1000) {
-      font-size: $base-font-size;
-    }
-    p {
-      margin: 0;
-    }
-  }
-
-  .promo__title {
-    display: inline-block;
+  li {
+    float: right;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: .8em;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    margin-bottom: .5em;
-    padding-right: 100px;
-    border-bottom: 2px solid $text-color;
 
-    a {
-      color: $text-color;
-      border-bottom-color:$text-color;
-      background: none;
-      border: none;
+    &:first-child {
+      padding-right: 0;
     }
   }
 }
 
-// .video-module {
-//   border-bottom-width: .6em;
-// }
+.promo__category {
 
-// .essay-module {
-//   border-bottom-width: .7em;
-// }
+}
 
-// .book-module {
-//   border-bottom-width: .8em;
-// }
+.promo__publish-date {
+  border-left: 1px solid $grey-color-dark;
+  width: 90px;
+}
 
-// .quote-module {
-//   border-bottom-width: .9em;
-// }
+.promo__copy {
+  font-size: $base-font-size * .9;
+  position: relative;
 
-// .code-module {
-//   border-bottom-width: 1em;
-// }
+  @include breakpoint(1000) {
+    font-size: $base-font-size;
+  }
+  p {
+    margin: 0;
+  }
+}
 
-// .link-module {
-//   border-bottom-width: 1.1em;
-// }
+.book-module .promo__copy {
+  display: flex;
+  flex-flow: column wrap;
+
+  p {
+    flex: 0 0 100%;
+  }
+
+  .promo__book-cover {
+    display: inline-block;
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .promo__book-cover img {
+    max-height: 200px;
+    border: 1px solid $grey-color-light;
+  }
+
+  @include breakpoint(800) {
+    flex-direction: row;
+    p {
+      flex: 6 0 0;
+    }
+    .promo__book-cover {
+      display: inline-block;
+      flex: 1 0 0;
+      margin: 0;
+      margin-right: 1em;
+    }
+
+    .promo__book-cover img {
+      max-height: 150px;
+    }
+  }
+}
+
+.promo__title {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: .5em;
+  padding-right: 25px;
+  border-bottom: 2px solid $text-color;
+  position: relative;
+
+  @include breakpoint(425){
+    padding-right: 60px;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      border-top: 2px solid rgba($link-color, .4);
+      border-left: 2px solid rgba($link-color, .4);
+      transform: rotate(-10deg);
+      position: absolute;
+      left: -12px;
+      top: -5px;
+    }
+  }
+
+  @include breakpoint(800){
+    padding-right: 100px;
+
+    &:before {
+      left: -18px;
+    }
+  }
+
+  a {
+    color: $text-color;
+    background: none;
+    border: none;
+  }
+
+  &:hover {
+    border-bottom:2px solid rgba($text-color, .5);
+    padding-right: 10px;
+    transition: padding-right .2s ease-out, border-bottom .2s linear;
+  }
+}

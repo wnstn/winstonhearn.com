@@ -18,7 +18,14 @@ wrapper: index
     <h2 class="promo__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a></h2>
 
     <div class="promo__copy">
-      <p>{{ post.my-excerpt | markdownify }}</p>
+      {% if post.category == "book" %}
+        <picture class="promo__book-cover">
+          <source srcset="{{post.book.cover}}" media="(min-width: 767px)">
+          <img src="{{post.book.cover}}" alt="cover of {{ post.book.title }} by {{ post.book.author }}" />
+        </picture>
+      {% endif %}
+
+      {{ post.my-excerpt | markdownify }}
     </div>
 
 
