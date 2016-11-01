@@ -16,7 +16,10 @@ wrapper: index
       </li>
     </ul>
     {% for reference in post.references %}
-    <h2 class="promo__title"><a href="{{ reference.url }}">{{ reference.title }}</a></h2>
+    <h2 class="promo__title"><a href="{{ reference.url }}">{{ post.title }}</a></h2>
+    <div class="promo__external-source">
+      <p>Read on {{ reference.title }}</p>
+    </div>
     <div class="promo__copy">
       {{post.content}}
     </div>

@@ -21,6 +21,10 @@ header {
     text-align: center;
     background-color: transparent;
 
+    &:hover {
+      background-color: transparent;
+    }
+
     @include breakpoint(600) {
       text-align: left;
       margin-left: 5%;

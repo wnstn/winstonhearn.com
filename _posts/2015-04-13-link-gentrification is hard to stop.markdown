@@ -8,7 +8,7 @@ subcategory: single-link
 edited: 1
 show-references: false
 references:
-    - title: Why Gentrification is So Hard to Stop
+    - title: Citylab
       url:  http://www.citylab.com/work/2014/02/why-gentrification-so-hard-stop/7708/
 
 ---
