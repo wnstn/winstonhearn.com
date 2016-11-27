@@ -5,43 +5,39 @@ script {
 }
 
 .post-header {
-  margin-bottom: 1em;
-  margin-top: 0;
-  padding-bottom: 1em;
-  padding-top: 1em;
-  position: relative;
+
 
   .post-title {
-    border-bottom: 2px solid $purple;
-    color: $purple;
-    font-size: 2rem;
-    line-height: 2rem;
-    padding-bottom: 3px;
-    padding-left: 5.6422%;
-    display: inline-block;
+
   }
 
   .post-meta {
-    font-size: .9rem;
-    color: lighten($grey-color, 10%);
-    margin-top: 5px;
-    margin-bottom: 1rem;
-  }
-
-  .publish-date strong {
-    display: none;
-  }
-
-  .post-references ul{
     list-style: none;
-    margin-left: 8px;
-    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    font-size: 12px;
+    background-color: lighten($header-blue, 5%);
+    color: $white;
+    padding: .65em;
+  }
+
+  .publish-date,
+  .post-category,
+  .publish-edited {
+    display: flex;
+    flex: 1 0 auto;
+    margin-right: 1em;
+  }
+
+  .post-references{
+    flex: 1 0 auto;
+    width: 100%;
   }
 }
 
 .post-content {
-  font-family: $serif-font;
-  font-size: 1.25rem;
 
   h1,
   h2,
@@ -49,7 +45,6 @@ script {
   h4,
   h5,
   h6 {
-    font-family: $sans-serif-font;
   }
 
   p + p {
@@ -57,35 +52,25 @@ script {
   }
 
   blockquote {
-    font-size: 1.2em;
-    line-height: 1.7em;
-    padding: 1em 1.3em;
-    text-align: left;
+
   }
 
   ul {
-    list-style: circle;
   }
 
   ul,
   ol, {
     li {
-      margin-bottom: 1.5rem;
     }
 
     li p + p{
-      margin-top: 0;
     }
   }
 
   hr {
-    border: none;
-    border-bottom:1px solid $muted-purple;
-    margin-bottom: 2em;
-    margin-top: 2em;
+
   }
 
   iframe {
-    margin-top: 2em;
   }
 }
