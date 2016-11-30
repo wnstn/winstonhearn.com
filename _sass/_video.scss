@@ -6,6 +6,11 @@
   padding-bottom: 47.25%;
   position: relative;
   text-align: center;
+  // max-height: 450px;
+
+  @include breakpoint(800){
+    max-width: 80%;
+  }
 
   iframe,
   object,

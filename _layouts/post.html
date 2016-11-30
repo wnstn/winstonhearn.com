@@ -6,21 +6,18 @@ layout: default
   <div class="post-header">
 
     <ul class="post-meta">
-      <li class="publish-date"><strong>Published</strong> {{ page.date | date: "%b %-d, %Y" }}</li>
-      <li class="post-category"><em>This is a</em> <strong>{{ page.category }}</strong> <em>post</em></li>
-
-      {% if page.edited > 1 %}
-        <li class="publish-edited">Edited {{ page.edited }} times</li>
-      {% endif %}
+      <li class="publish-date">Published: <strong>{{ page.date | date: "%b %-d, %Y" }}</strong></li>
+      <li class="post-category">Category: <strong>{{ page.category | capitalize }}</strong></li>
 
       {% if page.copyeditor %}
         <li class="publish-copyeditor">Copyedited by <br/><a href="{{ page.copyeditor.url }}" target="_blank">{{ page.copyeditor.name }}</a></li>
       {% endif %}
 
       {% if page.references %}
-        <li class="post-references">Inspiration from
-          <ul> {% for reference in page.references %}
-
+        <li class="post-references">
+          <ul>
+            <li class="post-reference">Referenced within</li>
+            {% for reference in page.references %}
             <li class="post-reference">
               <a href="{{ reference.url }}" target="_blank">
                 {{ reference.title }}

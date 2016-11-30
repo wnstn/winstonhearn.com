@@ -4,26 +4,22 @@ layout: default
 <div class="book">
 
   <div class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <ul class="post-meta">
-      <li class="publish-date"><strong>Published</strong> {{ page.date | date: "%b %-d, %Y" }}</li>
-      <li class="post-category"><em>This is a</em> <strong>{{ page.category }}</strong> <em>post</em></li>
 
-      {% if page.edited > 1 %}
-        <li class="publish-edited">Edited {{ page.edited }} times</li>
-      {% endif %}
+    <ul class="post-meta">
+      <li class="publish-date">Published: <strong>{{ page.date | date: "%b %-d, %Y" }}</strong></li>
+      <li class="post-category">Category: <strong>{{ page.category | capitalize }}</strong></li>
 
       {% if page.copyeditor %}
         <li class="publish-copyeditor">Copyedited by <br/><a href="{{ page.copyeditor.url }}" target="_blank">{{ page.copyeditor.name }}</a></li>
       {% endif %}
 
       {% if page.references %}
-        <li class="post-references">Inspiration from
-          <ul> {% for reference in page.references %}
-
+        <li class="post-references">
+          <ul>
+            <li class="post-reference">Referenced within</li>
+            {% for reference in page.references %}
             <li class="post-reference">
               <a href="{{ reference.url }}" target="_blank">
-                <svg class="icon"><use xlink:href="#brain"></use></svg>
                 {{ reference.title }}
               </a>
             </li>
@@ -43,34 +39,28 @@ layout: default
       <li class="post-local-bookstore"><a href="http://www.indiebound.org/indie-store-finder" target="_blank">Find a Local Bookstore</a></li>
 
     </ul>
-    <div class="post-image-container">
-      <div class="post-image-background {{ page.category }}">
-        <span class="post-link"></span>
-      </div>
-    </div>
+
+    <h1 class="post-title">{{ page.title }}</h1>
+
   </div>
 
   <article class="post-content">
-    {% comment %}<div class="book-details">{% endcomment %}
+    <div class="book-details">
       <div class="book-image">
         <img src="{{ page.book.cover }}" alt="cover of {{ page.book.title }} by {{ page.book.author }}">
       </div>
 
-      <h2 class="book-title">{{ page.book.title }}</h2>
-
       {% if page.book.url %}
-
-        <h3 class="book-author"><a href="{{ page.book.url }}" target="_blank">{{ page.book.author }}</a></h3>
-
+        <h2 class="book-title"><a href="{{ page.book.url }}">{{ page.book.title }}</a></h2>
       {% else %}
-
-        <h3 class="book-author">{{ page.book.author }}</h3>
-
+        <h2 class="book-title">{{ page.book.title }}</h2>
       {% endif %}
 
-        <p class="book-published"><em>Copyright {{ page.book.published }}, {{ page.book.publisher }}</em></p>
+      <h3 class="book-author">{{ page.book.author }}</h3>
 
-    {% comment %}</div>{% endcomment %}
+      <p class="book-published"><em>Copyright {{ page.book.published }}, {{ page.book.publisher }}</em></p>
+
+    </div>
 
     <div class="book-content">
       {{ content }}

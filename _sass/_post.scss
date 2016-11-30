@@ -6,11 +6,6 @@ script {
 
 .post-header {
 
-
-  .post-title {
-
-  }
-
   .post-meta {
     list-style: none;
     display: flex;
@@ -21,38 +16,110 @@ script {
     background-color: lighten($header-blue, 5%);
     color: $white;
     padding: .65em;
+
+    @include breakpoint(800) {
+      padding-left: 6%;
+    }
   }
 
-  .publish-date,
-  .post-category,
-  .publish-edited {
-    display: flex;
-    flex: 1 0 auto;
+  li {
     margin-right: 1em;
+    width: calc(50% - 1em);
+
+    @include breakpoint(600) {
+      width: auto;
+    }
+  }
+
+  .post-title {
+    margin: .3em 0 2em;
+    line-height: 1.2;
+    padding-left: .65em;
+    padding-right: .65em;
+    position: relative;
+
+    @include breakpoint(800) {
+      max-width: 800px;
+      padding-left: 6%;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100px;
+      transform: rotate(-8deg);
+      border-top: 1px solid rgba($text-color, .5);
+      background-color: transparent;
+      border-bottom: 1px solid rgba($link-color, .5);
+      position: absolute;
+      bottom: -1em;
+      height: 3px;
+    }
   }
 
   .post-references{
-    flex: 1 0 auto;
     width: 100%;
+
+    ul {
+      margin: 0;
+      width: 100%;
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+    }
+
+    li {
+      width: 100%;
+      display: flex;
+
+      @include breakpoint(800){
+        width: auto;
+      }
+    }
+
+    a {
+      color: $header-orange;
+      border-color: $header-orange;
+      padding-left: 1em;
+      font-size: 85%;
+
+      @include breakpoint(800){
+        padding-left: 0;
+        font-size: 100%;
+      }
+    }
   }
 }
 
 .post-content {
 
+  p,
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-  }
+    margin: .8em 1em;
+    max-width: 600px;
+    // display: inline-block;
 
-  p + p {
-    margin-top: 1rem;
+    @include breakpoint(770) {
+      margin: .6em auto;
+    }
   }
 
   blockquote {
+    background-color: rgba($muted-purple, .2);
+    padding: 1em;
+    margin: 1em 0;
+    font-size: 110%;
 
+    @include breakpoint(400) {
+      padding-left: calc(50% - 350px);
+      padding-right: calc(50% - 350px);
+    }
   }
 
   ul {
@@ -60,6 +127,7 @@ script {
 
   ul,
   ol, {
+    margin-bottom: 0;
     li {
     }
 
@@ -68,7 +136,10 @@ script {
   }
 
   hr {
-
+    margin: 2em 0;
+    background: none;
+    border: none;
+    border-top: 1px solid $grey-color-light;
   }
 
   iframe {
