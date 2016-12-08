@@ -9,12 +9,12 @@ edited: 1
 video: AvEqfg2sIH0
 video_source: youtube
 references:
-  - title: How Buildings Learn Episode 1
+  - title: Youtube
     url: https://www.youtube.com/watch?v=AvEqfg2sIH0
-    
+
 ---
 
-I'm reading Stewart Brand's _How Buildings Learn_, which I'll post more about after I finish, but in the meantime a friend found this BBC series that is a result of the research he did for the book. I love his framing of architecture and the engineered world: not as an art form, but as a humanist pursuit. His thesis is buildings are never still — from the moment we inhabit them we shape them, change them, and teach them. Sometimes this process is active, sometimes it is passive, but always it is occuring. 
+I'm reading Stewart Brand's _How Buildings Learn_, which I'll post more about after I finish, but in the meantime a friend found this BBC series that is a result of the research he did for the book. I love his framing of architecture and the engineered world: not as an art form, but as a humanist pursuit. His thesis is buildings are never still — from the moment we inhabit them we shape them, change them, and teach them. Sometimes this process is active, sometimes it is passive, but always it is occuring.
 
 The series has 6 episodes total, the first is above and the rest are here: <br/>
 [Episode 2](https://www.youtube.com/watch?v=09pekAKuXjc) <br/>

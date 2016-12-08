@@ -7,7 +7,7 @@ category: ux
 my-excerpt: We've moved into a little house in Chattanooga for at least a year. No more things in storage. We're looking for furniture, putting dishes in cabinets, and yes, connecting things to the internet. The concept of home is now very concrete.
 edited: 1
 references:
-    - title: Mat Honan | Wired
+    - title: Wired
       url: http://www.wired.com/2014/06/the-nightmare-on-connected-home-street/
 ---
 
@@ -29,9 +29,9 @@ But then I think about the technological layer of the house, and I get really te
 
 If you're not sure you believe me, let's start with something simple: your TV. Actually, to help make the point, think about watching TV at a friend's house. How many remotes can you expect to find? Usually one per device. So let's see, you have the TV, then possibly a DVR, maybe a BluRay Player, or perhaps a DVD player if your friends aren't hip. If they are over 40 you might find a VCR too, because those home videos are still laying around, right? And then let's see, there's possible an Apple TV or Roku or Amazon box (I can't remember the name but I bet it relates to burning things), so that thing will have a remote as well. And if your friends are into the good sounds, some or all of these devices may connect to a receiver for surround sound, with yet another remote. Perhaps one of the remotes, like the DVR one, is a "universal" remote so it will control some or all of these devices, helping to "simplify" things.
 
-Except have you ever met a remote control that simplifies things? Ok sure, the streaming box remotes are simple, but they are also tiny and easy to lose and an elegant but nowhere-to-be-found remote is even less usable than a shitty remote in your hand. 
+Except have you ever met a remote control that simplifies things? Ok sure, the streaming box remotes are simple, but they are also tiny and easy to lose and an elegant but nowhere-to-be-found remote is even less usable than a shitty remote in your hand.
 
-Ok so we've established you have between 1 and 5 remotes. They all look different, probably. They are probably sitting in a pile. So which one do you pick up to watch what you want to watch? 
+Ok so we've established you have between 1 and 5 remotes. They all look different, probably. They are probably sitting in a pile. So which one do you pick up to watch what you want to watch?
 
 Well, if your TV is Samsung and your BluRay is Sony, then I guess the Samsung remote goes to the TV and the Sony remote goes to the BluRay. Hope you can read the branding on the devices from the couch!
 
@@ -63,7 +63,7 @@ Now, of course, with my smartphone I can email said file, or Dropbox it, or AirD
 
 Photo organization and library syncing however, is not a solved problem. It's a ridiculously messy problem and very few companies are trying to solve it in a consumer friendly, It Just Works manner. Most of the ones that are doing really interesting things have taken VC funding.
 
-I am not against VC Funding, by-the-way, as one of my [favorite jobs ever](http://www.editorially.com/) was at a VC funded company and I am still sad about its closing. But VC funding mostly has the aim of an exit, which is to say how everyone who invested in the company gets their money back. Whereas a bank will give a business loan and get their return via interest, a VC gives a loan with the expectation that it will be repaid at many multiples when the company A) goes public, or B) sells to a larger company. 
+I am not against VC Funding, by-the-way, as one of my [favorite jobs ever](http://www.editorially.com/) was at a VC funded company and I am still sad about its closing. But VC funding mostly has the aim of an exit, which is to say how everyone who invested in the company gets their money back. Whereas a bank will give a business loan and get their return via interest, a VC gives a loan with the expectation that it will be repaid at many multiples when the company A) goes public, or B) sells to a larger company.
 
 Ok, but what the hell does that have to do with me organizing my photos? Everything. Remember how I want to solve the problem and then not worry about it again? Well if a startup sells to a larger company, there is very little chance that a year from the sell date their product will be the same. Sometimes the product just shuts down. Sometimes the purchasing company sees a different value in the startup than what their users saw. Sometimes, nothing happens. But the risk is high that things will happen and they will not be positive for me as an end user.
 

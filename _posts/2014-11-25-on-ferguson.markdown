@@ -7,7 +7,7 @@ category: essay
 my-excerpt: The status quo must not be allowed to stand.
 edited: 1
 references:
-    - title: I Will Only Bleed Here
+    - title: Today in Tabs
       url: http://www.fastcolabs.com/3039094/today-in-tabs/today-in-tabs-i-will-only-bleed-here
 ---
 

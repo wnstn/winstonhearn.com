@@ -9,9 +9,9 @@ edited: 1
 video: a4DCoZJv9YI
 video_source: youtube
 references:
-  - title: Chattanooga Story
+  - title: Youtube
     url: https://www.youtube.com/watch?v=a4DCoZJv9YI
-    
+
 ---
 
 A documentary about the boom in Chattanooga - it's history, it's potential future, and the ways that this boom is not extending to everyone equally.

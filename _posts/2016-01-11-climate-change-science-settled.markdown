@@ -9,7 +9,7 @@ edited: 1
 video: mmlHbt5jja4
 video_source: youtube
 references:
-  - title: "Climate Change: Is the Science “Settled”?"
+  - title: Youtube
     url: https://www.youtube.com/watch?v=mmlHbt5jja4
 
 ---
