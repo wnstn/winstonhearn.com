@@ -12,7 +12,6 @@ script {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0;
-    font-size: 12px;
     background-color: lighten($header-blue, 5%);
     color: $white;
     padding: .65em;
@@ -24,9 +23,11 @@ script {
 
   li {
     margin-right: 1em;
+    font-size: .7em;
     width: calc(50% - 1em);
 
     @include breakpoint(600) {
+      font-size: .8em;
       width: auto;
     }
   }
@@ -106,19 +107,29 @@ script {
     // display: inline-block;
 
     @include breakpoint(770) {
-      margin: .6em auto;
+      margin: 1.4em auto;
     }
   }
 
   blockquote {
-    background-color: rgba($muted-purple, .2);
+    border-top: 1px solid rgba($text-color, .5);
+    border-bottom: 1px solid rgba($link-color, .5);
     padding: 1em;
     margin: 1em 0;
     font-size: 110%;
+    font-style: italic;
 
     @include breakpoint(400) {
-      padding-left: calc(50% - 350px);
-      padding-right: calc(50% - 350px);
+      margin: 0 auto;
+      max-width: 700px;
+    }
+
+    p {
+      margin: 0 auto;
+    }
+
+    p + p {
+      margin-bottom: 1em;
     }
   }
 

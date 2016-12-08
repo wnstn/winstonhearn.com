@@ -1,56 +1,43 @@
-footer {
-  background-color: $grey-color-dark;
+footer, {
+  // background-color: transparentize($header-blue, .4);
+  background-image: url(/img/header.svg);
+  background-size: cover;
+  background-position: 50% 50%;
   padding-bottom: 3em;
   padding-top: 2em;
 
-  .bio-photo {
-    display: none;
-  }
-
-  .bio {
-  }
-
-  .subtitle {
-    color: $green;
-    font-family: $sans-serif-font;
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.2rem;
-  }
-
-  .bio-copy {
-    color: $grey-color-light;
-    font-size: 1em;
-    line-height: 1.3rem;
-    text-indent: .5em;
-  }
-
-  .snarky-title {
-  }
-
-  .colophon {
-  }
-
   ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: .5em;
   }
 
   li {
-
-  }
-
-  a {
-    color: $green;
-    font-size: 1em;
-
-    &:active,
-    &:visited {
-      color: lighten($green, 10%);
-    }
-
-    &:hover {
-      border-bottom: 2px solid $green;
-      color: lighten($green, 10%);
-      text-decoration: none;
-    }
+    font-size: 85%;
+    margin-bottom: .5em;
+    margin-left: 1em;
   }
 }
+
+.footer-nav,
+.bio {
+  background-color: rgba($white, .8);
+  margin: 1em;
+  padding: .5em;
+
+
+  @include breakpoint(700) {
+    max-width: 700px;
+    margin-left: 5%;
+  }
+}
+
+.snarky-title {
+  font-size: 1em;
+  line-height: 1.3;
+}
+
+

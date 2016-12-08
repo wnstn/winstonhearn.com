@@ -20,11 +20,7 @@
   }
 
   p > a {
-    border-bottom: 2px solid darken($header-blue, 15%);
-    color: darken($header-blue, 15%);
-    font-family: $sans-serif-font;
     font-size: 1.3rem;
-    font-weight: bold;
 
     &:hover {
       border-bottom: 0;

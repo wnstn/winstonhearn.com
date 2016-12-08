@@ -8,7 +8,7 @@ subcategory: single-link
 edited: 1
 show-references: false
 references:
-    - title: What Part of "No, Totally" Don't You Understand?
+    - title: The New Yorker
       url:  http://www.newyorker.com/books/page-turner/what-part-of-no-totally-dont-you-understand
 
 ---

@@ -14,7 +14,7 @@
 
   @include breakpoint(1030){
     position: absolute;
-    left: 1em;
+    left: 6%;
     max-width: 180px;
   }
 
@@ -30,27 +30,25 @@
   .book-content,
   .book-published {
     line-height: 1.3em;
-    margin-bottom: .3em;
+    // margin: .1rem 0 .1rem 1rem;
+    margin: .1rem 1em;
+
+    @include breakpoint(800) {
+      margin: .1rem auto;
+    }
+
+    @include breakpoint(1030) {
+      margin: 0 auto;
+      margin-bottom: .3rem;
+    }
   }
-}
 
-.book-title {
-  margin-top: 1em;
-  margin-bottom: .7rem;
-}
+  .book-title {
+    margin-top: 1em;
 
-.book-author {
-  margin-bottom: .4rem;
-}
+    @include breakpoint(1030){
+      margin-top: 0;
+    }
+  }
 
-.book-published {
-  margin-bottom: 2rem;
-}
-
-
-.book-content blockquote {
-  padding: 1em;
-  margin-left: -1em;
-  margin-right: -1em;
-  width: calc(100% + 2em);
 }

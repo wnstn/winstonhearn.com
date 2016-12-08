@@ -170,13 +170,13 @@
   margin-bottom: 1em;
   display: inline-block;
   padding-left: 1em;
-  padding-right: 1em;
+  padding-right: 3em;
   position: relative;
   transition: padding-right .2s ease-out;
 
   p {
-    font-size: 13px;
-    line-height: 2;
+    font-size: 11px;
+    line-height: 1.1;
     color: $white;
     display: inline-block;
     margin: 0;
@@ -198,6 +198,16 @@
   }
 }
 
+@include breakpoint(700) {
+  .promo__external-source {
+    padding-right: 1em;
+    p {
+      font-size: 13px;
+      line-height: 2;
+    }
+  }
+}
+
 .promo__single-link {
 
   .promo__title {
@@ -205,6 +215,7 @@
     color: $link-color;
     background-color: rgba($link-color, .1);
     text-decoration: none;
+    padding-right: 10px;
 
 
     &:hover,
