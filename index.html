@@ -3,8 +3,6 @@ layout: default
 wrapper: index
 ---
 
-{% include bio.html %}
-
 {% for post in paginator.posts %}
   {% if post.subcategory == "single-link" %}
 
@@ -28,14 +26,15 @@ wrapper: index
 
   {% else %}
   <article class="promo-module {{ post.category }}-module">
+
+    <h2 class="promo__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a></h2>
+
     <ul class="promo__meta">
       <li class="promo__publish-date">{{ post.date | date: "%b %-d, %Y" }}</li>
       <li class="promo__category">
         <a href="/{{post.category}}">{{ post.category }} post</a></strong>
       </li>
     </ul>
-
-    <h2 class="promo__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a></h2>
 
     <div class="promo__copy">
       {% if post.category == "book" %}
@@ -47,6 +46,7 @@ wrapper: index
 
       {{ post.my-excerpt | markdownify }}
     </div>
+
 
 
   <!--

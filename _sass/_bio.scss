@@ -1,13 +1,17 @@
 .bio {
   width: 100%;
   // background-color: #a58192;
-  background-color: lighten($header-blue, 5%);
+  background-color: transparentize($header-blue, .8);
+  border-color: $header-blue;
+  margin-top: 1em;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
 
   p {
     margin: 0 5%;
     padding: 1em 0 1em .5em;
     font-size: 12px;
-    color: #fff;
+    // color: #fff;
 
     @include breakpoint(800) {
       font-size: 14px;
