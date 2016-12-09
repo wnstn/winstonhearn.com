@@ -32,6 +32,18 @@ script {
     }
   }
 
+  a {
+    color: $header-orange;
+    border-color: $header-orange;
+    padding-left: 1em;
+    font-size: 85%;
+
+    @include breakpoint(800){
+      padding-left: 0;
+      font-size: 100%;
+    }
+  }
+
   .post-title {
     margin: .3em 0 2em;
     line-height: 1.2;
@@ -76,18 +88,6 @@ script {
 
       @include breakpoint(800){
         width: auto;
-      }
-    }
-
-    a {
-      color: $header-orange;
-      border-color: $header-orange;
-      padding-left: 1em;
-      font-size: 85%;
-
-      @include breakpoint(800){
-        padding-left: 0;
-        font-size: 100%;
       }
     }
   }

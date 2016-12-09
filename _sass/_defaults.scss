@@ -64,7 +64,7 @@ h6 {
 
 a {
   color: $link-color;
-  background-color: rgba($link-color, .1);
+  // background-color: rgba($link-color, .1);
   text-decoration: none;
   border-bottom: 2px solid rgba($link-color, .8);
 
@@ -72,7 +72,7 @@ a {
   &:active {
     border-bottom-width: 1px;
     border-bottom-color: rgba($link-color, .4);
-    background-color: rgba($link-color, .3);
+    // background-color: rgba($link-color, .3);
     transition: border .2s linear, background-color .2s linear;
   }
 }

@@ -40,7 +40,7 @@ function createFile(type) {
       '   date: ' + date + ' ' + time  + '\n' +
       '   category: personal|book|links|quote \n' +
       '   subcategory: single-link \n' +
-      '   my-excerpt: \n' +
+      '   my-excerpt: ""\n' +
       '   show-references: true, \n' +
       '   edited: 1 \n' +
       '   references: \n' +
