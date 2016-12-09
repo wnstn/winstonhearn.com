@@ -22,7 +22,11 @@ function createFile(type) {
   }
 
   var d = new Date();
-  var date = [d.getFullYear(), d.getMonth() + 1, d.getDate()].join("-");
+  var month = d.getMonth() + 1;
+  month = month.toString().length > 1 ? month : "0" + month.toString();
+  var day = d.getDate();
+  day = day.toString().length > 1 ? day : "0" + day.toString();
+  var date = [d.getFullYear(),  month, day].join("-");
   var time = [d.getHours(), d.getMinutes(), d.getSeconds()].join(":");
 
   var locations = [
@@ -37,10 +41,18 @@ function createFile(type) {
       '   category: personal|book|links|quote \n' +
       '   subcategory: single-link \n' +
       '   my-excerpt: \n' +
+      '   show-references: true, \n' +
       '   edited: 1 \n' +
       '   references: \n' +
       '     - title: \n' +
       '       url: \n' +
+      '   book:\n' +
+      '     author: \n' +
+      '     url: \n' +
+      '     title: \n' +
+      '     cover: \n' +
+      '     publisher: \n' +
+      '     published: \n' +
       '--- \n \n'}];
 
   locations.forEach(function(loc) {
