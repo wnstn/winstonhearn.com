@@ -80,13 +80,14 @@
 .promo__copy {
   display: flex;
   flex-flow: column wrap;
-  font-size: $base-font-size * .9;
+  // font-size: $base-font-size * .9;
   position: relative;
 
   p {
     flex: 0 0 100%;
     margin: 0;
-    line-height: 1.3;
+    line-height: 1.4;
+    font-size: 1.15rem;
   }
 
   .promo__book-cover {
@@ -109,6 +110,7 @@
     p {
       flex: 7 0 0;
       line-height: 1.5;
+      font-size: 1em;
     }
     .promo__book-cover {
       display: inline-block;

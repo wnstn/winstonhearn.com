@@ -121,9 +121,9 @@ gulp.task('jekyll-build', function() {
 });
 
 var setupWatchers = function() {
-  gulp.watch(['./_sass/**/*.scss',
-              './css/main.scss'], ['stream']);
-  gulp.watch(['./_posts/*.markdown',
+  // gulp.watch(['./_assets/css/**/*.scss'], ['stream']);
+  gulp.watch(['./_assets/css/**/*.scss',
+              './_posts/*.markdown',
               './_drafts/*.markdown',
               './_layouts/*.html',
               './_includes/*.html',

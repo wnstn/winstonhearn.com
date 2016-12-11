@@ -31,7 +31,7 @@
   .book-published {
     line-height: 1.3em;
     // margin: .1rem 0 .1rem 1rem;
-    margin: .1rem 1em;
+    margin: .1rem 1rem;
 
     @include breakpoint(800) {
       margin: .1rem auto;
