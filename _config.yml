@@ -19,3 +19,18 @@ exclude:
   - node_modules
   - gulpfile.js
   - procfile
+
+gems:
+- jekyll-assets
+- jekyll-paginate
+
+# https://github.com/jekyll/jekyll-assets
+assets:
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
+  sources:
+    - _assets/css
+  features:
+    liquid: true

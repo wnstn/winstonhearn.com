@@ -12,7 +12,6 @@ var cssGlobbing = require('gulp-css-globbing');
 var notify = require("gulp-notify");
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
-var rename = require('gulp-rename');
 
 function createFile(type) {
   if (!argv.name) {
@@ -83,8 +82,7 @@ gulp.task('sass', function(){
     cascade: false
   };
 
-  return gulp.src('./_sass/gulp-manifest.scss')
-    .pipe(rename('main.scss'))
+  return gulp.src('./_assets/css/main.scss')
     .pipe(cssGlobbing(cgConfig))
     .pipe(plumber(plumbConfig))
     .pipe(sass())
