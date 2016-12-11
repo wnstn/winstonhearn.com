@@ -175,6 +175,7 @@
   padding-right: 3em;
   position: relative;
   transition: padding-right .2s ease-out;
+  margin-right: 20%;
 
   p {
     font-size: 11px;
@@ -218,7 +219,7 @@
     background-color: rgba($link-color, .1);
     text-decoration: none;
     padding-right: 10px;
-
+    display: inline-block;
 
     &:hover,
     &:active {
