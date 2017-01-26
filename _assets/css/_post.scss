@@ -100,6 +100,7 @@ script {
 .post-content {
 
   p,
+  ul,
   h1,
   h2,
   h3,
@@ -115,7 +116,29 @@ script {
     }
   }
 
-  p {
+
+  ul,
+  ol, {
+    margin-left: 1.5em;
+    margin-bottom: 0;
+    max-width: 600px;
+
+    @include breakpoint(770) {
+      margin: 1.4em auto;
+    }
+  }
+
+  li {
+    margin-bottom: .3em;
+  }
+
+  li > ul {
+    margin-top: .1em;
+    margin-left: 1em;
+  }
+
+  p,
+  li {
     font-size: 1.2rem;
     line-height: 1.5;
   }
@@ -142,18 +165,6 @@ script {
     }
   }
 
-  ul {
-  }
-
-  ul,
-  ol, {
-    margin-bottom: 0;
-    li {
-    }
-
-    li p + p{
-    }
-  }
 
   hr {
     margin: 2em 0;
