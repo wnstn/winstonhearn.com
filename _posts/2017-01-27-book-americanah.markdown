@@ -2,10 +2,11 @@
    layout: book
    title:  "Americanah"
    permalink: /book-americanah/
-   date: 2017-01-27 22:25:9
+   date: 2017-01-27 22:25:09
    category: book
    my-excerpt: "A brilliant novel that spans decades and cultures and countries to tell a beautiful story. I read the entire thing in less than a week and was tempted to immediately start it over once finished."
    edited: 1
+   show-references: false
    amazon: http://www.amazon.com/dp/0307455920/?tag=wnshea-20
    powells: http://www.powells.com/book/americanah-9780307455925/18-0
    book:
