@@ -15,7 +15,7 @@
      title: Hope in the Dark
      cover: /img/book-covers/hope-in-the-dark.jpg
      publisher: Haymarket Books
-     published: 2004, Updated 2010`
+     published: 2004, Updated 2010
 ---
 
 Solnit wonderfully explores the concept of hope by centering it in many civil rights fights from the past few decades. Hope, she argues, must be cultivated and is not something we have because we expect to win, rather it is something we fight to retain even if victory is unclear. The book is relevant, fierce, and helpful for anyone seeking a framework for staying inspired as we look forward to the next few years.
