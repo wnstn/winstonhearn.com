@@ -4,7 +4,7 @@
    permalink: /nytmag-alien-messages-global-decisions/
    date: 2017-07-06 17:45:7
    category: links
-   my-excerpt: ""
+   my-excerpt: " How do we make decisions that potentially create large scale risks for future generations?"
    show-references: true,
    edited: 1
    references:
@@ -14,7 +14,7 @@
 
 > When I asked Denning where she stands on the METI issue, she told me: ‘‘I have to answer that question with a question: Why are you asking me? Why should my opinion matter more than that of a 6-year-old girl in Namibia? We both have exactly the same amount at stake, arguably, she more than I, since the odds of being dead before any consequences of transmission occur are probably a bit higher for me, assuming she has access to clean water and decent health care and isn’t killed far too young in war.’’ She continued: ‘‘I think the METI debate may be one of those rare topics where scientific knowledge is highly relevant to the discussion, but its connection to obvious policy is tenuous at best, because in the final analysis, it’s all about how much risk the people of Earth are willing to tolerate. . . . And why exactly should astronomers, cosmologists, physicists, anthropologists, psychologists, sociologists, biologists, sci-fi authors or anyone else (in no particular order), get to decide what those tolerances should be?’’
 
-This recent NYT Mag piece is about the potential consequences of trying to communicate with potential extraterrestrial civilizations. The piece is interesting, but the above quoted paragraph struck me as having far more practical perspective than the rest of the piece. Kathryn Denning, an anthropologist at York University in Toronto, gets to the heart of these questions: how do we make decisions that potentially create large scale risks for future generations.
+This recent NYT Mag piece is about the potential consequences of trying to communicate with potential extraterrestrial civilizations. The piece is interesting, but the above quoted paragraph struck me as having far more practical perspective than the rest of the piece. Kathryn Denning, an anthropologist at York University in Toronto, gets to the heart of these questions: how do we make decisions that potentially create large scale risks for future generations?
 
 The piece is future-focused though; it references SETI and the Long Now foundation. As with most futurist pieces focused on the people asking these questions there's no recognition of or conversation around their fundamental assumption: that certain people haven't already made decisions of this scale. I read the piece, I find the discussions interesting, but I personally have so much trouble investing any concern into these issues. When we are rolling back what little progress we have been able to make defending against the worst of the Capitalocene; when the questions for our next 100 years are how terrible are they going to be and how many of us will be able to survive; when we are faced with a dismal future of our own making, the questions if advanced civilizations on other planets exist and whether or not they want to harm us seems useless to me.
 
