@@ -38,33 +38,14 @@ wrapper: index
 
     <div class="promo__copy">
       {% if post.category == "book" %}
-        <picture class="promo__book-cover">
+        <!-- <picture class="promo__book-cover">
           <source srcset="{{post.book.cover}}" media="(min-width: 767px)">
           <img src="{{post.book.cover}}" alt="cover of {{ post.book.title }} by {{ post.book.author }}" />
-        </picture>
+        </picture> -->
       {% endif %}
 
       {{ post.my-excerpt | markdownify }}
     </div>
-
-
-
-  <!--
-      {% if post.references and post.show-references != false %}
-        <li class="post-references">Inspiration from
-          <ul> {% for reference in post.references %}
-
-            <li class="post-reference">
-              <a href="{{ reference.url }}" target="_blank">
-                <svg class="icon"><use xlink:href="#brain"></use></svg>
-                {{ reference.title }}
-              </a>
-            </li>
-
-          {% endfor%}</ul>
-        </li>
-      {% endif %}
-       -->
 
   </article>
   {% endif %}

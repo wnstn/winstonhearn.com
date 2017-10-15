@@ -1,45 +1,23 @@
-.pattern-bg {
-  background-image: url(/img/header.svg);
-  background-position: 0 70%;
-  background-size: 100% auto;
-  height: 4rem;
-
-  @include breakpoint(600) {
-    height: 12rem;
-  }
-}
-
 header {
-    font-size: .7rem;
-    height: 100%;
-    position: relative;
+  position: relative;
+  padding: 40px 0;
+  border-left: 5px solid $header-shade;
+  background-color: rgba($header-shade, .1);
 
-  a {
-    display: block;
-    padding-top: 1em;
-    border-bottom: none;
-    text-align: center;
-    background-color: transparent;
-
-    &:hover {
-      background-color: transparent;
-    }
-
-    @include breakpoint(600) {
-      text-align: left;
-      margin-left: 5%;
-      padding-top: 9.5rem;
-    }
+  h1,
+  nav {
+    display: inline-block;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    color: $header-blue;
   }
 
-  .author h1 {
-    color: white;
-    font-style: normal;
-    font-weight: 400;
+  h1 {
     margin-bottom: 0;
-    width: 100%;
-    @include breakpoint(600) {
-      font-size: 2em;
-    }
   }
+
+  nav a{
+    color: $header-blue;
+  }
+
 }

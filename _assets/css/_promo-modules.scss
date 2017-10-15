@@ -4,9 +4,8 @@
   margin-left: auto;
   margin-right: auto;
   padding: 2em 1em;
-  margin-bottom: .5em;
   position: relative;
-  border-bottom: 1px solid rgba($brand-color, .2);
+  border-left: 5px solid $purple;
 
   @include breakpoint(500) {
     border-bottom: none;
@@ -37,10 +36,6 @@
     padding: 1em 25px;
     margin-left: 4%;
   }
-
-  &:first-of-type {
-    margin-top: 1em;
-  }
 }
 
 .promo__meta {
@@ -48,7 +43,6 @@
   display: inline-block;
   list-style: none;
   margin: 0;
-  margin-bottom: 1.5em;
   position: relative;
   @include clearfix;
 
@@ -62,10 +56,6 @@
     padding-right: .5rem;
     font-size: .8em;
     text-transform: uppercase;
-
-    // &:first-child {
-    //   padding-right: 0;
-    // }
   }
 }
 
@@ -73,34 +63,17 @@
   border-left: 1px solid $grey-color-light;
 }
 
-.promo__publish-date {
-  // width: 90px;
-}
 
 .promo__copy {
   display: flex;
   flex-flow: column wrap;
-  // font-size: $base-font-size * .9;
   position: relative;
 
   p {
     flex: 0 0 100%;
     margin: 0;
     line-height: 1.4;
-    font-size: 1.15rem;
-  }
-
-  .promo__book-cover {
-    display: inline-block;
-    flex: 0 0 100%;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  .promo__book-cover img {
-    max-height: 200px;
-    border: 1px solid $grey-color-light;
+    font-size: 14px;
   }
 
   @include breakpoint(800) {
@@ -112,49 +85,24 @@
       line-height: 1.5;
       font-size: 1em;
     }
-    .promo__book-cover {
-      display: inline-block;
-      flex: 1 0 0;
-      margin: 0;
-      margin-right: 1em;
-    }
-
-    .promo__book-cover img {
-      max-height: 140px;
-    }
   }
 }
 
 .promo__title {
-  display: inline-block;
+  display: block;
   letter-spacing: 1px;
   line-height: 1.2;
   margin-bottom: .3em;
-  padding-right: 25px;
-  border-bottom: 2px solid $text-color;
   position: relative;
-  transition: padding-right .2s ease-out, border-bottom .2s linear;
-
-  @include breakpoint(425){
-    padding-right: 60px;
-  }
-
-  @include breakpoint(800){
-    padding-right: 100px;
-
-    &:before {
-      left: -25px;
-    }
-  }
 
   a {
-    color: $text-color;
+    color: $purple;
     background: none;
     border: none;
 
     &:hover,
     &:active {
-      border: none;
+      border: 1px solid $purple;
     }
   }
 
