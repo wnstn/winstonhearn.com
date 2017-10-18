@@ -16,11 +16,11 @@ layout: default
       {% if page.references %}
         <li class="post-references">
           <ul>
-            <li class="post-reference">Referenced within</li>
+            <li class="post-reference-header">Noteworthy References</li>
             {% for reference in page.references %}
             <li class="post-reference">
               <a href="{{ reference.url }}" target="_blank">
-                {{ reference.title }}
+                &#9728 {{ reference.title }}
               </a>
             </li>
 
@@ -30,7 +30,9 @@ layout: default
 
     </ul>
 
-    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-title-wrapper">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </div>
 
   </div>
 

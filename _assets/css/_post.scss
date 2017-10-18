@@ -12,9 +12,11 @@ script {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0;
-    background-color: lighten($header-blue, 5%);
-    color: $white;
+    border-left: 5px solid $header-orange;
+    background-color: rgba($header-orange, .1);
     padding: .65em;
+    width: 100%;
+    box-sizing: border-box;
 
     @include breakpoint(800) {
       padding-left: 6%;
@@ -23,7 +25,7 @@ script {
 
   li {
     margin-right: 1em;
-    font-size: .9em;
+    font-size: 12px;
     width: calc(50% - 1em);
     margin-bottom: 10px;
 
@@ -34,22 +36,48 @@ script {
     }
   }
 
-  a {
-    color: $header-orange-faint;
-    border-color: $header-orange;
-    padding: 3px;
+  .post-reference-header {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
 
-    @include breakpoint(800){
-      padding: 0;
-      font-size: 100%;
+  .post-references {
+    width: 100%;
+    margin-bottom: 0;
+
+    ul {
+      margin: 0;
+      width: 100%;
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
     }
   }
 
+  .post-reference {
+    font-size: 13px;
+    width: 100%;
+    display: flex;
+    padding: 3px 5px;
+
+    @include breakpoint(800){
+      width: auto;
+    }
+  }
+
+  .post-title-wrapper {
+    border-left: 5px solid lighten($header-blue, 5%);
+    padding: 2em 0;
+    width: 100%;
+  }
+
   .post-title {
-    margin: 1.5em 0 2em;
     line-height: 1.2;
     padding-left: .65em;
     padding-right: .65em;
+    margin: 0;
     position: relative;
 
     @include breakpoint(800) {
@@ -57,50 +85,28 @@ script {
       margin: .5em 0 2em;
       padding-left: 6%;
     }
-
-    &:after {
-      content: "";
-      display: block;
-      width: 100px;
-      transform: rotate(-8deg);
-      border-top: 1px solid rgba($text-color, .5);
-      background-color: transparent;
-      border-bottom: 1px solid rgba($link-color, .5);
-      position: absolute;
-      bottom: -1em;
-      height: 3px;
-    }
-  }
-
-  .post-references{
-    width: 100%;
-
-    ul {
-      margin: 0;
-      margin-top: .5em;
-      width: 100%;
-      list-style: none;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-start;
-    }
-
-    li {
-      font-size: 1rem;
-      width: 100%;
-      display: flex;
-
-      @include breakpoint(800){
-        width: auto;
-      }
-    }
   }
 }
 
 .post-content {
+  border-left: 5px solid lighten($header-blue, 5%);
+
+  &:after {
+    content: "";
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    transform: translate3d(-50%, -2em, 0);
+    border-bottom: 1px solid lighten($header-blue, 5%);
+    margin-left: 50%;
+  }
+
+  p:first-child {
+    margin-top: 0;
+    padding-top: 1em;
+  }
 
   p,
-  ul,
   h1,
   h2,
   h3,
@@ -109,18 +115,21 @@ script {
   h6 {
     margin: .8em 1em;
     max-width: 600px;
-    // display: inline-block;
 
     @include breakpoint(770) {
       margin: 1.4em auto;
     }
   }
 
+  p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 3em;
+  }
+
 
   ul,
   ol, {
-    margin-left: 1.5em;
-    margin-bottom: 0;
+    margin: .8em 1em .8em 2.2em;
     max-width: 600px;
 
     @include breakpoint(770) {
@@ -139,7 +148,7 @@ script {
 
   p,
   li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.5;
   }
 
@@ -163,6 +172,11 @@ script {
     p + p {
       margin-bottom: 1em;
     }
+
+    p:last-child {
+      padding-bottom: 0;
+      margin-bottom: 1em;
+    }
   }
 
 
@@ -175,4 +189,8 @@ script {
 
   iframe {
   }
+}
+
+.link-list blockquote:first-child {
+  border-top: none;
 }

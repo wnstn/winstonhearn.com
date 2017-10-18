@@ -3,24 +3,24 @@ layout: default
 wrapper: index
 ---
 
+{% include bio.html %}
+
 {% for post in paginator.posts %}
   {% if post.subcategory == "single-link" %}
 
-  <article class="promo-module {{post.category}}-module promo__single-link">
-    <ul class="promo__meta">
-      <li class="promo__publish-date">{{ post.date | date: "%b %-d, %Y" }}</li>
-      <li class="promo__category">
-        <!-- <a href="/{{post.category}}"> -->{{ post.category }}<!-- </a> --></strong>
-      </li>
-    </ul>
+  <article class="promo-module {{post.category}}-module promo__external-source">
     {% for reference in post.references %}
-    <h2 class="promo__title"><a href="{{ reference.url }}">{{ post.title }}</a></h2>
-    <div class="promo__external-source">
-      <p>Read on {{ reference.title }}</p>
-    </div>
-    <div class="promo__copy">
-      {{post.content}}
-    </div>
+      <p class="promo__description">Read on {{ reference.title }}</p>
+      <h2 class="promo__title"><a href="{{ reference.url }}">{{ post.title }}</a></h2>
+      <ul class="promo__meta">
+        <li class="promo__publish-date">{{ post.date | date: "%b %-d, %Y" }}</li>
+        <li class="promo__category">
+          <!-- <a href="/{{post.category}}"> -->{{ post.category }}<!-- </a> --></strong>
+        </li>
+      </ul>
+      <div class="promo__copy">
+        {{post.content}}
+      </div>
     {% endfor %}
   </article>
 
@@ -51,3 +51,4 @@ wrapper: index
   {% endif %}
 {% endfor %}
 
+{% include pagination.html %}

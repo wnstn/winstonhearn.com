@@ -2,6 +2,7 @@
 .book-image {
   position: relative;
   text-align: center;
+  margin-top: 2em;
 
   img {
     border: 10px solid rgba($muted-purple, .2);
@@ -20,35 +21,34 @@
 
 }
 
-.book-details {
-  margin: 1em auto 4em;
-  border-bottom: 1px solid rgba($muted-purple, .2);
-  font-size: 80%;
 
-  .book-title,
-  .book-author,
-  .book-content,
-  .book-published {
-    line-height: 1.3em;
-    // margin: .1rem 0 .1rem 1rem;
-    margin: .1rem 1rem;
+.book-title,
+.book-author,
+.book-published {
+  line-height: 1.3em;
+  margin-left: 1em;
+  margin: .1rem 1rem;
 
-    @include breakpoint(800) {
-      margin: .1rem auto;
-    }
-
-    @include breakpoint(1030) {
-      margin: 0 auto;
-      margin-bottom: .3rem;
-    }
+  @include breakpoint(800) {
+    margin: .1rem auto;
   }
 
-  .book-title {
-    margin-top: 1em;
-
-    @include breakpoint(1030){
-      margin-top: 0;
-    }
+  @include breakpoint(1030) {
+    margin: 0 auto;
+    margin-bottom: .3rem;
   }
-
 }
+
+.book-published {
+  font-size: 12px;
+  margin-top: .8em;
+}
+
+.book-title {
+  margin-top: 1em;
+
+  @include breakpoint(1030){
+    margin-top: 0;
+  }
+}
+

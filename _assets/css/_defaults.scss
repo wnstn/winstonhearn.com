@@ -7,6 +7,10 @@ body {
   background-color: $background-color;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 *:focus {
   outline: 2px dotted $text-color;
   outline-offset: 1px;
@@ -85,5 +89,5 @@ footer {
 // global classes
 
 .page-content {
-
+  width: 100%;
 }

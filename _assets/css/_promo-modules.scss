@@ -52,8 +52,8 @@
 
   li {
     float: left;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: .3em;
+    padding-right: .3rem;
     font-size: .8em;
     text-transform: uppercase;
   }
@@ -68,12 +68,13 @@
   display: flex;
   flex-flow: column wrap;
   position: relative;
+  padding-left: .3rem;
 
   p {
     flex: 0 0 100%;
     margin: 0;
     line-height: 1.4;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   @include breakpoint(800) {
@@ -98,7 +99,7 @@
   a {
     color: $purple;
     background: none;
-    border: none;
+    border-bottom: 2px solid $purple;
 
     &:hover,
     &:active {
@@ -114,39 +115,20 @@
 }
 
 .promo__external-source {
-  padding: 0;
   margin: 0;
-  background-color: $text-color;
-  margin-bottom: 1em;
-  display: inline-block;
-  padding-left: 1em;
-  padding-right: 3em;
+  background-color: rgba($purple, .1);
   position: relative;
   transition: padding-right .2s ease-out;
-  margin-right: 20%;
 
-  p {
-    font-size: 11px;
-    line-height: 1.1;
-    color: $white;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-
-    &:after {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      opacity: 0.4;
-      width: 10px;
-      height: 10px;
-      border-top: 2px solid $white;
-      border-right: 2px solid $white;
-      top: 7px;
-      margin-left: 1.2em;
-      transform: rotate(-6deg) skew(-10deg);
-    }
+  a {
+    color: $purple;
   }
+}
+
+.promo__description {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 1em;
 }
 
 @include breakpoint(700) {
@@ -157,31 +139,4 @@
       line-height: 2;
     }
   }
-}
-
-.promo__single-link {
-
-  .promo__title {
-    margin-bottom: 0;
-    color: $link-color;
-    background-color: rgba($link-color, .1);
-    text-decoration: none;
-    padding-right: 10px;
-    display: inline-block;
-
-    &:hover,
-    &:active {
-      background-color: rgba($link-color, .3);
-    }
-
-    &:hover + .promo__external-source {
-      padding-right: 3em;
-
-      p:after {
-        opacity: 1.0;
-        transition: opacity .2s;
-      }
-    }
-  }
-
 }
