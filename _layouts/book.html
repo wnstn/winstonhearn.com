@@ -5,40 +5,7 @@ layout: default
 
   <div class="post-header">
 
-    <ul class="post-meta">
-      <li class="publish-date">Published: <strong>{{ page.date | date: "%b %-d, %Y" }}</strong></li>
-      <li class="post-category">Category: <strong>{{ page.category | capitalize }}</strong></li>
-
-      {% if page.copyeditor %}
-        <li class="publish-copyeditor">Copyedited by <br/><a href="{{ page.copyeditor.url }}" target="_blank">{{ page.copyeditor.name }}</a></li>
-      {% endif %}
-
-      {% if page.references %}
-        <li class="post-references">
-          <ul>
-            <li class="post-reference-header">Noteworthy References</li>
-            {% for reference in page.references %}
-            <li class="post-reference">
-              <a href="{{ reference.url }}" target="_blank">
-                &#9728 {{ reference.title }}
-              </a>
-            </li>
-
-          {% endfor%}</ul>
-        </li>
-      {% endif %}
-
-      {% if page.powells %}
-        <li class="post-powells"><a href="{{ page.powells }}" target='_blank'>Buy on Powells</a></li>
-      {% endif %}
-
-      {% if page.amazon %}
-        <li class="post-amazon"><a href="{{ page.amazon }}" target='_blank'>Buy on Amazon</a></li>
-      {% endif %}
-
-      <li class="post-local-bookstore"><a href="http://www.indiebound.org/indie-store-finder" target="_blank">Find a Local Bookstore</a></li>
-
-    </ul>
+    {% include post_meta.html %}
 
     <div class="post-title-wrapper">
       <h1 class="post-title">{{ page.title }}</h1>
@@ -52,7 +19,10 @@ layout: default
       <p class="book-published"><em>Copyright {{ page.book.published }}, {{ page.book.publisher }}</em></p>
 
       <div class="book-image">
-        <img src="{{ page.book.cover }}" alt="cover of {{ page.book.title }} by {{ page.book.author }}">
+        <picture>
+          <source srcset="{{ page.book.cover }}" media="(max-width: 600px)">
+          <img src="{{ page.book.cover }}" alt="cover of {{ page.book.title }} by {{ page.book.author }}">
+        </picture>
       </div>
     </div>
 

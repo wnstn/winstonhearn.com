@@ -1,29 +1,35 @@
 header {
   position: relative;
-  padding: 40px 0;
-  border-left: 5px solid $header-shade;
-  background-color: rgba($header-shade, .1);
+  padding: 50px 0 0;
+  border-bottom: 2px solid $white;
+  background-color: $header-border;
   width: 100%;
-
-  h1,
+  overflow: hidden;
   nav {
-    display: inline-block;
+    display: block;
     margin-left: 10px;
-    padding-bottom: 5px;
-    color: $header-blue;
+    margin-bottom: 20px;
+    color: $white;
   }
 
   h1 {
-    margin-bottom: 0;
+    margin-bottom: -8px;
+    display: block;
+    margin-left: 10px;
+    font-size: 35px;
+    line-height: 1;
+    text-align: right;
   }
 
-  a {
-    color: $header-blue;
+  h1 a {
     border-bottom: none;
+    color: $white;
   }
 
-  nav a{
-    color: $header-blue;
+
+  nav a {
+    color: $white;
+    border-bottom: 1px solid $white;
   }
 
 }

@@ -1,7 +1,7 @@
 $serif-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
 $sans-serif-font: Georgia, sans-serif;
-$big-font: Tahoma, sans-serif;
-$monospace-font: "botanika-mono-web",sans-serif;;
+$big-font: Merriweather, serif;
+$monospace-font: "botanika-mono-web",sans-serif;
 
 // Our variables
 $base-font-family: $serif-font;
@@ -22,13 +22,17 @@ $breakpoints: (
 
 $text-color:       #353f69;
 $background-color: #fff;
-$link-color:       #2a7ae2;
+$link-color:       #724D81;
+
+$header-border:    #A53F3C;
+$meta-border:      #497DB4;
+$content-border:   #475078;
 
 $brand-color:      #2a7ae2;
-$header-shade:     #72BCE5;
+$header-shade:     #4089AE;
 $header-text:      #EFD2C6;
-$header-orange:    #F8A580;
-$header-blue:      #597184;
+$header-orange:    #D4C611;
+$header-blue:      #4089AE;
 $header-orange-faint: #FBEAE2;
 $header-blue-faint: #DAEAF4;
 

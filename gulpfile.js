@@ -127,18 +127,18 @@ var setupWatchers = function() {
               './_drafts/*.markdown',
               './_layouts/*.html',
               './_includes/*.html',
-              './links/index.html',
-              './video/index.html',
+              './books/index.html',
+              './code/index.html',
               './index.html'], ['reload']);
 }
 
 gulp.task('init', function() {
   browserSync.init({
-      proxy: 'localhost:3999',
-      port: 4000,
+      proxy: 'localhost:4999',
+      port: 5000,
       open: false,
       ui: {
-        port: 4001
+        port: 5001
       }
   });
 

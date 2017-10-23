@@ -12,8 +12,8 @@ script {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0;
-    border-left: 5px solid $header-orange;
-    background-color: rgba($header-orange, .1);
+    border-left: 5px solid $meta-border;
+    background-color: rgba($meta-border, .1);
     padding: .65em;
     width: 100%;
     box-sizing: border-box;
@@ -68,13 +68,13 @@ script {
   }
 
   .post-title-wrapper {
-    border-left: 5px solid lighten($header-blue, 5%);
+    border-left: 5px solid lighten($content-border, 5%);
     padding: 2em 0;
     width: 100%;
   }
 
   .post-title {
-    line-height: 1.2;
+    line-height: 1.4;
     padding-left: .65em;
     padding-right: .65em;
     margin: 0;
@@ -89,7 +89,7 @@ script {
 }
 
 .post-content {
-  border-left: 5px solid lighten($header-blue, 5%);
+  border-left: 5px solid lighten($content-border, 5%);
 
   &:after {
     content: "";
@@ -97,7 +97,7 @@ script {
     display: inline-block;
     position: relative;
     transform: translate3d(-50%, -2em, 0);
-    border-bottom: 1px solid lighten($header-blue, 5%);
+    border-bottom: 1px solid lighten($content-border, 5%);
     margin-left: 50%;
   }
 
@@ -113,7 +113,7 @@ script {
   h4,
   h5,
   h6 {
-    margin: .8em 1em;
+    margin: 1em;
     max-width: 600px;
 
     @include breakpoint(770) {
@@ -170,7 +170,7 @@ script {
     }
 
     p + p {
-      margin-bottom: 1em;
+      margin-bottom: 1.4em;
     }
 
     p:last-child {

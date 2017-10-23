@@ -6,30 +6,7 @@ wrapper: video
 
   <div class="post-header">
 
-    <ul class="post-meta">
-      <li class="publish-date">Published: <strong>{{ page.date | date: "%b %-d, %Y" }}</strong></li>
-      <li class="post-category">Category: <strong>{{ page.category | capitalize }}</strong></li>
-
-      {% if page.copyeditor %}
-        <li class="publish-copyeditor">Copyedited by <br/><a href="{{ page.copyeditor.url }}" target="_blank">{{ page.copyeditor.name }}</a></li>
-      {% endif %}
-
-      {% if page.references %}
-        <li class="post-references">
-          <ul>
-            <li class="post-reference-header">Noteworthy References</li>
-            {% for reference in page.references %}
-            <li class="post-reference">
-              <a href="{{ reference.url }}" target="_blank">
-                &#9728 {{ reference.title }}
-              </a>
-            </li>
-
-          {% endfor%}</ul>
-        </li>
-      {% endif %}
-
-    </ul>
+    {% include post_meta.html %}
 
     <div class="post-title-wrapper">
       <h1 class="post-title">{{ page.title }}</h1>
