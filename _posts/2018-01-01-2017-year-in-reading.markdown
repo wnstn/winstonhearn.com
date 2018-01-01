@@ -8,8 +8,8 @@
    show-references: false,
    edited: 1
    book:
-     title:
-     cover:
+     title: Warmth of Other Suns
+     cover: /img/book-covers/warmth-of-other-suns.png
 ---
 
 In 2016 I read about 4 books in the entirety of the year. Maybe a few more, but not many. It was a banner year for not reading. Come to find out, I was at the tail end of a 2 year depression. It was a fight, but in 2017 I recovered my ability to focus on books (the original #longreads, amirite) and made it through quite a few. According to the notes I've kept, in 2017 I started to read 39 books and actually finished 24 of them. I am still reading a few of them too.
