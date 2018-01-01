@@ -3,7 +3,7 @@ layout: link-list
 title: Why Gentrification is So Hard to Stop
 permalink:
 date:   2015-04-13 00:30:00
-category: links
+category: other-things
 subcategory: single-link
 edited: 1
 show-references: false

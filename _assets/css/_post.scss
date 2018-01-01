@@ -5,6 +5,7 @@ script {
 }
 
 .post-header {
+  background-color: $white;
 
   .post-meta {
     list-style: none;
@@ -37,9 +38,10 @@ script {
   }
 
   .post-reference-header {
-    font-weight: bold;
-    font-size: 12px;
+    font-size: .8rem;
     margin-bottom: 0;
+    margin-top: 5px;
+    width: 100%;
   }
 
   .post-references {
@@ -50,17 +52,15 @@ script {
       margin: 0;
       width: 100%;
       list-style: none;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-start;
     }
   }
 
   .post-reference {
     font-size: 13px;
     width: 100%;
-    display: flex;
+    display: block;
     padding: 3px 5px;
+    margin-bottom: 0;
 
     @include breakpoint(800){
       width: auto;
@@ -75,21 +75,15 @@ script {
 
   .post-title {
     line-height: 1.4;
-    padding-left: .65em;
-    padding-right: .65em;
+    padding-left: 20px;
     margin: 0;
     position: relative;
-
-    @include breakpoint(800) {
-      max-width: 800px;
-      margin: .5em 0 2em;
-      padding-left: 6%;
-    }
   }
 }
 
 .post-content {
   border-left: 5px solid lighten($content-border, 5%);
+  background-color: $white;
 
   &:after {
     content: "";
@@ -153,8 +147,9 @@ script {
   }
 
   blockquote {
-    border-top: 1px solid rgba($text-color, .5);
-    border-bottom: 1px solid rgba($link-color, .5);
+    // border-top: 1px solid rgba($text-color, .5);
+    // border-bottom: 1px solid rgba($link-color, .5);
+    background-color: rgba($link-color, .1);
     padding: 1em;
     margin: 1em 0;
     font-size: 1.25rem;

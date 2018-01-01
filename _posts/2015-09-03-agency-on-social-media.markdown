@@ -3,7 +3,7 @@ layout: post
 title:  "Agency in the Context of Social Media"
 permalink: /agency-on-social-media/
 date:   2015-09-03 12:30:00
-category: essay
+category: other-things
 my-excerpt: A quick scroll through Twitter wrecked me for an evening. Unfortunately, this is not uncommon nor exactly accidental from the perspective of product-designers. Let's talk about that.
 edited: 2
 show-references: true

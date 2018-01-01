@@ -3,7 +3,7 @@ layout: link-list
 title:  "Thursday Links: <br /> Stuff I've Enjoyed Recently"
 permalink: /recent-readings-links-aug-20-2015/
 date:   2015-08-20 00:30:00
-category: links
+category: other-things
 my-excerpt: There is no over-arching theme this week, just a collection of pieces I've read in the past few weeks that I really enjoy. Click, read, grow in your knowledge and curiosity!
 edited: 1
 show-references: false

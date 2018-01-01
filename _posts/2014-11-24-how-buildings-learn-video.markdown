@@ -3,7 +3,7 @@ layout: video
 title:  "BBC Series:<br/> How Buildings Learn"
 permalink: /how-buildings-learn-series/
 date:   2014-11-24 10:30:00
-category: video
+category: other-things
 my-excerpt: Excellent series from Stewart Brand attempting to understand buildings from a evolutionary standpoint.
 edited: 1
 video: AvEqfg2sIH0

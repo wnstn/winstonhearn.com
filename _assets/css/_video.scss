@@ -9,10 +9,7 @@
   padding-bottom: calc(49.25% + 1em);
   position: relative;
   text-align: center;
-
-  @include breakpoint(800){
-    max-width: 80%;
-  }
+  border-left: 5px solid lighten($content-border, 5%);
 
   iframe,
   object,

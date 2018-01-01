@@ -36,14 +36,16 @@ wrapper: index
       </li>
     </ul>
 
-    <div class="promo__copy">
-      {% if post.category == "book" %}
-        <!-- <picture class="promo__book-cover">
+    {% if post.category == "book" %}
+      <div class="promo__book-cover">
+        <picture class="promo__book-cover">
           <source srcset="{{post.book.cover}}" media="(min-width: 767px)">
           <img src="{{post.book.cover}}" alt="cover of {{ post.book.title }} by {{ post.book.author }}" />
-        </picture> -->
-      {% endif %}
+        </picture>
+      </div>
+    {% endif %}
 
+    <div class="promo__copy">
       {{ post.my-excerpt | markdownify }}
     </div>
 

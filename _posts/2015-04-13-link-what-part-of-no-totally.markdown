@@ -3,7 +3,7 @@ layout: link-list
 title: What Part of “No, Totally” Don't You Understand?
 permalink:
 date:   2015-04-13 00:30:00
-category: links
+category: other-things
 subcategory: single-link
 edited: 1
 show-references: false

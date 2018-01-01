@@ -3,7 +3,7 @@ layout: post
 title:  "On Accessibility"
 permalink: /on-accessibility/
 date:   2014-02-28 12:30:00
-category: quote
+category: code
 my-excerpt: Great thought from Jenn Schiffer on accessibility.
 edited: 1
 references:

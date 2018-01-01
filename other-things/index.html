@@ -1,0 +1,42 @@
+---
+layout: default
+wrapper: book-index
+
+---
+
+{% include bio.html %}
+
+{% for post in site.categories.other-things %}
+  {% if post.subcategory == "single-link" %}
+
+    <article class="promo-module {{post.category}}-module promo__external-source">
+      {% for reference in post.references %}
+        <p class="promo__description">Read on {{ reference.title }}</p>
+        <h2 class="promo__title"><a href="{{ reference.url }}">{{ post.title }}</a></h2>
+        <ul class="promo__meta">
+          <li class="promo__publish-date">{{ post.date | date: "%b %-d, %Y" }}</li>
+          </li>
+        </ul>
+        <div class="promo__copy">
+          {{post.content}}
+        </div>
+      {% endfor %}
+    </article>
+
+    {% else %}
+    <article class="promo-module {{ post.category }}-module">
+
+      <h2 class="promo__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a></h2>
+
+      <ul class="promo__meta">
+        <li class="promo__publish-date">{{ post.date | date: "%b %-d, %Y" }}</li>
+      </ul>
+
+      <div class="promo__copy">
+        {{ post.my-excerpt | markdownify }}
+      </div>
+
+    </article>
+  {% endif %}
+{% endfor %}
+

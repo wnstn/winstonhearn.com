@@ -21,12 +21,14 @@ $breakpoints: (
 );
 
 $text-color:       #353f69;
-$background-color: #fff;
-$link-color:       #724D81;
 
-$header-border:    #A53F3C;
+$link-color:       #2f8197;
+
+$header-border:    #494f70;
 $meta-border:      #497DB4;
 $content-border:   #475078;
+$background-base:  #49706a;//#C9DBBF;
+$background-color: rgba($background-base, .1);
 
 $brand-color:      #2a7ae2;
 $header-shade:     #4089AE;

@@ -3,7 +3,7 @@ layout: post
 title:  "On Political Correctness"
 permalink: /sady-doyle-on-pc-culture/
 date:   2015-09-04 12:30:00
-category: quote
+category: other-things
 my-excerpt: An excellent essay from Sady Doyle about how to conceive of "political correctness" inside comedy, but with applications to all of art.
 edited: 1
 references:

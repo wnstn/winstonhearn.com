@@ -3,7 +3,7 @@
    title:  "Questioning Global Risk"
    permalink: /nytmag-alien-messages-global-decisions/
    date: 2017-07-06 17:45:7
-   category: links
+   category: other-things
    my-excerpt: " How do we make decisions that potentially create large scale risks for future generations?"
    show-references: true,
    edited: 1
