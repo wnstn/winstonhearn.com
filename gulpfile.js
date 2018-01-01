@@ -37,7 +37,7 @@ function createFile(type) {
       '   title:  ""\n' +
       '   permalink: //\n' +
       '   date: ' + date + ' ' + time  + '\n' +
-      '   category: personal|book|links|quote \n' +
+      '   category: book|code|other-things \n' +
       '   subcategory: single-link \n' +
       '   my-excerpt: ""\n' +
       '   show-references: true, \n' +

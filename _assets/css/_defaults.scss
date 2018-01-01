@@ -46,6 +46,7 @@ h3 {
 h4 {
   font-family: $big-font;
   font-size: $base-font-size * 1.2;
+  margin: 0;
 
   @include breakpoint(800) {
     font-size: $base-font-size * 1.5;

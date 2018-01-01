@@ -104,7 +104,7 @@ script {
   h1,
   h2,
   h3,
-  h4,
+  // h4, excluded for inline headers
   h5,
   h6 {
     margin: 1em;
@@ -112,6 +112,15 @@ script {
 
     @include breakpoint(770) {
       margin: 1.4em auto;
+    }
+  }
+
+  h4 {
+    margin: 0 1em;
+
+    @include breakpoint(770) {
+      max-width: 600px;
+      margin: 0 1.4em;
     }
   }
 
