@@ -104,19 +104,26 @@ buy at [Powell's](http://www.powells.com/book/racecraft-the-soul-of-inequality-i
 
 #### Every book I finished in 2017:
 
+**Fiction**
+
+  * **A Handmaid's Tale**, Margaret Atwood
+  * **Parable of the Sower**, Octavia Butler
+  * **The Last Daughter**, Elena Ferrante
+  * **The Lathe of Heaven**, Ursula Le Guin
+* **The Peripheral**, William Gibson
+
+**Non-Fiction**
+
   * **The Empathy Exams**, Leslie Jamison
   * **Networks of New York**, Ingrid Burrington
   * **Hope in the Dark**, Rebecca Solnit
   * **The Master Switch**, Tim Wu
   * **A Disability History of the US**, Kim Nielsen
   * **Racecraft**, Karen E. Fields & Barbara J. Fields
-  * **A Handmaid's Tale**, Margaret Atwood
   * **A Burglar's Guide to the City**, Geoff Manaugh
   * **Weapons of Math Destruction**, Cathy O'Neil
   * **Twitter and Tear Gas**,  Zeynep Tufecki
   * **The Warmth of Other Suns**, Isabel Wilkerson
-  * **Parable of the Sower**, Octavia Butler
-  * **The Last Daughter**, Elena Ferrante
   * **Evicted**, Matthew Desmond
   * **Counting Descent**, Clint Smith
   * **The Next American Revolution**, Grace Lee Boggs
@@ -124,9 +131,7 @@ buy at [Powell's](http://www.powells.com/book/racecraft-the-soul-of-inequality-i
   * **Making Home**, Sharon Astyk
   * **Men Explain Things to Me**, Rebecca Solnit
   * **Technically Wrong**, Sara Wachter-Boettcher
-  * **The Lathe of Heaven**, Ursula Le Guin
   * **The Genius of Birds**, Jennifer Ackerman
-  * **The Peripheral**, William Gibson
   * **The Great Derangement**, Amitav Ghosh
 
 If you read any of these and want to strike up a discussion about them, reach out! My email and twitter are in the footer.
