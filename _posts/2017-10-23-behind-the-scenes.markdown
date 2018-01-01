@@ -3,7 +3,7 @@
    title:  Authors showing their work
    permalink: /behind-the-scenes/
    date: 2017-10-23 10:19:33
-   category: miscellaneous
+   category: other-things
    my-excerpt: "Two authors generously sharing the process behind their work."
    show-references: true,
    edited: 1
