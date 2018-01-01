@@ -1,0 +1,36 @@
+<ul class="post-meta">
+  <li class="publish-date">Published: <strong>{{ page.date | date: "%b %-d, %Y" }}</strong></li>
+  <li class="post-category">Category: <strong>{{ page.category | capitalize }}</strong></li>
+
+  {% if page.copyeditor %}
+    <li class="publish-copyeditor">Copyedited by <br/><a href="{{ page.copyeditor.url }}" target="_blank">{{ page.copyeditor.name }}</a></li>
+  {% endif %}
+
+  {% if page.references %}
+    <li class="post-references">
+      <ul>
+        <li class="post-reference-header">Referenced below:</li>
+        {% for reference in page.references %}
+        <li class="post-reference">
+          <a href="{{ reference.url }}" target="_blank">
+            &#9728 {{ reference.title }}
+          </a>
+        </li>
+
+      {% endfor%}</ul>
+    </li>
+  {% endif %}
+
+  {% if page.category == "book"%}
+    {% if page.powells %}
+      <li class="post-powells"><a href="{{ page.powells }}" target='_blank'>Buy on Powells</a></li>
+    {% endif %}
+
+    {% if page.amazon %}
+      <li class="post-amazon"><a href="{{ page.amazon }}" target='_blank'>Buy on Amazon</a></li>
+    {% endif %}
+
+    <li class="post-local-bookstore"><a href="http://www.indiebound.org/indie-store-finder" target="_blank">Find a Local Bookstore</a></li>
+  {% endif %}
+
+</ul>

@@ -3,7 +3,7 @@ layout: post
 title:  "Embracing the Existing"
 permalink: /embracing-the-existing/
 date:   2014-10-29 23:30:00
-category: essay
+category: code
 my-excerpt: I like working on things that already exist, as opposed to building new things. I think this is really strange? I have no clue. But it's a truth for me, perhaps, at least for where I am now in my career.
 edited: 1
 ---

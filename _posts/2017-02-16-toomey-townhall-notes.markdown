@@ -3,7 +3,7 @@
    title:  "Notes from Pat Toomey's February 16 Townhall"
    permalink: /fucking-toomey-townhall-notes/
    date: 2017-02-16 21:36:5
-   category: personal
+   category: other-things
    my-excerpt: "On Thursday, February 16 at 1:52PM I found out that Senator Pat Toomey was holding a town hall at 2:05PM. Virtual only, via phone and web audio means. So I joined. This post consists of the notes I was able to take and links that I think are relevant to the questions he received and answers he gave."
    edited: 1
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  "Listening"
 permalink: /on-ferguson-im-listening/
 date:   2014-11-25 12:30:00
-category: essay
+category: other-things
 my-excerpt: The status quo must not be allowed to stand.
 edited: 1
 references:

@@ -4,43 +4,9 @@
   margin-left: auto;
   margin-right: auto;
   padding: 2em 1em;
-  margin-bottom: .5em;
   position: relative;
-  border-bottom: 1px solid rgba($brand-color, .2);
-
-  @include breakpoint(500) {
-    border-bottom: none;
-    margin-top: 4em;
-    width: 90%;
-
-    &:after {
-      content: "";
-      display: block;
-      width: 100px;
-      transform: rotate(-8deg);
-      border-top: 1px solid rgba($text-color, .5);
-      background-color: transparent;
-      border-bottom: 1px solid rgba($link-color, .5);
-      position: absolute;
-      bottom: -2em;
-      left: calc(50% - 50px);
-      height: 3px;
-    }
-
-    &:last-child:after {
-      display: none;
-    }
-  }
-
-  @include breakpoint(1000) {
-    max-width: 850px;
-    padding: 1em 25px;
-    margin-left: 4%;
-  }
-
-  &:first-of-type {
-    margin-top: 1em;
-  }
+  border-left: 5px solid $content-border;
+  background-color: $white;
 }
 
 .promo__meta {
@@ -48,7 +14,6 @@
   display: inline-block;
   list-style: none;
   margin: 0;
-  margin-bottom: 1.5em;
   position: relative;
   @include clearfix;
 
@@ -58,14 +23,10 @@
 
   li {
     float: left;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: .3em;
+    padding-right: .3rem;
     font-size: .8em;
     text-transform: uppercase;
-
-    // &:first-child {
-    //   padding-right: 0;
-    // }
   }
 }
 
@@ -73,34 +34,18 @@
   border-left: 1px solid $grey-color-light;
 }
 
-.promo__publish-date {
-  // width: 90px;
-}
 
 .promo__copy {
   display: flex;
   flex-flow: column wrap;
-  // font-size: $base-font-size * .9;
   position: relative;
+  padding-left: .3rem;
 
   p {
     flex: 0 0 100%;
     margin: 0;
     line-height: 1.4;
-    font-size: 1.15rem;
-  }
-
-  .promo__book-cover {
-    display: inline-block;
-    flex: 0 0 100%;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  .promo__book-cover img {
-    max-height: 200px;
-    border: 1px solid $grey-color-light;
+    font-size: 15px;
   }
 
   @include breakpoint(800) {
@@ -112,93 +57,82 @@
       line-height: 1.5;
       font-size: 1em;
     }
-    .promo__book-cover {
-      display: inline-block;
-      flex: 1 0 0;
-      margin: 0;
-      margin-right: 1em;
-    }
-
-    .promo__book-cover img {
-      max-height: 140px;
-    }
   }
 }
 
 .promo__title {
-  display: inline-block;
+  display: block;
   letter-spacing: 1px;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: .3em;
-  padding-right: 25px;
-  border-bottom: 2px solid $text-color;
   position: relative;
-  transition: padding-right .2s ease-out, border-bottom .2s linear;
-
-  @include breakpoint(425){
-    padding-right: 60px;
-  }
-
-  @include breakpoint(800){
-    padding-right: 100px;
-
-    &:before {
-      left: -25px;
-    }
-  }
-
-  a {
-    color: $text-color;
-    background: none;
-    border: none;
-
-    &:hover,
-    &:active {
-      border: none;
-    }
-  }
-
-  &:hover {
-    border-bottom:2px solid rgba($text-color, .5);
-    padding-right: 10px;
-    transition: padding-right .2s ease-out, border-bottom .2s linear;
-  }
 }
 
 .promo__external-source {
-  padding: 0;
   margin: 0;
-  background-color: $text-color;
-  margin-bottom: 1em;
-  display: inline-block;
-  padding-left: 1em;
-  padding-right: 3em;
+  background-color: rgba($purple, .1);
   position: relative;
-  transition: padding-right .2s ease-out;
-  margin-right: 20%;
+  padding: 1em .5em;
 
-  p {
-    font-size: 11px;
-    line-height: 1.1;
-    color: $white;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: 2px solid $white;
+  }
+
+  .promo__title {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  a {
+    // color: $purple;
+    color: $text-color;
+    border-bottom: 1px solid $text-color;
+  }
+
+  .promo__copy p {
+    font-size: 13px;
+  }
+}
+
+.promo__book-cover {
+  position: relative;
+  text-align: center;
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+
+  picture {
+    position: relative;
+    margin: 1em auto;
+    transform: rotate(-4deg);
 
     &:after {
       content: "";
-      display: inline-block;
       position: absolute;
-      opacity: 0.4;
-      width: 10px;
-      height: 10px;
-      border-top: 2px solid $white;
-      border-right: 2px solid $white;
-      top: 7px;
-      margin-left: 1.2em;
-      transform: rotate(-6deg) skew(-10deg);
+      z-index: -1;
+      top: 12px;
+      left: 15px;
+      bottom: 12px;
+      right: 15px;
+      box-shadow: 2px 2px 6px 2px rgba(0,0,0,.2);
     }
   }
+
+  img {
+    max-height: 250px;
+    box-shadow: 2px 2px 6px 2px rgba(0,0,0,.2);
+  }
+}
+
+.promo__description {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 1em;
 }
 
 @include breakpoint(700) {
@@ -209,31 +143,4 @@
       line-height: 2;
     }
   }
-}
-
-.promo__single-link {
-
-  .promo__title {
-    margin-bottom: 0;
-    color: $link-color;
-    background-color: rgba($link-color, .1);
-    text-decoration: none;
-    padding-right: 10px;
-    display: inline-block;
-
-    &:hover,
-    &:active {
-      background-color: rgba($link-color, .3);
-    }
-
-    &:hover + .promo__external-source {
-      padding-right: 3em;
-
-      p:after {
-        opacity: 1.0;
-        transition: opacity .2s;
-      }
-    }
-  }
-
 }

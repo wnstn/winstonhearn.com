@@ -5,66 +5,31 @@ layout: default
 
   <div class="post-header">
 
-    <ul class="post-meta">
-      <li class="publish-date">Published: <strong>{{ page.date | date: "%b %-d, %Y" }}</strong></li>
-      <li class="post-category">Category: <strong>{{ page.category | capitalize }}</strong></li>
+    {% include post_meta.html %}
 
-      {% if page.copyeditor %}
-        <li class="publish-copyeditor">Copyedited by <br/><a href="{{ page.copyeditor.url }}" target="_blank">{{ page.copyeditor.name }}</a></li>
-      {% endif %}
-
-      {% if page.references %}
-        <li class="post-references">
-          <ul>
-            <li class="post-reference">Referenced within</li>
-            {% for reference in page.references %}
-            <li class="post-reference">
-              <a href="{{ reference.url }}" target="_blank">
-                {{ reference.title }}
-              </a>
-            </li>
-
-          {% endfor%}</ul>
-        </li>
-      {% endif %}
-
-      {% if page.powells %}
-        <li class="post-powells"><a href="{{ page.powells }}" target='_blank'>Buy on Powells</a></li>
-      {% endif %}
-
-      {% if page.amazon %}
-        <li class="post-amazon"><a href="{{ page.amazon }}" target='_blank'>Buy on Amazon</a></li>
-      {% endif %}
-
-      <li class="post-local-bookstore"><a href="http://www.indiebound.org/indie-store-finder" target="_blank">Find a Local Bookstore</a></li>
-
-    </ul>
-
-    <h1 class="post-title">{{ page.title }}</h1>
-
-  </div>
-
-  <article class="post-content">
-    <div class="book-details">
-      <div class="book-image">
-        <img src="{{ page.book.cover }}" alt="cover of {{ page.book.title }} by {{ page.book.author }}">
-      </div>
+    <div class="post-title-wrapper">
+      <h1 class="post-title">{{ page.title }}</h1>
 
       {% if page.book.url %}
-        <h2 class="book-title"><a href="{{ page.book.url }}">{{ page.book.title }}</a></h2>
+        <h3 class="book-author"><a href="{{ page.book.url }}">{{ page.book.author }}</a></h3>
       {% else %}
-        <h2 class="book-title">{{ page.book.title }}</h2>
+        <h3 class="book-author">{{ page.book.author }}</h3>
       {% endif %}
-
-      <h3 class="book-author">{{ page.book.author }}</h3>
 
       <p class="book-published"><em>Copyright {{ page.book.published }}, {{ page.book.publisher }}</em></p>
 
+      <div class="book-image">
+        <picture>
+          <source srcset="{{ page.book.cover }}" media="(max-width: 600px)">
+          <img src="{{ page.book.cover }}" alt="cover of {{ page.book.title }} by {{ page.book.author }}">
+        </picture>
+      </div>
     </div>
 
-    <div class="book-content">
+  </div>
+
+  <article class="post-content book-content">
       {{ content }}
-    </div>
   </article>
 
 </div>

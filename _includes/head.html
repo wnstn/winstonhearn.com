@@ -2,8 +2,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://use.typekit.net">
-  <link rel="dns-prefetch" href="http://p.typekit.net">
 
   <title>{% if page.title %}Winston Hearn | {{ page.title | strip_html }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
@@ -11,9 +9,7 @@
   {% include meta.html %}
 
   {% css main %}
-
-  <script src="https://use.typekit.net/zma1vip.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

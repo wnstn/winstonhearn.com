@@ -3,7 +3,7 @@
    title:  "Thinking About Winning the Next Election"
    permalink: /fighting-trump-with-cognitive-dissonance/
    date: 2016-11-27 11:34:6
-   category: personal
+   category: other-things
    my-excerpt: The 2004 presidential election was the first presidential election I was eligible to vote in. I proudly voted for President George W. Bush's second term. I did not vote in 2008 because I had gotten married a few weeks prior and neglected to register. If I had voted, it would have timidly been for Barack Obama. In 2012 I did register and vote and I proudly did so for President Obama's second term. Since November 9, 2016, I've been trying to remember what exactly changed my beliefs over those 8 years. Clearly there were some big shifts; what caused them?
    edited: 1
 ---

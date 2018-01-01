@@ -3,24 +3,24 @@ layout: default
 wrapper: index
 ---
 
+{% include bio.html %}
+
 {% for post in paginator.posts %}
   {% if post.subcategory == "single-link" %}
 
-  <article class="promo-module {{post.category}}-module promo__single-link">
-    <ul class="promo__meta">
-      <li class="promo__publish-date">{{ post.date | date: "%b %-d, %Y" }}</li>
-      <li class="promo__category">
-        <!-- <a href="/{{post.category}}"> -->{{ post.category }}<!-- </a> --></strong>
-      </li>
-    </ul>
+  <article class="promo-module {{post.category}}-module promo__external-source">
     {% for reference in post.references %}
-    <h2 class="promo__title"><a href="{{ reference.url }}">{{ post.title }}</a></h2>
-    <div class="promo__external-source">
-      <p>Read on {{ reference.title }}</p>
-    </div>
-    <div class="promo__copy">
-      {{post.content}}
-    </div>
+      <p class="promo__description">Read on {{ reference.title }}</p>
+      <h2 class="promo__title"><a href="{{ reference.url }}">{{ post.title }}</a></h2>
+      <ul class="promo__meta">
+        <li class="promo__publish-date">{{ post.date | date: "%b %-d, %Y" }}</li>
+        <li class="promo__category">
+          <!-- <a href="/{{post.category}}"> -->{{ post.category }}<!-- </a> --></strong>
+        </li>
+      </ul>
+      <div class="promo__copy">
+        {{post.content}}
+      </div>
     {% endfor %}
   </article>
 
@@ -36,37 +36,21 @@ wrapper: index
       </li>
     </ul>
 
-    <div class="promo__copy">
-      {% if post.category == "book" %}
+    {% if post.category == "book" %}
+      <div class="promo__book-cover">
         <picture class="promo__book-cover">
           <source srcset="{{post.book.cover}}" media="(min-width: 767px)">
           <img src="{{post.book.cover}}" alt="cover of {{ post.book.title }} by {{ post.book.author }}" />
         </picture>
-      {% endif %}
+      </div>
+    {% endif %}
 
+    <div class="promo__copy">
       {{ post.my-excerpt | markdownify }}
     </div>
-
-
-
-  <!--
-      {% if post.references and post.show-references != false %}
-        <li class="post-references">Inspiration from
-          <ul> {% for reference in post.references %}
-
-            <li class="post-reference">
-              <a href="{{ reference.url }}" target="_blank">
-                <svg class="icon"><use xlink:href="#brain"></use></svg>
-                {{ reference.title }}
-              </a>
-            </li>
-
-          {% endfor%}</ul>
-        </li>
-      {% endif %}
-       -->
 
   </article>
   {% endif %}
 {% endfor %}
 
+{% include pagination.html %}

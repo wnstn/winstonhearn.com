@@ -3,7 +3,7 @@ layout: video
 title:  "Chattanooga Story"
 permalink: /chattanooga-story/
 date:   2014-11-16 10:53:00
-category: video
+category: other-things
 my-excerpt: Chattanooga, my new home city, is in the midst of a renaissance, but it's not helping everyone. A documentary explores the history of the improvements and the challenges facing the city.
 edited: 1
 video: a4DCoZJv9YI

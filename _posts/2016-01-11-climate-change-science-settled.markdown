@@ -3,7 +3,7 @@ layout: video
 title:  "Climate Change: Is the Science Settled?"
 permalink: /climate-change-science-settled/
 date:   2016-01-11 12:30:00
-category: video
+category: other-things
 my-excerpt: A lecture that is as much about how confident we are in the science of climate change as it is about the philosophy of science and how that informs the ways we gathering and understanding data.
 edited: 1
 video: mmlHbt5jja4

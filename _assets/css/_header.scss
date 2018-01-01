@@ -1,45 +1,50 @@
-.pattern-bg {
-  background-image: url(/img/header.svg);
-  background-position: 0 70%;
-  background-size: 100% auto;
-  height: 4rem;
-
-  @include breakpoint(600) {
-    height: 12rem;
-  }
-}
-
 header {
-    font-size: .7rem;
-    height: 100%;
-    position: relative;
-
-  a {
+  position: relative;
+  padding: 0;
+  border-bottom: 2px solid $white;
+  background-color: $header-border;
+  width: 100%;
+  overflow: hidden;
+  nav {
     display: block;
-    padding-top: 1em;
-    border-bottom: none;
+    margin-left: 10px;
+    margin-bottom: 20px;
     text-align: center;
-    background-color: transparent;
-
-    &:hover {
-      background-color: transparent;
-    }
-
-    @include breakpoint(600) {
-      text-align: left;
-      margin-left: 5%;
-      padding-top: 9.5rem;
+    color: $white;
+    transform: rotate(-2deg);
+    @include breakpoint(700) {
+      transform: rotate(0);
+      max-width: 700px;
+      margin: 0 auto 20px;
     }
   }
 
-  .author h1 {
-    color: white;
-    font-style: normal;
-    font-weight: 400;
+  h1 {
+    margin-left: 8px;
     margin-bottom: 0;
-    width: 100%;
-    @include breakpoint(600) {
-      font-size: 2em;
+    margin-top: 30px;
+    display: block;
+    font-size: 35px;
+    line-height: 1;
+    text-align: center;
+    transform: rotate(-2deg);
+
+    @include breakpoint(700) {
+      transform: rotate(0);
+      max-width: 700px;
+      margin: 20px auto 0;
     }
   }
+
+  h1 a {
+    border-bottom: none;
+    color: $white;
+  }
+
+
+  nav a {
+    color: $white;
+    border-bottom: 1px solid $white;
+  }
+
 }

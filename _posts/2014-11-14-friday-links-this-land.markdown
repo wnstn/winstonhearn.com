@@ -3,7 +3,7 @@ layout: link-list
 title:  "Friday Links: <br/> This Land"
 permalink: /friday-links-nov-14-2014/
 date:   2014-11-14 00:30:00
-category: links
+category: other-things
 my-excerpt: The first polar vortex of the new winter has descended on America, and I'm thinking about the land.
 edited: 1
 show-references: false

@@ -11,7 +11,12 @@
 }
 
 @mixin breakpoint($width) {
-    @media screen and (min-width: #{getBreakpoint($width)}px) {
+    $brk: #{$width}px;
+    @if (typeof($width) == 'string') {
+      $brk: #{getBreakpoint($width)}px;
+    }
+
+    @media screen and (min-width: $brk) {
         @content;
     }
 }

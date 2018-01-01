@@ -3,7 +3,7 @@ layout: post
 title:  I Wrote a Thing
 permalink: /omg-racked-published-me/
 date:   2015-08-08 00:30:00
-category: quote
+category: other-things
 my-excerpt: I wrote a thing and Racked published it and omggggg
 edited: 1
 show-references: false

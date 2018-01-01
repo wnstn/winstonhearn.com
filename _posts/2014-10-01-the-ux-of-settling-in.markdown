@@ -3,7 +3,7 @@ layout: post
 title:  "The UX of Settling in"
 permalink: /the-ux-of-settling-in/
 date:   2014-10-01 12:30:00
-category: ux
+category: other-things
 my-excerpt: We've moved into a little house in Chattanooga for at least a year. No more things in storage. We're looking for furniture, putting dishes in cabinets, and yes, connecting things to the internet. The concept of home is now very concrete.
 edited: 1
 references:

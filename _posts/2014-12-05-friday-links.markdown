@@ -3,7 +3,7 @@ layout: link-list
 title:  "Friday Links: <br/> Lakes"
 permalink: /friday-links-dec-5-2014/
 date:   2014-12-05 00:30:00
-category: links
+category: other-things
 my-excerpt: Two pieces on bodies of water and one piece on how our bodies are similar.
 edited: 1
 show-references: false
@@ -14,7 +14,7 @@ references:
       url: http://thewalrus.ca/troubled-waters/
     - title: The Atlantic
       url: http://www.theatlantic.com/national/archive/2011/05/where-the-roads-end-in-water-the-lake-that-wont-stop-rising/238848/
-    
+
 ---
 
 > He recalled a career’s worth of stories: A fire that leaped through the forest, coming within an eyelash of camp, and the moment when everything turned green again. The dozens of scientists who took off at dusk to wash mercury into Lake 658. He had seen die-offs and population recoveries. All but one lake had returned to its natural state, but the same could not be said for science. Our understanding of the world, as seen through the prism of the ELA’s ongoing data collecting, might never be the same again. Shearer stared off at a wall. “If they ever really needed a facility like that again,” he said, “it would take far more political will than I’ve seen in recent years.”
