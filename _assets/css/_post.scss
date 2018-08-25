@@ -13,8 +13,7 @@ script {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0;
-    border-left: 5px solid $meta-border;
-    background-color: rgba($meta-border, .1);
+    border-left: 5px solid rgba($meta-border, .3);
     padding: .65em;
     width: 100%;
     box-sizing: border-box;
@@ -68,7 +67,7 @@ script {
   }
 
   .post-title-wrapper {
-    border-left: 5px solid lighten($content-border, 5%);
+    border-left: 5px solid rgba($meta-border, .3);
     padding: 2em 0;
     width: 100%;
   }
@@ -82,7 +81,7 @@ script {
 }
 
 .post-content {
-  border-left: 5px solid lighten($content-border, 5%);
+  border-left: 5px solid rgba($meta-border, .3);
   background-color: $white;
 
   &:after {
@@ -156,9 +155,9 @@ script {
   }
 
   blockquote {
-    // border-top: 1px solid rgba($text-color, .5);
-    // border-bottom: 1px solid rgba($link-color, .5);
-    background-color: rgba($link-color, .1);
+    border-top: 1px solid rgba($text-color, .1);
+    border-bottom: 1px solid rgba($link-color, .1);
+    // background-color: rgba($link-color, .1);
     padding: 1em;
     margin: 1em 0;
     font-size: 1.25rem;

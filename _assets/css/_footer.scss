@@ -1,7 +1,6 @@
 footer, {
-  border-left: 5px solid $header-shade;
-  background-color: rgba($header-shade, .1);
-  padding: 4em .5em;
+  background:rgba($meta-border, .1);
+  padding: 4em 1em;
   max-width: 700px;
   margin: 0 auto;
 
