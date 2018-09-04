@@ -16,7 +16,9 @@ layout: default
         <h3 class="book-author">{{ page.book.author }}</h3>
       {% endif %}
 
+      {% if page.book.publisher %}
       <p class="book-published"><em>Copyright {{ page.book.published }}, {{ page.book.publisher }}</em></p>
+      {% endif %}
 
       <div class="book-image">
         <picture>
