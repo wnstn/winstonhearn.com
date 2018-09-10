@@ -32,7 +32,7 @@ Google is signaling to website owners that if they are going to use AMP, the AMP
 
 > AMP pages are fast to load (so fast to crawl), easy to understand (thanks to mandatory structured data), and devoid of any unwanted clutter or mess (as that breaks the standard).
 
-It’s hard to argue as a user of the web it’s always nice when sites are fast loading, easy to understand, and missing unwanted clutter. As a web developer, I work hard to build sites and fight for product decisions that lead to these ends!
+It’s hard to argue as a user against having a web where sites are fast loading, easy to understand, and missing unwanted clutter. As a web developer, I work hard to build sites and fight for product decisions that lead to these ends!
 
 I work for a media company on revenue; specifically I work in the world of internet ads. I am well aware of the lay of the land for user experience across the broader web. Popups, overlays, animated distractions, designs that started out clean but due to business concerns increasingly became cluttered, slow servers and overloading a page with scripts that prevent the actual content from loading are common ways that websites quickly become unusable.
 
