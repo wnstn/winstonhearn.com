@@ -17,4 +17,24 @@ layout: default
     {{ content }}
   </article>
 
+    {% if page.references %}
+    <section class="post-references">
+      <p class="post-reference-header"><strong>Notes and References:</strong></p>
+
+      <ul>
+        {% for reference in page.references %}
+        <li class="post-reference">
+          {% if reference.url %}
+            <a href="{{ reference.url }}" target="_blank">
+              &#9728 {{ reference.title }}
+            </a>
+          {% else %}
+            {{ reference.title }}
+          {% endif %}
+        </li>
+
+      {% endfor%}</ul>
+      </section>
+  {% endif %}
+
 </div>

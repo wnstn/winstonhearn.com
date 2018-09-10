@@ -35,49 +35,6 @@ script {
       margin-bottom: 0;
     }
   }
-
-  .post-reference-header {
-    font-size: .8rem;
-    margin-bottom: 0;
-    margin-top: 5px;
-    width: 100%;
-  }
-
-  .post-references {
-    width: 100%;
-    margin-bottom: 0;
-
-    ul {
-      margin: 0;
-      width: 100%;
-      list-style: none;
-    }
-  }
-
-  .post-reference {
-    font-size: 13px;
-    width: 100%;
-    display: block;
-    padding: 3px 5px;
-    margin-bottom: 0;
-
-    @include breakpoint(800){
-      width: auto;
-    }
-  }
-
-  .post-title-wrapper {
-    border-left: 5px solid rgba($meta-border, .3);
-    padding: 2em 0;
-    width: 100%;
-  }
-
-  .post-title {
-    line-height: 1.4;
-    padding-left: 20px;
-    margin: 0;
-    position: relative;
-  }
 }
 
 .post-content {
@@ -157,7 +114,7 @@ script {
   blockquote {
     border-top: 1px solid rgba($text-color, .1);
     border-bottom: 1px solid rgba($link-color, .1);
-    // background-color: rgba($link-color, .1);
+    background-color: #ededed;
     padding: 1em;
     margin: 1em 0;
     font-size: 1.25rem;
@@ -196,4 +153,52 @@ script {
 
 .link-list blockquote:first-child {
   border-top: none;
+}
+
+.post-references {
+  background-color: rgba($dark-orange, .3);
+  padding: 2rem 0 2rem 2rem;
+}
+
+.post-references ul {
+  list-style: none;
+  display: block;
+  margin: 0;
+}
+
+.post-references li {
+  padding-left: 1rem;
+}
+
+.post-reference-header {
+  font-size: .8rem;
+  margin-bottom: 0;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.post-reference {
+  font-size: 13px;
+  width: 100%;
+  display: block;
+  padding: 3px 5px;
+  margin-bottom: .5em;
+
+  @include breakpoint(800){
+    width: auto;
+  }
+}
+
+.post-title-wrapper {
+  border-left: 5px solid rgba($meta-border, .3);
+  padding: 2em 0;
+  width: 100%;
+}
+
+.post-title {
+  line-height: 1.4;
+  padding-left: 20px;
+  margin: 0;
+  position: relative;
+  border-bottom: 2px solid $header-border;
 }

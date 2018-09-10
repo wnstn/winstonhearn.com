@@ -6,21 +6,6 @@
     <li class="publish-copyeditor">Copyedited by <br/><a href="{{ page.copyeditor.url }}" target="_blank">{{ page.copyeditor.name }}</a></li>
   {% endif %}
 
-  {% if page.references %}
-    <li class="post-references">
-      <ul>
-        <li class="post-reference-header">Referenced below:</li>
-        {% for reference in page.references %}
-        <li class="post-reference">
-          <a href="{{ reference.url }}" target="_blank">
-            &#9728 {{ reference.title }}
-          </a>
-        </li>
-
-      {% endfor%}</ul>
-    </li>
-  {% endif %}
-
   {% if page.category == "book"%}
     {% if page.powells %}
       <li class="post-powells"><a href="{{ page.powells }}" target='_blank'>Buy on Powells</a></li>
