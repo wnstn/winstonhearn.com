@@ -1,5 +1,3 @@
-'use strict';
-
 var gulp = require('gulp');
 var exec = require('child_process').exec;
 var gutil = require("gulp-util");
