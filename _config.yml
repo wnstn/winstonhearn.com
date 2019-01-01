@@ -13,6 +13,8 @@ github_username:  wnstn
 
 # Build settings
 markdown: kramdown
+kramdown:
+  hard_wrap: true
 paginate: 16
 exclude:
   - package.json
